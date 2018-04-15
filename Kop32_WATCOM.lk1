@@ -1,0 +1,2 @@
+FIL Kop32_main.obj,stdafx.obj
+LIBR \WATCOM\lib386\nt\advapi32.lib,\WATCOM\lib386\nt\crypt32.lib,\WATCOM\lib386\nt\winmm.lib,\WATCOM\lib386\nt\ws2_32.lib,\WATCOM\lib386\nt\wsock32.lib,\X86_LIBRARIES\STK\stk_WATCOM.lib

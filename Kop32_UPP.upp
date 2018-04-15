@@ -1,0 +1,6 @@
+file
+	Koperek_UPP.cpp;
+
+mainconfig
+	"" = "SSE2";
+

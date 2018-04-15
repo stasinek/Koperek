@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="Kop32_BCB.exe"/>
+    <OBJFILES value="Kop32_main.obj"/>
+    <RESFILES value="Kop32_BCB.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value="C:\X86_LIBRARIES\STK\stk_BCB.lib"/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value=""/>
+    <PACKAGES value="Vcl50.bpi Vclx50.bpi dclusr50.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="tlink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
+    <MAINSOURCE value="Kop32_BCB.bpf"/>
+    <INCLUDEPATH value="..\..\..\X86_LIBRARIES\STK\file\vfs;..\..\..\X86_LIBRARIES\STK\file\json;..\..\..\X86_LIBRARIES\STK\file\xml;..\..\..\X86_LIBRARIES\STK\time;..\..\..\X86_LIBRARIES\STK\text;..\..\..\X86_LIBRARIES\STK\sthreads;..\..\..\X86_LIBRARIES\STK\sockets;..\..\..\X86_LIBRARIES\STK\process_journal;..\..\..\X86_LIBRARIES\STK\pharser;..\..\..\X86_LIBRARIES\STK\io;..\..\..\X86_LIBRARIES\STK\hash;..\..\..\X86_LIBRARIES\STK\cipher;..\..\..\X86_LIBRARIES\STK\compression;..\..\..\X86_LIBRARIES\STK\3D;..\..\..\X86_LIBRARIES\STK\database;..\..\..\X86_LIBRARIES\STK\file\eno;..\..\..\X86_LIBRARIES\STK\file\ini;..\..\..\X86_LIBRARIES\STK\file;..\..\..\X86_LIBRARIES\STK\mem;..\..\..\X86_LIBRARIES\STK\stasm;..\..\..\X86_LIBRARIES\STK\cpu;..\..\..\X86_LIBRARIES\STK;C:\PROGS\CPP\Kop32\;$(BCB)\include"/>
+    <LIBPATH value="..\..\..\X86_LIBRARIES\STK\file\vfs;..\..\..\X86_LIBRARIES\STK\file\json;..\..\..\X86_LIBRARIES\STK\file\xml;..\..\..\X86_LIBRARIES\STK\time;..\..\..\X86_LIBRARIES\STK\text;..\..\..\X86_LIBRARIES\STK\sthreads;..\..\..\X86_LIBRARIES\STK\sockets;..\..\..\X86_LIBRARIES\STK\process_journal;..\..\..\X86_LIBRARIES\STK\pharser;..\..\..\X86_LIBRARIES\STK\io;..\..\..\X86_LIBRARIES\STK\hash;..\..\..\X86_LIBRARIES\STK\cipher;..\..\..\X86_LIBRARIES\STK\compression;..\..\..\X86_LIBRARIES\STK\3D;..\..\..\X86_LIBRARIES\STK\database;..\..\..\X86_LIBRARIES\STK\file\eno;..\..\..\X86_LIBRARIES\STK\file\ini;..\..\..\X86_LIBRARIES\STK\file;..\..\..\X86_LIBRARIES\STK\mem;..\..\..\X86_LIBRARIES\STK\cpu;..\..\..\X86_LIBRARIES\STK\stasm;..\..\..\X86_LIBRARIES\STK;C:\PROGS\CPP\Kop32\;$(BCB)\lib"/>
+    <WARNINGS value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl50.csm -Hc -Q -Jgx -Vx -Ve -xf -xp -VC -Vd -Vmp -VF 
+      -C -ff -X- -ps -a8 -6 -b -d -k -y -v -vi- -tWC -tWM -c"/>
+    <PFLAGS value="-$YD -$W -$T -$R -$Q -$B -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -Rr -Gz -ap -Tpe -GD -s -Gn -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0x32.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32mt.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1045
+CodePage=1250
+
+[Version Info Keys]
+CompanyName=SSTSOFT.pl
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=KOPEREK32
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+$(BCB)\Bin\bcbsmp50.bpl=Borland C++ Sample Components
+$(BCB)\Bin\dcl31w50.bpl=Delphi 1.0 Compatibility Components
+$(BCB)\Bin\dclocx50.bpl=Borland Sample Imported ActiveX Controls
+$(BCB)\Bin\bcb2kaxserver50.bpl=Borland C++Builder COM Server Components Sample Package
+
+[HistoryLists\hlIncludePath]
+Count=5
+Item0=..\..\..\X86_LIBRARIES\STK\file\vfs;..\..\..\X86_LIBRARIES\STK\file\json;..\..\..\X86_LIBRARIES\STK\file\xml;..\..\..\X86_LIBRARIES\STK\time;..\..\..\X86_LIBRARIES\STK\text;..\..\..\X86_LIBRARIES\STK\sthreads;..\..\..\X86_LIBRARIES\STK\sockets;..\..\..\X86_LIBRARIES\STK\process_journal;..\..\..\X86_LIBRARIES\STK\pharser;..\..\..\X86_LIBRARIES\STK\io;..\..\..\X86_LIBRARIES\STK\hash;..\..\..\X86_LIBRARIES\STK\cipher;..\..\..\X86_LIBRARIES\STK\compression;..\..\..\X86_LIBRARIES\STK\3D;..\..\..\X86_LIBRARIES\STK\database;..\..\..\X86_LIBRARIES\STK\file\eno;..\..\..\X86_LIBRARIES\STK\file\ini;..\..\..\X86_LIBRARIES\STK\file;..\..\..\X86_LIBRARIES\STK\mem;..\..\..\X86_LIBRARIES\STK\stasm;..\..\..\X86_LIBRARIES\STK\cpu;..\..\..\X86_LIBRARIES\STK;C:\PROGS\CPP\Kop32\;$(BCB)\include
+Item1=..\..\..\X86_LIBRARIES\STK\file\vfs;..\..\..\X86_LIBRARIES\STK\file\json;..\..\..\X86_LIBRARIES\STK\file\xml;..\..\..\X86_LIBRARIES\STK\time;..\..\..\X86_LIBRARIES\STK\text;..\..\..\X86_LIBRARIES\STK\sthreads;..\..\..\X86_LIBRARIES\STK\sockets;..\..\..\X86_LIBRARIES\STK\process_journal;..\..\..\X86_LIBRARIES\STK\pharser;..\..\..\X86_LIBRARIES\STK\io;..\..\..\X86_LIBRARIES\STK\hash;..\..\..\X86_LIBRARIES\STK\cipher;..\..\..\X86_LIBRARIES\STK\compression;..\..\..\X86_LIBRARIES\STK\3D;..\..\..\X86_LIBRARIES\STK\database;..\..\..\X86_LIBRARIES\STK\file\eno;..\..\..\X86_LIBRARIES\STK\file\ini;..\..\..\X86_LIBRARIES\STK\file;..\..\..\X86_LIBRARIES\STK\mem;..\..\..\X86_LIBRARIES\STK\stasm;..\..\..\X86_LIBRARIES\STK\cpu;..\..\..\X86_LIBRARIES\STK;C:\PROGS\CPP\Kop32\
+Item2=..\..\..\X86_LIBRARIES\STK\file\vfs;..\..\..\X86_LIBRARIES\STK\file\json;..\..\..\X86_LIBRARIES\STK\file\xml;..\..\..\X86_LIBRARIES\STK\time;..\..\..\X86_LIBRARIES\STK\text;..\..\..\X86_LIBRARIES\STK\sthreads;..\..\..\X86_LIBRARIES\STK\sockets;..\..\..\X86_LIBRARIES\STK\process_journal;..\..\..\X86_LIBRARIES\STK\pharser;..\..\..\X86_LIBRARIES\STK\io;..\..\..\X86_LIBRARIES\STK\hash;..\..\..\X86_LIBRARIES\STK\cipher;..\..\..\X86_LIBRARIES\STK\compression;..\..\..\X86_LIBRARIES\STK\3D;..\..\..\X86_LIBRARIES\STK\database;..\..\..\X86_LIBRARIES\STK\file\eno;..\..\..\X86_LIBRARIES\STK\file\ini;..\..\..\X86_LIBRARIES\STK\file;..\..\..\X86_LIBRARIES\STK\mem;..\..\..\X86_LIBRARIES\STK\stasm;..\..\..\X86_LIBRARIES\STK\cpu;..\..\..\X86_LIBRARIES\STK;C:\PROGS\CPP\Kop32;
+Item3=..\..\..\X86_LIBRARIES\STK\time;..\..\..\X86_LIBRARIES\STK\text;..\..\..\X86_LIBRARIES\STK\sthreads;..\..\..\X86_LIBRARIES\STK\sockets;..\..\..\X86_LIBRARIES\STK\process_journal;..\..\..\X86_LIBRARIES\STK\pharser;..\..\..\X86_LIBRARIES\STK\io;..\..\..\X86_LIBRARIES\STK\hash;..\..\..\X86_LIBRARIES\STK\cipher;..\..\..\X86_LIBRARIES\STK\compression;..\..\..\X86_LIBRARIES\STK\3D;..\..\..\X86_LIBRARIES\STK\database;..\..\..\X86_LIBRARIES\STK\file\eno;..\..\..\X86_LIBRARIES\STK\file\ini;..\..\..\X86_LIBRARIES\STK\file;..\..\..\X86_LIBRARIES\STK\mem;..\..\..\X86_LIBRARIES\STK\stasm;..\..\..\X86_LIBRARIES\STK\cpu;..\..\..\X86_LIBRARIES\STK;C:\PROGS\CPP\Kop32;K:\prc++\x86_libraries\STK\time\;K:\prc++\x86_libraries\STK\text\;K:\prc++\x86_libraries\STK\sthreads\;K:\prc++\x86_libraries\STK\sockets\;K:\prc++\x86_libraries\STK\process_journal\;K:\prc++\x86_libraries\STK\pharser\;K:\prc++\x86_libraries\STK\io\;K:\prc++\x86_libraries\STK\hash\;K:\prc++\x86_libraries\STK\cipher\;K:\prc++\x86_libraries\STK\compression\;K
+Item4=K:\prc++\x86_libraries\STK\time;K:\prc++\x86_libraries\STK\text;K:\prc++\x86_libraries\STK\sthreads;K:\prc++\x86_libraries\STK\sockets;K:\prc++\x86_libraries\STK\process_journal;K:\prc++\x86_libraries\STK\pharser;K:\prc++\x86_libraries\STK\io;K:\prc++\x86_libraries\STK\hash;K:\prc++\x86_libraries\STK\cipher;K:\prc++\x86_libraries\STK\compression;K:\prc++\x86_libraries\STK\3D;K:\prc++\x86_libraries\STK\database;K:\prc++\x86_libraries\STK\file\eno;K:\prc++\x86_libraries\STK\file\ini;K:\prc++\x86_libraries\STK\file;K:\prc++\x86_libraries\STK\mem;K:\prc++\x86_libraries\STK\stasm;K:\prc++\x86_libraries\STK\cpu;K:\prc++\x86_libraries\STK\;K:\prc++\PROGS\CPP\Kop32\;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=6
+Item0=..\..\..\X86_LIBRARIES\STK\file\vfs;..\..\..\X86_LIBRARIES\STK\file\json;..\..\..\X86_LIBRARIES\STK\file\xml;..\..\..\X86_LIBRARIES\STK\time;..\..\..\X86_LIBRARIES\STK\text;..\..\..\X86_LIBRARIES\STK\sthreads;..\..\..\X86_LIBRARIES\STK\sockets;..\..\..\X86_LIBRARIES\STK\process_journal;..\..\..\X86_LIBRARIES\STK\pharser;..\..\..\X86_LIBRARIES\STK\io;..\..\..\X86_LIBRARIES\STK\hash;..\..\..\X86_LIBRARIES\STK\cipher;..\..\..\X86_LIBRARIES\STK\compression;..\..\..\X86_LIBRARIES\STK\3D;..\..\..\X86_LIBRARIES\STK\database;..\..\..\X86_LIBRARIES\STK\file\eno;..\..\..\X86_LIBRARIES\STK\file\ini;..\..\..\X86_LIBRARIES\STK\file;..\..\..\X86_LIBRARIES\STK\mem;..\..\..\X86_LIBRARIES\STK\cpu;..\..\..\X86_LIBRARIES\STK\stasm;..\..\..\X86_LIBRARIES\STK;C:\PROGS\CPP\Kop32\;$(BCB)\lib
+Item1=..\..\..\X86_LIBRARIES\STK\file\vfs;..\..\..\X86_LIBRARIES\STK\file\json;..\..\..\X86_LIBRARIES\STK\file\xml;..\..\..\X86_LIBRARIES\STK\time;..\..\..\X86_LIBRARIES\STK\text;..\..\..\X86_LIBRARIES\STK\sthreads;..\..\..\X86_LIBRARIES\STK\sockets;..\..\..\X86_LIBRARIES\STK\process_journal;..\..\..\X86_LIBRARIES\STK\pharser;..\..\..\X86_LIBRARIES\STK\io;..\..\..\X86_LIBRARIES\STK\hash;..\..\..\X86_LIBRARIES\STK\cipher;..\..\..\X86_LIBRARIES\STK\compression;..\..\..\X86_LIBRARIES\STK\3D;..\..\..\X86_LIBRARIES\STK\database;..\..\..\X86_LIBRARIES\STK\file\eno;..\..\..\X86_LIBRARIES\STK\file\ini;..\..\..\X86_LIBRARIES\STK\file;..\..\..\X86_LIBRARIES\STK\mem;..\..\..\X86_LIBRARIES\STK\stasm;..\..\..\X86_LIBRARIES\STK\cpu;..\..\..\X86_LIBRARIES\STK;C:\PROGS\CPP\Kop32\;$(BCB)\lib
+Item2=..\..\..\X86_LIBRARIES\STK\file\vfs;..\..\..\X86_LIBRARIES\STK\file\json;..\..\..\X86_LIBRARIES\STK\file\xml;..\..\..\X86_LIBRARIES\STK\time;..\..\..\X86_LIBRARIES\STK\text;..\..\..\X86_LIBRARIES\STK\sthreads;..\..\..\X86_LIBRARIES\STK\sockets;..\..\..\X86_LIBRARIES\STK\process_journal;..\..\..\X86_LIBRARIES\STK\pharser;..\..\..\X86_LIBRARIES\STK\io;..\..\..\X86_LIBRARIES\STK\hash;..\..\..\X86_LIBRARIES\STK\cipher;..\..\..\X86_LIBRARIES\STK\compression;..\..\..\X86_LIBRARIES\STK\3D;..\..\..\X86_LIBRARIES\STK\database;..\..\..\X86_LIBRARIES\STK\file\eno;..\..\..\X86_LIBRARIES\STK\file\ini;..\..\..\X86_LIBRARIES\STK\file;..\..\..\X86_LIBRARIES\STK\mem;..\..\..\X86_LIBRARIES\STK\stasm;..\..\..\X86_LIBRARIES\STK\cpu;..\..\..\X86_LIBRARIES\STK;C:\PROGS\CPP\Kop32\
+Item3=..\..\..\X86_LIBRARIES\STK\file\vfs;..\..\..\X86_LIBRARIES\STK\file\json;..\..\..\X86_LIBRARIES\STK\file\xml;..\..\..\X86_LIBRARIES\STK\time;..\..\..\X86_LIBRARIES\STK\text;..\..\..\X86_LIBRARIES\STK\sthreads;..\..\..\X86_LIBRARIES\STK\sockets;..\..\..\X86_LIBRARIES\STK\process_journal;..\..\..\X86_LIBRARIES\STK\pharser;..\..\..\X86_LIBRARIES\STK\io;..\..\..\X86_LIBRARIES\STK\hash;..\..\..\X86_LIBRARIES\STK\cipher;..\..\..\X86_LIBRARIES\STK\compression;..\..\..\X86_LIBRARIES\STK\3D;..\..\..\X86_LIBRARIES\STK\database;..\..\..\X86_LIBRARIES\STK\file\eno;..\..\..\X86_LIBRARIES\STK\file\ini;..\..\..\X86_LIBRARIES\STK\file;..\..\..\X86_LIBRARIES\STK\mem;..\..\..\X86_LIBRARIES\STK\stasm;..\..\..\X86_LIBRARIES\STK\cpu;..\..\..\X86_LIBRARIES\STK;C:\PROGS\CPP\Kop32;
+Item4=..\..\..\X86_LIBRARIES\STK\time;..\..\..\X86_LIBRARIES\STK\text;..\..\..\X86_LIBRARIES\STK\sthreads;..\..\..\X86_LIBRARIES\STK\sockets;..\..\..\X86_LIBRARIES\STK\process_journal;..\..\..\X86_LIBRARIES\STK\pharser;..\..\..\X86_LIBRARIES\STK\io;..\..\..\X86_LIBRARIES\STK\hash;..\..\..\X86_LIBRARIES\STK\cipher;..\..\..\X86_LIBRARIES\STK\compression;..\..\..\X86_LIBRARIES\STK\3D;..\..\..\X86_LIBRARIES\STK\database;..\..\..\X86_LIBRARIES\STK\file\eno;..\..\..\X86_LIBRARIES\STK\file\ini;..\..\..\X86_LIBRARIES\STK\file;..\..\..\X86_LIBRARIES\STK\mem;..\..\..\X86_LIBRARIES\STK\stasm;..\..\..\X86_LIBRARIES\STK\cpu;..\..\..\X86_LIBRARIES\STK;C:\PROGS\CPP\Kop32;K:\prc++\x86_libraries\STK\time\;K:\prc++\x86_libraries\STK\text\;K:\prc++\x86_libraries\STK\sthreads\;K:\prc++\x86_libraries\STK\sockets\;K:\prc++\x86_libraries\STK\process_journal\;K:\prc++\x86_libraries\STK\pharser\;K:\prc++\x86_libraries\STK\io\;K:\prc++\x86_libraries\STK\hash\;K:\prc++\x86_libraries\STK\cipher\;K:\prc++\x86_libraries\STK\compression\;K
+Item5=K:\prc++\x86_libraries\STK\time;K:\prc++\x86_libraries\STK\text;K:\prc++\x86_libraries\STK\sthreads;K:\prc++\x86_libraries\STK\sockets;K:\prc++\x86_libraries\STK\process_journal;K:\prc++\x86_libraries\STK\pharser;K:\prc++\x86_libraries\STK\io;K:\prc++\x86_libraries\STK\hash;K:\prc++\x86_libraries\STK\cipher;K:\prc++\x86_libraries\STK\compression;K:\prc++\x86_libraries\STK\3D;K:\prc++\x86_libraries\STK\database;K:\prc++\x86_libraries\STK\file\eno;K:\prc++\x86_libraries\STK\file\ini;K:\prc++\x86_libraries\STK\file;K:\prc++\x86_libraries\STK\mem;K:\prc++\x86_libraries\STK\stasm;K:\prc++\x86_libraries\STK\cpu;K:\prc++\x86_libraries\STK\;K:\prc++\PROGS\CPP\Kop32\;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=1
+LinkDebugVcl=1
+  </IDEOPTIONS>
+</PROJECT>

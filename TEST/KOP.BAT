@@ -1,0 +1,1 @@
+"C:\dok\PRC++\BCB5\Progs\Koperek_DOS\Kop32_DEV.exe" /encode /dict={4096} /buffer={512} /password={mrost} /methods={crc,lzs} test.txt ..

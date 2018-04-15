@@ -1,0 +1,1 @@
+"C:\Documents and Settings\stasiek\My Documents\My Projects\aktualne prc++\Progs\Koperek_VS_CON\Kop_CON.exe"  /cached /decode c:\Koperek32\test1.eno c:\Koperek32\dek

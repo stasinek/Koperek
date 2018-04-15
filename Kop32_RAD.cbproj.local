@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/01/21 17:35:01.000.176,=D:\stasiek\My Projects\prc++\PROGS\CPP\Kop32\Kop32_main.cpp</Transaction>
+    <Transaction>2018/01/21 17:35:01.000.160,=D:\stasiek\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>2018/01/21 17:35:16.000.207,D:\stasiek\Embarcadero\Studio\Projects\Project2PCH1.h=D:\stasiek\My Projects\prc++\PROGS\CPP\Kop32\RADKop32PCH.h</Transaction>
+    <Transaction>2018/01/21 17:36:07.000.499,D:\stasiek\Embarcadero\Studio\Projects\Project2.cbproj=D:\stasiek\My Projects\prc++\PROGS\CPP\Kop32\Kop32_RAD.cbproj</Transaction>
+    <Transaction>2018/01/22 14:42:07.000.824,=C:\x86_libraries\STK\stk_lib.lib</Transaction>
+    <Transaction>2018/01/22 14:44:53.000.110,C:\x86_libraries\STK\stk_lib.lib=</Transaction>
+    <Transaction>2018/01/22 14:45:30.000.088,=C:\x86_libraries\STK\Win32\Debug\RAD_stk_lib.lib</Transaction>
+    <Transaction>2018/04/15 11:06:25.000.900,=D:\stasiek\My Projects\X86_LIBRARIES\STK\RAD_stk_lib.lib</Transaction>
+    <Transaction>2018/04/15 17:27:05.000.547,C:\x86_libraries\STK\Win32\Debug\RAD_stk_lib.lib=</Transaction>
+    <Transaction>2018/04/15 17:28:04.000.168,=D:\stasiek\My Projects\X86_LIBRARIES\STK\stk_RAD.lib</Transaction>
+  </Transactions>
+</BorlandProject>

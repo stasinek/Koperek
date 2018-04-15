@@ -1,0 +1,110 @@
+REGEDIT4
+
+;directories
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z1ZAZNACZ]
+@=-"sstsoft->Kop32->ZAZNACZ"
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z1ZAZNACZ\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --SELECT \"%L\""
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z8LISTUJ]
+@=-"sstsoft->Kop32->LISTUJ"
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z8LISTUJ\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --LIST --ARGTS{#file} \"%L\""
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z2KOPIUJ]
+@=-"sstsoft->Kop32->KOPIUJ"
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z2KOPIUJ\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --COPY --NOCACHE \"%L\""
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z3PRZENIES]
+@=-"sstsoft->Kop32->PRZENIEŒ"
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z3PRZENIES\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --MOVE --NOCACHE \"%L\""
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z4KODUJ]
+@=-"sstsoft->Kop32->KODUJ"
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z4KODUJ\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --ENCODE --DICT{4096} --NOCACHE \"%L\""
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z5DEKODUJ]
+@=-"sstsoft->Kop32->DEKODUJ"
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z5DEKODUJ\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --DECODE \"%L\""
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z6USUN]
+@=-"sstsoft->Kop32->USUÑ"
+
+[-HKEY_CLASSES_ROOT\Directory\shell\Z6USUN\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --DELETE \"%L\""
+
+;drives
+
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z1ZAZNACZ]
+@=-"sstsoft->Kop32->ZAZNACZ"
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z1ZAZNACZ\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --SELECT \"%L\""
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z8LISTUJ]
+@=-"sstsoft->Kop32->LISTUJ"
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z8LISTUJ\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --LIST --ARGTS{#file} \"%L\""
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z2KOPIUJ]
+@=-"sstsoft->Kop32->KOPIUJ"
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z2KOPIUJ\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --COPY --NOCACHE \"%L\""
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z3PRZENIES]
+@=-"sstsoft->Kop32->PRZENIEŒ"
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z3PRZENIES\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --MOVE --NOCACHE  \"%L\""
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z4KODUJ]
+@=-"sstsoft->Kop32->KODUJ"
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z4KODUJ\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --ENCODE  --DICT{4096} --NOCACHE  \"%L\""
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z5DEKODUJ]
+@=-"sstsoft->Kop32->DEKODUJ"
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z5DEKODUJ\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --DECODE \"%L\""
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z6USUN]
+@=-"sstsoft->Kop32->USUÑ"
+
+[-HKEY_CLASSES_ROOT\Drive\shell\Z6USUN\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --DELETE \"%L\""
+
+;files
+
+[-HKEY_CLASSES_ROOT\*\shell\Z8LISTUJ]
+@=-"sstsoft->Kop32->LISTUJ"
+
+[-HKEY_CLASSES_ROOT\*\shell\Z8LISTUJ\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --LIST --ARGTS{#file} \"%L\""
+
+[-HKEY_CLASSES_ROOT\*\shell\Z6USUN]
+@=-"sstsoft->Kop32->USUÑ"
+
+[-HKEY_CLASSES_ROOT\*\shell\Z6USUN\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --DELETE \"%L\""
+
+[-HKEY_CLASSES_ROOT\*\shell\Z1ZAZNACZ]
+@=-"sstsoft->Kop32->ZAZNACZ"
+
+[-HKEY_CLASSES_ROOT\*\shell\Z1ZAZNACZ\command]
+@=-"\"C:\\Program Files\\Kop32\\Kop32_DEV.exe\" --SELECT \"%L\""

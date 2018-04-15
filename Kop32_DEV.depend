@@ -1,0 +1,282 @@
+# depslib dependency file v1.0
+1459931646 source:d:\my projects\aktualne prc++\x86_libraries\sstsoft\__hash_chain.cpp
+
+1453664779 source:d:\my projects\aktualne prc++\x86_libraries\sstsoft\__hashed_linked_vector.cpp
+
+1459931646 source:d:\prc++\x86_libraries\sstsoft\__hash_chain.cpp
+
+1453664779 source:d:\prc++\x86_libraries\sstsoft\__hashed_linked_vector.cpp
+
+1489526579 source:k:\prc++\x86_libraries\stk\cipher\stk_cipher_api.cpp
+	"stk_cipher_API.h"
+	"stk_cipher_mtf.h"
+	"./../text/stk_cstr_utils.h"
+	"./../io/stk_console.h"
+
+1515786016 k:\prc++\x86_libraries\stk\cipher\stk_cipher_api.h
+	"./../stk_main.h"
+	"./../file/eno/stk_file_lzst_header.h"
+
+1515786779 k:\prc++\x86_libraries\stk\stk_main.h
+	<winsock2.h>
+	<windows.h>
+	<conio.h>
+	<io.h>
+	<direct.h>
+	<cstddef>
+	<stdlib.h>
+	<assert.h>
+	<stdint.h>
+	<time.h>
+	<stdio.h>
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<inttypes.h>
+	<omp.h>
+	"./time/stk_time.h"
+	"./incbin/stk_incbin.h"
+	"./stasm/stk_stasm.h"
+
+1515786706 k:\prc++\x86_libraries\stk\time\stk_time.h
+	<stk_main.h>
+
+1489612175 k:\prc++\x86_libraries\stk\incbin\stk_incbin.h
+
+1515784446 k:\prc++\x86_libraries\stk\stasm\stk_stasm.h
+	<stdint.h>
+	<stk_MAIN.h>
+	<arm_neon.h>
+	<mmintrin.h>
+	<altivec.h>
+	<spe.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	<tmmintrin.h>
+	<ammintrin.h>
+	<smmintrin.h>
+	<nmmintrin.h>
+	<immintrin.h>
+	<wmmintrin.h>
+
+1489612175 k:\prc++\x86_libraries\stk\file\eno\stk_file_lzst_header.h
+	"./../../stk_main.h"
+
+1515786033 k:\prc++\x86_libraries\stk\cipher\stk_cipher_mtf.h
+	"./../stk_main.h"
+
+1489526563 k:\prc++\x86_libraries\stk\text\stk_cstr_utils.h
+	"./../stk_main.h"
+	"./../mem/stk_mem.h"
+
+1515271986 k:\prc++\x86_libraries\stk\mem\stk_mem.h
+	"./../stk_main.h"
+	<new>
+
+1489612175 k:\prc++\x86_libraries\stk\io\stk_console.h
+	"./../stk_main.h"
+
+1489526579 source:k:\prc++\x86_libraries\stk\cipher\stk_cipher_mtf.cpp
+	"stk_cipher_mtf.h"
+	"./../mem/stk_mem.h"
+	"./../text/stk_cstr_utils.h"
+	"./../io/stk_console.h"
+
+1489526578 source:k:\prc++\x86_libraries\stk\cipher\stk_cipher_pair.cpp
+	"stk_cipher_pair.h"
+	"./../mem/stk_mem.h"
+	"./../text/stk_cstr_utils.h"
+
+1515786053 k:\prc++\x86_libraries\stk\cipher\stk_cipher_pair.h
+	"./../stk_main.h"
+
+1489526580 source:k:\prc++\x86_libraries\stk\compression\stk_compression_api.cpp
+	"stk_compression_API.h"
+	"stk_compression_lzstv4.h"
+	"stk_compression_bwt_matrix2.h"
+	"stk_compression_huff.h"
+	"stk_compression_ari.h"
+	"./../cipher/stk_cipher_mtf.h"
+	"./../io/stk_console.h"
+	"./../text/stk_cstr_utils.h"
+	"./../mem/stk_mem.h"
+
+1489612175 k:\prc++\x86_libraries\stk\compression\stk_compression_api.h
+	"./../stk_main.h"
+	"./../file/eno/stk_file_lzst_header.h"
+
+1489612175 k:\prc++\x86_libraries\stk\compression\stk_compression_lzstv4.h
+	"./../stk_main.h"
+	"./../file/eno/stk_file_lzst_header.h"
+
+1489612175 k:\prc++\x86_libraries\stk\compression\stk_compression_bwt_matrix2.h
+	"./../stk_main.h"
+
+1489612083 k:\prc++\x86_libraries\stk\compression\stk_compression_huff.h
+	"./../stk_main.h"
+
+1489612083 k:\prc++\x86_libraries\stk\compression\stk_compression_ari.h
+	"./../stk_main.h"
+
+1489527213 source:k:\prc++\x86_libraries\stk\compression\stk_compression_ari.cpp
+	"stk_compression_ari.h"
+	"./../mem/stk_mem.h"
+	"./../text/stk_cstr_utils.h"
+	"./../io/stk_console.h"
+
+1489526578 source:k:\prc++\x86_libraries\stk\compression\stk_compression_bwt_matrix2.cpp
+	"stk_compression_bwt_matrix2.h"
+	"./../mem/stk_mem.h"
+
+1489527213 source:k:\prc++\x86_libraries\stk\compression\stk_compression_huff.cpp
+	"stk_compression_huff.h"
+	"./../mem/stk_mem.h"
+	"./../text/stk_cstr_utils.h"
+	"./../io/stk_console.h"
+
+1489526579 source:k:\prc++\x86_libraries\stk\compression\stk_compression_static_huff.cpp
+	"stk_compression_static_huff.h"
+	"./../mem/stk_mem.h"
+	"./../text/stk_cstr_utils.h"
+	"./../io/stk_console.h"
+
+1489612175 k:\prc++\x86_libraries\stk\compression\stk_compression_static_huff.h
+	"./../stk_main.h"
+
+1515786476 source:k:\prc++\x86_libraries\stk\3d\stk_3dvector.cpp
+	"stk_3Dvector.h"
+
+1489527110 k:\prc++\x86_libraries\stk\3d\stk_3dvector.h
+	<smmintrin.h>
+
+1515786476 source:d:\stasiek\my projects\x86_libraries\stk\3d\stk_3dvector.cpp
+	"stk_3Dvector.h"
+
+1489527110 d:\stasiek\my projects\x86_libraries\stk\3d\stk_3dvector.h
+	<smmintrin.h>
+
+1516736429 source:d:\stasiek\my projects\x86_libraries\stk\cipher\stk_base64.cpp
+	"stk_base64.h"
+	"./../mem/stk_mem.h"
+	"./../text/stk_cstr_utils.h"
+
+1516732425 d:\stasiek\my projects\x86_libraries\stk\cipher\stk_base64.h
+	"./../stk_main.h"
+
+1516811604 d:\stasiek\my projects\x86_libraries\stk\stk_main.h
+	<winsock2.h>
+	<windows.h>
+	<conio.h>
+	<io.h>
+	<direct.h>
+	<cstdint>
+	<stdint.h>
+	<cstddef>
+	<cstdint>
+	<stdlib.h>
+	<assert.h>
+	<time.h>
+	<stdio.h>
+	<fcntl.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<inttypes.h>
+	<omp.h>
+	"./time/stk_time.h"
+	"./stasm/stk_stasm.h"
+
+1516733842 d:\stasiek\my projects\x86_libraries\stk\time\stk_time.h
+	"./../stk_main.h"
+
+1516733566 d:\stasiek\my projects\x86_libraries\stk\stasm\stk_stasm.h
+	"../stk_MAIN.h"
+	<arm_neon.h>
+	<mmintrin.h>
+	<altivec.h>
+	<spe.h>
+	<mmintrin.h>
+	<xmmintrin.h>
+	<emmintrin.h>
+	<pmmintrin.h>
+	<tmmintrin.h>
+	<ammintrin.h>
+	<smmintrin.h>
+	<nmmintrin.h>
+	<immintrin.h>
+	<wmmintrin.h>
+
+1515937562 d:\stasiek\my projects\x86_libraries\stk\mem\stk_mem.h
+	"./../stk_main.h"
+	<new>
+
+1489526563 d:\stasiek\my projects\x86_libraries\stk\text\stk_cstr_utils.h
+	"./../stk_main.h"
+	"./../mem/stk_mem.h"
+
+1516733792 source:d:\stasiek\my projects\x86_libraries\stk\cipher\stk_cipher_api.cpp
+	"stk_cipher_API.h"
+	"stk_cipher_mtf.h"
+	"./../text/stk_cstr_utils.h"
+	"./../io/stk_console.h"
+
+1515786016 d:\stasiek\my projects\x86_libraries\stk\cipher\stk_cipher_api.h
+	"./../stk_main.h"
+	"./../file/eno/stk_file_lzst_header.h"
+
+1516626856 d:\stasiek\my projects\x86_libraries\stk\file\eno\stk_file_lzst_header.h
+	"./../../stk_main.h"
+
+1515786033 d:\stasiek\my projects\x86_libraries\stk\cipher\stk_cipher_mtf.h
+	"./../stk_main.h"
+
+1515940891 d:\stasiek\my projects\x86_libraries\stk\io\stk_console.h
+	"./../stk_main.h"
+
+1489526579 source:d:\stasiek\my projects\x86_libraries\stk\cipher\stk_cipher_mtf.cpp
+	"stk_cipher_mtf.h"
+	"./../mem/stk_mem.h"
+	"./../text/stk_cstr_utils.h"
+	"./../io/stk_console.h"
+
+1489526578 source:d:\stasiek\my projects\x86_libraries\stk\cipher\stk_cipher_pair.cpp
+	"stk_cipher_pair.h"
+	"./../mem/stk_mem.h"
+	"./../text/stk_cstr_utils.h"
+
+1515786053 d:\stasiek\my projects\x86_libraries\stk\cipher\stk_cipher_pair.h
+	"./../stk_main.h"
+
+1489526493 source:d:\stasiek\my projects\x86_libraries\stk\cipher\stk_cipher_test.cpp
+	"stk_cipher_API.h"
+	"stk_cipher_mtf.h"
+
+1516626794 source:d:\stasiek\my projects\x86_libraries\stk\compression\stk_compression_api.cpp
+	"stk_compression_API.h"
+	"stk_compression_lzstv4.h"
+	"stk_compression_bwt_matrix2.h"
+	"stk_compression_huff.h"
+	"stk_compression_ari.h"
+	"./../cipher/stk_cipher_mtf.h"
+	"./../io/stk_console.h"
+	"./../text/stk_cstr_utils.h"
+	"./../mem/stk_mem.h"
+
+1489612175 d:\stasiek\my projects\x86_libraries\stk\compression\stk_compression_api.h
+	"./../stk_main.h"
+	"./../file/eno/stk_file_lzst_header.h"
+
+1489612175 d:\stasiek\my projects\x86_libraries\stk\compression\stk_compression_lzstv4.h
+	"./../stk_main.h"
+	"./../file/eno/stk_file_lzst_header.h"
+
+1489612175 d:\stasiek\my projects\x86_libraries\stk\compression\stk_compression_bwt_matrix2.h
+	"./../stk_main.h"
+
+1489612083 d:\stasiek\my projects\x86_libraries\stk\compression\stk_compression_huff.h
+	"./../stk_main.h"
+
+1489612083 d:\stasiek\my projects\x86_libraries\stk\compression\stk_compression_ari.h
+	"./../stk_main.h"
+

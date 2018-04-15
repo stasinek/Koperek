@@ -1,0 +1,1 @@
+xcopy /y *.exe d:\kop
