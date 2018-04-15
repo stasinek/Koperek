@@ -1,0 +1,26 @@
+var structtag_o_f_n_w =
+[
+    [ "dwReserved", "structtag_o_f_n_w.html#ae2035bc497d5c3524f01dfaa909c9ba9", null ],
+    [ "Flags", "structtag_o_f_n_w.html#a0fdc9c585828912a6de0c5bbe6c873bf", null ],
+    [ "FlagsEx", "structtag_o_f_n_w.html#a6f9a8884061a9828efbe64d844c74cbb", null ],
+    [ "hInstance", "structtag_o_f_n_w.html#a09e72307ceaafbf95f2a74c4ceed09e3", null ],
+    [ "hwndOwner", "structtag_o_f_n_w.html#a0f60bf1606c2ad17e5509ff09789da94", null ],
+    [ "lCustData", "structtag_o_f_n_w.html#abcfa340b3e0e31d41a281bbade70f9ec", null ],
+    [ "lpfnHook", "structtag_o_f_n_w.html#a73d3866400650516e12b7d4f620c479e", null ],
+    [ "lpstrCustomFilter", "structtag_o_f_n_w.html#a9539b74f2dc89a017a9ecfba7c34188e", null ],
+    [ "lpstrDefExt", "structtag_o_f_n_w.html#aae71d0ca32e97b6d4a3ffc3748ed37ba", null ],
+    [ "lpstrFile", "structtag_o_f_n_w.html#a4d85e332d5d7b03aea63411bf3b1d585", null ],
+    [ "lpstrFileTitle", "structtag_o_f_n_w.html#a90b9be67a98873816dfbc3124937efb5", null ],
+    [ "lpstrFilter", "structtag_o_f_n_w.html#ae36d68d04b8ec7df9e67c971f978a04b", null ],
+    [ "lpstrInitialDir", "structtag_o_f_n_w.html#a5b428c578625f078af332693dcb3a259", null ],
+    [ "lpstrTitle", "structtag_o_f_n_w.html#a8d10213159cb2b0607e82f05a1b49422", null ],
+    [ "lpTemplateName", "structtag_o_f_n_w.html#a4a873a2b0113afca39f04d29d590f2bf", null ],
+    [ "lStructSize", "structtag_o_f_n_w.html#ac0808907740e28c65351276d1bf87f79", null ],
+    [ "nFileExtension", "structtag_o_f_n_w.html#a3ad7410c5181b4faa509500029d29837", null ],
+    [ "nFileOffset", "structtag_o_f_n_w.html#a85b9466bddcb42f5ce2712b6521c9be2", null ],
+    [ "nFilterIndex", "structtag_o_f_n_w.html#af2da5f6e4cd0a059300064e3ef01f1df", null ],
+    [ "nMaxCustFilter", "structtag_o_f_n_w.html#a4e046f3a0b5461cc58f19d4b12742d90", null ],
+    [ "nMaxFile", "structtag_o_f_n_w.html#ac667da0cc376e85d4e153a0f590ffbc2", null ],
+    [ "nMaxFileTitle", "structtag_o_f_n_w.html#a25031bff044755799b7579b7eeb4995d", null ],
+    [ "pvReserved", "structtag_o_f_n_w.html#a23ee8f1f3a1b86fc64f397ba355dcc82", null ]
+];

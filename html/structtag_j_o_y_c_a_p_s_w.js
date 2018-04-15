@@ -1,0 +1,27 @@
+var structtag_j_o_y_c_a_p_s_w =
+[
+    [ "szOEMVxD", "structtag_j_o_y_c_a_p_s_w.html#a253240f127835278a9ee21c13b67e70a", null ],
+    [ "szPname", "structtag_j_o_y_c_a_p_s_w.html#ad4f9b3f841934f79d4507175b2b30676", null ],
+    [ "szRegKey", "structtag_j_o_y_c_a_p_s_w.html#a51fcdeb873de5943724f906e66f0bcfb", null ],
+    [ "wCaps", "structtag_j_o_y_c_a_p_s_w.html#a14f27b9a93e91eb67b74bccd55f307d1", null ],
+    [ "wMaxAxes", "structtag_j_o_y_c_a_p_s_w.html#a18cbc43b64ff7cf6d74f6956acd327df", null ],
+    [ "wMaxButtons", "structtag_j_o_y_c_a_p_s_w.html#a57bbf784f57a348dae144dfc0268bd8f", null ],
+    [ "wMid", "structtag_j_o_y_c_a_p_s_w.html#a9b90df9d1573d7061a7e1ed7245902e8", null ],
+    [ "wNumAxes", "structtag_j_o_y_c_a_p_s_w.html#a9bec5a907238ee215944b8d98b919ded", null ],
+    [ "wNumButtons", "structtag_j_o_y_c_a_p_s_w.html#adff375366ec259d94ab6d94933092fbe", null ],
+    [ "wPeriodMax", "structtag_j_o_y_c_a_p_s_w.html#ac8c76f94da7ab0cd1c89132c09c68d47", null ],
+    [ "wPeriodMin", "structtag_j_o_y_c_a_p_s_w.html#a83f4b40deaf40a0458d6ed6df815f68a", null ],
+    [ "wPid", "structtag_j_o_y_c_a_p_s_w.html#a5ff94438b2762deaf7335222a83209f7", null ],
+    [ "wRmax", "structtag_j_o_y_c_a_p_s_w.html#a036db9d169ef891ed91b26b27ffec205", null ],
+    [ "wRmin", "structtag_j_o_y_c_a_p_s_w.html#a0c9928056eecc09ce85aa3983fe5d09a", null ],
+    [ "wUmax", "structtag_j_o_y_c_a_p_s_w.html#a0b7232dd61216b3d3132e4c2e52761b7", null ],
+    [ "wUmin", "structtag_j_o_y_c_a_p_s_w.html#a1eb644608b96a995c1b65750b17fa46d", null ],
+    [ "wVmax", "structtag_j_o_y_c_a_p_s_w.html#ac3327eff09f2d174690cea9c44c8ce5a", null ],
+    [ "wVmin", "structtag_j_o_y_c_a_p_s_w.html#a6d13d635bac383260fc15c4a0fc1f634", null ],
+    [ "wXmax", "structtag_j_o_y_c_a_p_s_w.html#aa2332a4cffbc9a17895736f32f0c9c09", null ],
+    [ "wXmin", "structtag_j_o_y_c_a_p_s_w.html#aa8b75b5cf8a0257af69927a2d7016a53", null ],
+    [ "wYmax", "structtag_j_o_y_c_a_p_s_w.html#a03a362ddf5161fa77a49329abf853286", null ],
+    [ "wYmin", "structtag_j_o_y_c_a_p_s_w.html#a5c8a69bcd55189129453816d5c3aa088", null ],
+    [ "wZmax", "structtag_j_o_y_c_a_p_s_w.html#a0902cdb64788a04711a6231b47c7ae89", null ],
+    [ "wZmin", "structtag_j_o_y_c_a_p_s_w.html#a746cea5fcb1737d42838e5591aa6cc8f", null ]
+];

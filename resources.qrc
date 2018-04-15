@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>ICO/Icon2.ico</file>
+        <file>ICO/Icon3.ico</file>
+        <file>ICO/Icon4.ico</file>
+        <file>ICO/Icon5.ico</file>
+        <file>ICO/Icon6.ico</file>
+        <file>ICO/Icon7.ico</file>
+        <file>BMP/LEFT.BMP</file>
+        <file>BMP/stop.png</file>
+        <file>BMP/pause.PNG</file>
+        <file>BMP/PLUS2.png</file>
+        <file>BMP/DELETE2.png</file>
+        <file>BMP/minus2.png</file>
+        <file>BMP/resume.PNG</file>
+        <file>BMP/down.png</file>
+        <file>BMP/bottom.png</file>
+        <file>BMP/top.png</file>
+        <file>BMP/up.png</file>
+        <file>BMP/doneplus.png</file>
+        <file>BMP/progress.png</file>
+        <file>BMP/resize.PNG</file>
+        <file>BMP/menu.PNG</file>
+        <file>BMP/logo2_mini.bmp</file>
+        <file>BMP/ZWIN.png</file>
+        <file>Koperek32_license.txt</file>
+        <file>ICO/Icon8.ico</file>
+        <file>ICO/Icon1.ico</file>
+        <file>BMP/console.bmp</file>
+    </qresource>
+    <qresource prefix="/new/prefix2"/>
+    <qresource prefix="/"/>
+</RCC>

@@ -1,0 +1,27 @@
+var structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r =
+[
+    [ "bReserved", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a28c1d6c334e81bea4d3625648e675d34", null ],
+    [ "cAccumAlphaBits", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a0105b81460d90bd921ad04bab8335555", null ],
+    [ "cAccumBits", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a4551a571f9b2163a0bb62ad1b3ee5fab", null ],
+    [ "cAccumBlueBits", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#ae6debb8235ba5a71e4c0dfac90b4a90b", null ],
+    [ "cAccumGreenBits", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a00da3a6ee8f739c56d296d7ce5ecc04b", null ],
+    [ "cAccumRedBits", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#acc1a84161d64c33d507c96b7570f4b07", null ],
+    [ "cAlphaBits", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#ac34aa81f89e1e099cdc96eb6ce23f801", null ],
+    [ "cAlphaShift", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a46633bb5b4a1180a387f0a0fe7558d6f", null ],
+    [ "cAuxBuffers", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a30ca0966b40504b6378af1663ee37f07", null ],
+    [ "cBlueBits", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a5014496acb8839d195b115f23c199b42", null ],
+    [ "cBlueShift", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#aea2a49fe6db424d318e77e88259bfa9a", null ],
+    [ "cColorBits", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#ab7039a7383d6005a3de745cae4d8f0fe", null ],
+    [ "cDepthBits", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a18264ed5fb6ce944b8bcbb9585066c3f", null ],
+    [ "cGreenBits", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a2e7b1b96ffa39d78bfb172a1571dd8f9", null ],
+    [ "cGreenShift", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a996e23ac07fafe8f0e744cb911a51cbf", null ],
+    [ "cRedBits", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a2960d51eaefe906b4beb052798dec61e", null ],
+    [ "cRedShift", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a96bd7f195d6742ca0b3bc6f2efe01fc9", null ],
+    [ "crTransparent", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a9a1f72ea198fb331bc62269e8f75f877", null ],
+    [ "cStencilBits", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a1c63a1ad07f1a81c77d6a2801f1cdf92", null ],
+    [ "dwFlags", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#a5eee6e35e887738d6590ab544c9bf3e9", null ],
+    [ "iLayerPlane", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#ad017ec2ed5722840e6fb524ba2cb0be8", null ],
+    [ "iPixelType", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#aff50005b3a9ab3cfbf87040d45471249", null ],
+    [ "nSize", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#ae8c27a07c1d294f5095904cb76d1bfb6", null ],
+    [ "nVersion", "structtag_l_a_y_e_r_p_l_a_n_e_d_e_s_c_r_i_p_t_o_r.html#af67caf01d4d9f7749f7181f8f561cca6", null ]
+];

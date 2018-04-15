@@ -1,0 +1,26 @@
+var struct___j_o_b___i_n_f_o__2_a =
+[
+    [ "JobId", "struct___j_o_b___i_n_f_o__2_a.html#a23a1027bbf4109b7f37f856c50e9c290", null ],
+    [ "PagesPrinted", "struct___j_o_b___i_n_f_o__2_a.html#a37cad190602563fc04755e148951ad87", null ],
+    [ "pDatatype", "struct___j_o_b___i_n_f_o__2_a.html#aa27272ba6f875a8b8fdee7d20d4cc98f", null ],
+    [ "pDevMode", "struct___j_o_b___i_n_f_o__2_a.html#ad071bba414beed8a451c250771165451", null ],
+    [ "pDocument", "struct___j_o_b___i_n_f_o__2_a.html#a2ab886e6dfd4ed03593f8ab98acd5a00", null ],
+    [ "pDriverName", "struct___j_o_b___i_n_f_o__2_a.html#a6a671917d60d02ea7939624d5f75ac51", null ],
+    [ "pMachineName", "struct___j_o_b___i_n_f_o__2_a.html#af2c14e7997b01bb1aa29501d253caed2", null ],
+    [ "pNotifyName", "struct___j_o_b___i_n_f_o__2_a.html#a33e9b9a2d0e2a346261077d5f1c5e403", null ],
+    [ "Position", "struct___j_o_b___i_n_f_o__2_a.html#a5fab38b5d264ac00e2bc858193df8945", null ],
+    [ "pParameters", "struct___j_o_b___i_n_f_o__2_a.html#a80103ab2fba1f14e4d430d3ccff435bf", null ],
+    [ "pPrinterName", "struct___j_o_b___i_n_f_o__2_a.html#a31edcd9f8a4f9710b5d1fde44776e25d", null ],
+    [ "pPrintProcessor", "struct___j_o_b___i_n_f_o__2_a.html#a46502c459cca4392f5646a4590f78a62", null ],
+    [ "Priority", "struct___j_o_b___i_n_f_o__2_a.html#a42c8e3426116baad1487b20f4f7f6f1c", null ],
+    [ "pSecurityDescriptor", "struct___j_o_b___i_n_f_o__2_a.html#ace5d27d6a225e6277a99bec2e08b7be2", null ],
+    [ "pStatus", "struct___j_o_b___i_n_f_o__2_a.html#ae2d89957175efaecfc35e18cdd0aaab4", null ],
+    [ "pUserName", "struct___j_o_b___i_n_f_o__2_a.html#a94e64996659b141e8322a639d1e3ceb8", null ],
+    [ "Size", "struct___j_o_b___i_n_f_o__2_a.html#adf32862a22dfada4fd8048b5431fa1aa", null ],
+    [ "StartTime", "struct___j_o_b___i_n_f_o__2_a.html#a44d574d2d5348a86e45ddd45bce3931f", null ],
+    [ "Status", "struct___j_o_b___i_n_f_o__2_a.html#a6b578ce6e7ef0f40e05a2cf6611edb63", null ],
+    [ "Submitted", "struct___j_o_b___i_n_f_o__2_a.html#a5486135265c14f0c7879bc9ab9770592", null ],
+    [ "Time", "struct___j_o_b___i_n_f_o__2_a.html#ad58d1a5e2679b57a072f0c215d9ecff9", null ],
+    [ "TotalPages", "struct___j_o_b___i_n_f_o__2_a.html#a9edfca69211af5a2080633979a9b4054", null ],
+    [ "UntilTime", "struct___j_o_b___i_n_f_o__2_a.html#a752d8d1778b94d4968d544b9423b1cf6", null ]
+];
