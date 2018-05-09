@@ -4,11 +4,12 @@
 
 TEMPLATE = app
 DEFINES += QT_GUI
-#CONFIG -= static
+CONFIG -= static
 CONFIG += precompile_header
 CONFIG += warn_on exceptions
 CONFIG += c++11
 
+QMAKE_LFLAGS -= -static
 QMAKE_CFLAGS_RELEASE += rtti_off stl_off exceptions_off
 
 contains(DEFINES, QT_GUI) {
@@ -33,7 +34,7 @@ QT -= dbus
 QT -= concurent
 QT -= printsupport
 QT -= testlib
-TARGET = KopereQ
+TARGET = Koperek32_Qt
 }
 else {
 TARGET = Kop32
@@ -159,7 +160,7 @@ HEADERS += \
 contains(DEFINES, __GNUC__) {
 LIBS += -lwinmm -lgomp
 LIBS += -lwsock32 -lws2_32 -lcrypt32 -lgdi32 -luser32 -lshell32
-LIBS += -L"./../../../../x86_libraries/STK/Qt_5_5_1_mingw492_32-Release/release/libstk.a"
+LIBS += -static -L"./../../../../x86_libraries/STK/Qt_5_5_1_mingw492_32-Release/release/libstk.a"
 }
 contains(DEFINES, _MSC_VER) {
 LIBS += \
@@ -172,7 +173,7 @@ LIBS -= \
     vcompd.lib
 LIBS += -L"./../../../../x86_libraries/STK/Desktop_Qt_5_5_1_MSVC2010_32bit-Release/release/libstk.lib"
 }
-contains(QMAKE_DEFINES, __clang__) {
+contains(DEFINES, __clang__) {
 LIBS += -lwinmm -lgomp
 LIBS += -lwsock32 -lws2_32 -lcrypt32 -lgdi32 -luser32 -lshell32
 LIBS += -L"./../../../../x86_libraries/STK/Qt_5_5_1_mingw492_32-Release/release/libstk.a"
