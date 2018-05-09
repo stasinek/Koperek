@@ -27,12 +27,13 @@
 *.pdb
 *.idb
 DEBUG/*.*
+RELEASE/*.*
 *.ipch
 Win32/*.*
 Makefile.win
 *.err
 *.bc
-./ipch/*
+ipch/*
 *.tlog
 *.sdf
 *.log
@@ -43,5 +44,8 @@ Makefile.win
 *.vcxproj.filters
 moc_*.*
 qrc_*.*
-*Release
-*Debug
+*Release/*
+*Debug/*
+
+
+!EXE/*
