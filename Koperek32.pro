@@ -1,24 +1,15 @@
+#
+# Qmake Qt5.5.1 file last modified 2018.5, Windows MSC2010,MinGW4.92,LLVM3.7 builds tester
+#
+
 TEMPLATE = app
 DEFINES += QT_GUI
+#CONFIG -= static
+CONFIG += precompile_header
+CONFIG += warn_on exceptions
+CONFIG += c++11
 
 QMAKE_CFLAGS_RELEASE += rtti_off stl_off exceptions_off
-
-contains (QMAKE_COMPILER_DEFINES,__clang__) {
-QMAKE_CC  = clang
-QMAKE_CXX = clang++
-}
-#moc.depend_command = g++ -E -M ${QMAKE_FILE_NAME} | sed "s,^.*: ,,"
-#NASM.output  = ${QMAKE_FILE_BASE}_asm.o
-#NASM.commands = c:/nasm/nasm -f elf -g -F dwarf --prefix ${PWD}${QMAKE_FILE_NAME} -o ${PWD}/${QMAKE_FILE_OUT}
-#NASM.input = ASM_SOURCES
-#YASM.output  = ${QMAKE_FILE_BASE}_asm.o
-#YASM.commands = c:/YASM/YASM -f elf -g dwarf2 -w -o ${QMAKE_FILE_OUT} ${PWD}${QMAKE_FILE_NAME}
-#YASM.input = ASM_SOURCES
-#FASM.output  = ${QMAKE_FILE_BASE}_asm.o
-#FASM.commands = c:/fasm/fasm  ${PWD}${QMAKE_FILE_NAME} ${QMAKE_FILE_OUT}
-#FASM.input = ASM_SOURCES
-#QMAKE_EXTRA_COMPILERS += YASM
-#ASM_SOURCES += 	../../../../x86_libraries/SSTSOFT/cpu/tsoft_cpu_nasm.asm
 
 contains(DEFINES, QT_GUI) {
 QT += core gui
@@ -49,17 +40,12 @@ TARGET = Kop32
 CONFIG += console
 }
 
-CONFIG -= static
-CONFIG += precompile_header
-CONFIG += warn_on exceptions
-CONFIG += c++11
-
 INCLUDEPATH += ./../../../x86_libraries/STK
 
-
-contains(QMAKE_COMPILER_DEFINES, __GNUC__) {
+win32-g++: {
 QMAKE_CXXFLAGS -= -pipe
 QMAKE_CXXFLAGS += -save-temps
+
 QMAKE_CXXFLAGS += -Wno-write-strings
 QMAKE_CXXFLAGS += -Wno-unused-variable
 QMAKE_CXXFLAGS += -Wno-unused-parameter
@@ -68,28 +54,36 @@ QMAKE_CXXFLAGS += -Wno-unused-value
 QMAKE_CXXFLAGS += -Wno-inline
 QMAKE_CXXFLAGS += -Wunknown-pragmas
 QMAKE_CXXFLAGS += -Wattributes
+QMAKE_CXXFLAGS += -Winline
+QMAKE_CXXFLAGS += -Wshadow
+QMAKE_CXXFLAGS += -Wno-multichar
+QMAKE_CXXFLAGS += -Wall
 QMAKE_CXXFLAGS += -fverbose-asm
 QMAKE_CXXFLAGS += -fstrict-aliasing
 QMAKE_CXXFLAGS += -dD
 QMAKE_CXXFLAGS += -g
 QMAKE_CXXFLAGS += -std=gnu++0x -pthread
-QMAKE_CXXFLAGS += -Wno-multichar
 
-QMAKE_CXXFLAGS += -Winline
-QMAKE_CXXFLAGS += -Wshadow
-QMAKE_CXXFLAGS += -Wall
-QMAKE_CXXFLAGS += -malign-double
-QMAKE_CXXFLAGS += -momit-leaf-frame-pointer
-QMAKE_CXXFLAGS += -fwrapv
-QMAKE_CXXFLAGS += -funroll-loops
-QMAKE_CXXFLAGS += -m32 -mfpmath=sse -flto -O3
-QMAKE_CXXFLAGS += -mpreferred-stack-boundary=8
-QMAKE_CXXFLAGS += -mmmx -msse -msse2 #-msse3
+QMAKE_CXXFLAGS_RELEASE += -malign-double
+QMAKE_CXXFLAGS_RELEASE += -momit-leaf-frame-pointer
+QMAKE_CXXFLAGS_RELEASE += -fwrapv
+QMAKE_CXXFLAGS_RELEASE += -funroll-loops
+QMAKE_CXXFLAGS_RELEASE += -m32 -mfpmath=sse -flto -O3
+QMAKE_CXXFLAGS_RELEASE += -mpreferred-stack-boundary=8
+QMAKE_CXXFLAGS_RELEASE += -mmmx -msse -msse2 #-msse3
 
 }
+win32-msvc2010: {
+QMAKE_CXXFLAGS_RELEASE += /W0
+QMAKE_CXXFLAGS_RELEASE += /arch:SSE2
+QMAKE_CXXFLAGS_RELEASE += /w
+}
 
-contains(QMAKE_COMPILER_DEFINES, __clang__) {
+contains(DEFINES, __clang__) {
+QMAKE_CXX = clang++
 QMAKE_CXXFLAGS += -save-temps
+QMAKE_CXXFLAGS += -pipe
+
 QMAKE_CXXFLAGS += -Wno-write-strings
 QMAKE_CXXFLAGS += -Wno-unused-variable
 QMAKE_CXXFLAGS += -Wno-unused-parameter
@@ -97,6 +91,10 @@ QMAKE_CXXFLAGS += -Wno-unused-label
 QMAKE_CXXFLAGS += -Wno-unused-value
 QMAKE_CXXFLAGS += -Wunknown-pragmas
 QMAKE_CXXFLAGS += -Wattributes
+QMAKE_CXXFLAGS += -Winline
+QMAKE_CXXFLAGS += -Wshadow
+QMAKE_CXXFLAGS += -Wall
+QMAKE_CXXFLAGS += -Qunused-arguments -Wno-error=unused-command-line-argument-hard-error-in-future
 QMAKE_CXXFLAGS += -fverbose-asm
 QMAKE_CXXFLAGS += -fstrict-aliasing
 QMAKE_CXXFLAGS += -dD
@@ -104,27 +102,20 @@ QMAKE_CXXFLAGS += -g
 QMAKE_CXXFLAGS += -std=gnu++0x -pthread
 QMAKE_CXXFLAGS += -Wno-multichar
 
-QMAKE_CXXFLAGS += -Winline
-QMAKE_CXXFLAGS += -Wshadow
-QMAKE_CXXFLAGS += -Wall
-QMAKE_CXXFLAGS += -malign-double
-QMAKE_CXXFLAGS += -momit-leaf-frame-pointer
-QMAKE_CXXFLAGS += -fwrapv
-QMAKE_CXXFLAGS += -funroll-loops
-QMAKE_CXXFLAGS += -m32 --32 -mfpmath=sse -flto -O3
-QMAKE_CXXFLAGS += -mpreferred-stack-boundary=8
-QMAKE_CXXFLAGS += -mmmx -msse -msse2 #-msse3
-QMAKE_CXXFLAGS += -Qunused-arguments -Wno-error=unused-command-line-argument-hard-error-in-future
-QMAKE_CXXFLAGS -= -fno-keep-inline-dllexport
-QMAKE_CXXFLAGS -= -finline-small-functions
-QMAKE_CXXFLAGS -= -pipe
+QMAKE_CXXFLAGS_RELEASE += -malign-double
+QMAKE_CXXFLAGS_RELEASE += -momit-leaf-frame-pointer
+QMAKE_CXXFLAGS_RELEASE += -fwrapv
+QMAKE_CXXFLAGS_RELEASE += -funroll-loops
+QMAKE_CXXFLAGS_RELEASE += -m32 --32 -mfpmath=sse -flto -O3
+QMAKE_CXXFLAGS_RELEASE += -mpreferred-stack-boundary=8
+QMAKE_CXXFLAGS_RELEASE += -mmmx -msse -msse2 #-msse3
+QMAKE_CXXFLAGS_RELEASE -= -fno-keep-inline-dllexport
+QMAKE_CXXFLAGS_RELEASE -= -finline-small-functions
+
+QMAKE_CC  = clang
 
 QMAKE_LFLAGS += -Qunused-arguments -Wno-error=unused-command-line-argument-hard-error-in-future
 QMAKE_LFLAGS -= -mthreads
-}
-
-contains(QMAKE_COMPILER_DEFINES, _MSC_VER) {
-QMAKE_CXXFLAGS += /arch:SSE2
 }
 
 SOURCES += \
@@ -165,14 +156,12 @@ HEADERS += \
         tselect_form.h \
         tconsole_form.h
 }
-contains(QMAKE_COMPILER_DEFINES, __GNUC__) {
+contains(DEFINES, __GNUC__) {
 LIBS += -lwinmm -lgomp
 LIBS += -lwsock32 -lws2_32 -lcrypt32 -lgdi32 -luser32 -lshell32
 LIBS += -L"./../../../../x86_libraries/STK/Qt_5_5_1_mingw492_32-Release/release/libstk.a"
-#LIBS += -L"../../../x86_libraries/BHAPI/src/libs/freetype/objs/debug" -libfreetype
-#LIBS += -L"../../../x86_libraries/BHAPI" -libBHAPI
 }
-contains(QMAKE_COMPILER_DEFINES, _MSC_VER) {
+contains(DEFINES, _MSC_VER) {
 LIBS += \
     winmm.lib wsock32.lib ws2_32.lib crypt32.lib
 LIBS += \
@@ -182,6 +171,11 @@ LIBS -= \
     gomp.lib \
     vcompd.lib
 LIBS += -L"./../../../../x86_libraries/STK/Desktop_Qt_5_5_1_MSVC2010_32bit-Release/release/libstk.lib"
+}
+contains(QMAKE_DEFINES, __clang__) {
+LIBS += -lwinmm -lgomp
+LIBS += -lwsock32 -lws2_32 -lcrypt32 -lgdi32 -luser32 -lshell32
+LIBS += -L"./../../../../x86_libraries/STK/Qt_5_5_1_mingw492_32-Release/release/libstk.a"
 }
 
 contains(DEFINES, QT_GUI) {
@@ -198,7 +192,6 @@ FORMS += \
         tlister_form.ui \
         tselect_form.ui \
         tconsole_form.ui
-
 RESOURCES += \
         resources.qrc
 }

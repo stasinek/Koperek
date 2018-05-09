@@ -59,4 +59,10 @@
 	</File>
 </CodeBlocks_layout_file>
 [Editors]
-Order=
+Order=0
+Focused=0
+[Editor_0]
+CursorCol=31
+CursorRow=19
+TopLine=1
+LeftChar=1

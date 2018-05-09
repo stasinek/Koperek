@@ -4,13 +4,13 @@
 #  include <windows.h>
 # endif
 
-IDI_ICON1	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Koperek.Qt\\ICO\\icon4.ico"
-IDI_ICON2	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Koperek.Qt\\ICO\\icon6.ico"
-IDI_ICON3	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Koperek.Qt\\ICO\\icon2.ico"
-IDI_ICON4	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Koperek.Qt\\ICO\\icon3.ico"
-IDI_ICON5	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Koperek.Qt\\ICO\\icon5.ico"
-IDI_ICON6	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Koperek.Qt\\ICO\\icon7.ico"
-IDI_ICON7	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Koperek.Qt\\ICO\\icon8.ico"
+IDI_ICON1	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Kop32\\ICO\\icon4.ico"
+IDI_ICON2	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Kop32\\ICO\\icon6.ico"
+IDI_ICON3	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Kop32\\ICO\\icon2.ico"
+IDI_ICON4	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Kop32\\ICO\\icon3.ico"
+IDI_ICON5	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Kop32\\ICO\\icon5.ico"
+IDI_ICON6	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Kop32\\ICO\\icon7.ico"
+IDI_ICON7	ICON	DISCARDABLE	"D:\\stasiek\\My Projects\\PROGS\\CPP\\Kop32\\ICO\\icon8.ico"
 
 VS_VERSION_INFO VERSIONINFO
 	FILEVERSION 0,0,0,0

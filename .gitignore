@@ -32,3 +32,16 @@ Win32/*.*
 Makefile.win
 *.err
 *.bc
+./ipch/*
+*.tlog
+*.sdf
+*.log
+*.lastbuildstate
+*.embed.manifest
+*.intermediate.manifest
+*.vcxproj.user
+*.vcxproj.filters
+moc_*.*
+qrc_*.*
+*Release
+*Debug
