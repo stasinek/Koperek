@@ -96,9 +96,9 @@ public:
         horizontalLayout->setContentsMargins(-1, 0, -1, -1);
         toolButton = new QToolButton(TPassword_form);
         toolButton->setObjectName(QStringLiteral("toolButton"));
-        toolButton->setMinimumSize(QSize(45, 45));
+        toolButton->setMinimumSize(QSize(50, 42));
         QIcon icon;
-        icon.addFile(QStringLiteral(":/new/prefix1/ICO/Icon8.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QStringLiteral(":/new/prefix1/ICO/Icon7.ico"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton->setIcon(icon);
         toolButton->setIconSize(QSize(32, 32));
         toolButton->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
@@ -134,7 +134,8 @@ public:
         label_2->setText(QApplication::translate("TPassword_form", "Set password:", 0));
         label->setText(QApplication::translate("TPassword_form", "Repeat:", 0));
         checkBox->setText(QApplication::translate("TPassword_form", "Show text", 0));
-        toolButton->setText(QApplication::translate("TPassword_form", "OR LOAD/SAVE IT FROM...", 0));
+        toolButton->setText(QApplication::translate("TPassword_form", "Load/Save It From/To...", 0));
+        toolButton->setShortcut(QApplication::translate("TPassword_form", "2, 4, Return", 0));
     } // retranslateUi
 
 };

@@ -50,7 +50,6 @@ public:
     QProgressBar *progressBar_1;
     QFrame *line_2;
     QHBoxLayout *horizontalLayout;
-    QToolButton *toolButton_F;
     QToolButton *toolButton;
     QSpacerItem *horizontalSpacer_2;
     QLabel *label_4;
@@ -59,6 +58,7 @@ public:
     QToolButton *toolButton_2;
     QToolButton *toolButton_3;
     QToolButton *toolButton_MENU;
+    QToolButton *toolButton_F;
     QSpacerItem *verticalSpacer_3;
     QWidget *widget_5;
     QVBoxLayout *verticalLayout_12;
@@ -73,8 +73,6 @@ public:
     QToolButton *toolButton_D1;
     QListView *listView;
     QLabel *label_6;
-    QCheckBox *checkBox_7;
-    QCheckBox *checkBox_6;
     QWidget *widget_2;
     QWidget *tab_1;
     QGridLayout *gridLayout;
@@ -103,6 +101,8 @@ public:
     QWidget *page_1;
     QVBoxLayout *verticalLayout_10;
     QCheckBox *checkBox;
+    QCheckBox *checkBox_6;
+    QCheckBox *checkBox_7;
     QWidget *widget_4;
     QWidget *page_3;
     QVBoxLayout *verticalLayout_2;
@@ -143,7 +143,7 @@ public:
         verticalLayout_4->setSpacing(0);
         verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
         verticalLayout_4->setSizeConstraint(QLayout::SetMinimumSize);
-        verticalLayout_4->setContentsMargins(4, 4, 4, 4);
+        verticalLayout_4->setContentsMargins(8, 8, 8, 8);
         widget_7 = new QWidget(TMain_form);
         widget_7->setObjectName(QStringLiteral("widget_7"));
         QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Fixed);
@@ -213,8 +213,10 @@ public:
         label_3->setSizePolicy(sizePolicy3);
         label_3->setMaximumSize(QSize(16777215, 30));
         label_3->setFont(font);
+        label_3->setLayoutDirection(Qt::LeftToRight);
         label_3->setFrameShape(QFrame::NoFrame);
         label_3->setFrameShadow(QFrame::Sunken);
+        label_3->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         verticalLayout_14->addWidget(label_3);
 
@@ -266,20 +268,6 @@ public:
         horizontalLayout->setSpacing(0);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(-1, 0, 0, 0);
-        toolButton_F = new QToolButton(widget_7);
-        toolButton_F->setObjectName(QStringLiteral("toolButton_F"));
-        sizePolicy4.setHeightForWidth(toolButton_F->sizePolicy().hasHeightForWidth());
-        toolButton_F->setSizePolicy(sizePolicy4);
-        toolButton_F->setMinimumSize(QSize(40, 30));
-        QIcon icon1;
-        icon1.addFile(QStringLiteral(":/new/prefix1/BMP/ZWIN.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_F->setIcon(icon1);
-        toolButton_F->setCheckable(true);
-        toolButton_F->setChecked(true);
-        toolButton_F->setAutoRaise(true);
-
-        horizontalLayout->addWidget(toolButton_F);
-
         toolButton = new QToolButton(widget_7);
         toolButton->setObjectName(QStringLiteral("toolButton"));
         QSizePolicy sizePolicy5(QSizePolicy::Fixed, QSizePolicy::Expanding);
@@ -288,9 +276,9 @@ public:
         sizePolicy5.setHeightForWidth(toolButton->sizePolicy().hasHeightForWidth());
         toolButton->setSizePolicy(sizePolicy5);
         toolButton->setMinimumSize(QSize(40, 30));
-        QIcon icon2;
-        icon2.addFile(QStringLiteral(":/new/prefix1/BMP/console.bmp"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton->setIcon(icon2);
+        QIcon icon1;
+        icon1.addFile(QStringLiteral(":/new/prefix1/BMP/console.bmp"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton->setIcon(icon1);
 
         horizontalLayout->addWidget(toolButton);
 
@@ -326,10 +314,10 @@ public:
         toolButton_2->setMinimumSize(QSize(40, 30));
         toolButton_2->setLayoutDirection(Qt::RightToLeft);
         toolButton_2->setAutoFillBackground(false);
-        QIcon icon3;
-        icon3.addFile(QStringLiteral(":/new/prefix1/BMP/pause.PNG"), QSize(), QIcon::Normal, QIcon::Off);
-        icon3.addFile(QStringLiteral(":/new/prefix1/BMP/resume.PNG"), QSize(), QIcon::Normal, QIcon::On);
-        toolButton_2->setIcon(icon3);
+        QIcon icon2;
+        icon2.addFile(QStringLiteral(":/new/prefix1/BMP/pause.PNG"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QStringLiteral(":/new/prefix1/BMP/resume.PNG"), QSize(), QIcon::Normal, QIcon::On);
+        toolButton_2->setIcon(icon2);
         toolButton_2->setIconSize(QSize(24, 24));
         toolButton_2->setCheckable(true);
         toolButton_2->setChecked(false);
@@ -344,9 +332,9 @@ public:
         toolButton_3->setMinimumSize(QSize(40, 30));
         toolButton_3->setLayoutDirection(Qt::RightToLeft);
         toolButton_3->setAutoFillBackground(false);
-        QIcon icon4;
-        icon4.addFile(QStringLiteral(":/new/prefix1/BMP/stop.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_3->setIcon(icon4);
+        QIcon icon3;
+        icon3.addFile(QStringLiteral(":/new/prefix1/BMP/stop.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_3->setIcon(icon3);
         toolButton_3->setIconSize(QSize(24, 24));
         toolButton_3->setCheckable(true);
         toolButton_3->setToolButtonStyle(Qt::ToolButtonIconOnly);
@@ -355,15 +343,29 @@ public:
 
         toolButton_MENU = new QToolButton(widget_7);
         toolButton_MENU->setObjectName(QStringLiteral("toolButton_MENU"));
-        toolButton_MENU->setMinimumSize(QSize(30, 30));
+        toolButton_MENU->setMinimumSize(QSize(40, 30));
         toolButton_MENU->setMaximumSize(QSize(16777215, 30));
-        QIcon icon5;
-        icon5.addFile(QStringLiteral(":/new/prefix1/BMP/menu.PNG"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_MENU->setIcon(icon5);
+        QIcon icon4;
+        icon4.addFile(QStringLiteral(":/new/prefix1/BMP/menu.PNG"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_MENU->setIcon(icon4);
         toolButton_MENU->setIconSize(QSize(24, 24));
         toolButton_MENU->setAutoRaise(false);
 
         horizontalLayout->addWidget(toolButton_MENU);
+
+        toolButton_F = new QToolButton(widget_7);
+        toolButton_F->setObjectName(QStringLiteral("toolButton_F"));
+        sizePolicy4.setHeightForWidth(toolButton_F->sizePolicy().hasHeightForWidth());
+        toolButton_F->setSizePolicy(sizePolicy4);
+        toolButton_F->setMinimumSize(QSize(40, 30));
+        QIcon icon5;
+        icon5.addFile(QStringLiteral(":/new/prefix1/BMP/ZWIN.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_F->setIcon(icon5);
+        toolButton_F->setCheckable(true);
+        toolButton_F->setChecked(true);
+        toolButton_F->setAutoRaise(true);
+
+        horizontalLayout->addWidget(toolButton_F);
 
 
         verticalLayout_14->addLayout(horizontalLayout);
@@ -432,6 +434,7 @@ public:
         verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
         toolButton_D1 = new QToolButton(tab_3);
         toolButton_D1->setObjectName(QStringLiteral("toolButton_D1"));
+        toolButton_D1->setMinimumSize(QSize(24, 24));
         toolButton_D1->setMaximumSize(QSize(30, 16777215));
 
         verticalLayout_3->addWidget(toolButton_D1, 0, Qt::AlignTop);
@@ -460,16 +463,6 @@ public:
         label_6->setFont(font);
 
         gridLayout_3->addWidget(label_6, 0, 0, 1, 1);
-
-        checkBox_7 = new QCheckBox(tab_3);
-        checkBox_7->setObjectName(QStringLiteral("checkBox_7"));
-
-        gridLayout_3->addWidget(checkBox_7, 4, 0, 1, 1);
-
-        checkBox_6 = new QCheckBox(tab_3);
-        checkBox_6->setObjectName(QStringLiteral("checkBox_6"));
-
-        gridLayout_3->addWidget(checkBox_6, 3, 0, 1, 1);
 
         widget_2 = new QWidget(tab_3);
         widget_2->setObjectName(QStringLiteral("widget_2"));
@@ -529,6 +522,7 @@ public:
         toolButton_P->setObjectName(QStringLiteral("toolButton_P"));
         sizePolicy3.setHeightForWidth(toolButton_P->sizePolicy().hasHeightForWidth());
         toolButton_P->setSizePolicy(sizePolicy3);
+        toolButton_P->setMinimumSize(QSize(24, 24));
         QIcon icon6;
         icon6.addFile(QStringLiteral(":/new/prefix1/BMP/PLUS2.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_P->setIcon(icon6);
@@ -539,6 +533,7 @@ public:
         toolButton_M->setObjectName(QStringLiteral("toolButton_M"));
         sizePolicy3.setHeightForWidth(toolButton_M->sizePolicy().hasHeightForWidth());
         toolButton_M->setSizePolicy(sizePolicy3);
+        toolButton_M->setMinimumSize(QSize(24, 24));
         QIcon icon7;
         icon7.addFile(QStringLiteral(":/new/prefix1/BMP/minus2.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_M->setIcon(icon7);
@@ -553,6 +548,7 @@ public:
         toolButton_T->setObjectName(QStringLiteral("toolButton_T"));
         sizePolicy3.setHeightForWidth(toolButton_T->sizePolicy().hasHeightForWidth());
         toolButton_T->setSizePolicy(sizePolicy3);
+        toolButton_T->setMinimumSize(QSize(24, 24));
         QIcon icon8;
         icon8.addFile(QStringLiteral(":/new/prefix1/BMP/top.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_T->setIcon(icon8);
@@ -563,6 +559,7 @@ public:
         toolButton_U->setObjectName(QStringLiteral("toolButton_U"));
         sizePolicy3.setHeightForWidth(toolButton_U->sizePolicy().hasHeightForWidth());
         toolButton_U->setSizePolicy(sizePolicy3);
+        toolButton_U->setMinimumSize(QSize(24, 24));
         QIcon icon9;
         icon9.addFile(QStringLiteral(":/new/prefix1/BMP/up.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_U->setIcon(icon9);
@@ -573,6 +570,7 @@ public:
         toolButton_D->setObjectName(QStringLiteral("toolButton_D"));
         sizePolicy3.setHeightForWidth(toolButton_D->sizePolicy().hasHeightForWidth());
         toolButton_D->setSizePolicy(sizePolicy3);
+        toolButton_D->setMinimumSize(QSize(24, 24));
         QIcon icon10;
         icon10.addFile(QStringLiteral(":/new/prefix1/BMP/down.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_D->setIcon(icon10);
@@ -583,6 +581,7 @@ public:
         toolButton_B->setObjectName(QStringLiteral("toolButton_B"));
         sizePolicy3.setHeightForWidth(toolButton_B->sizePolicy().hasHeightForWidth());
         toolButton_B->setSizePolicy(sizePolicy3);
+        toolButton_B->setMinimumSize(QSize(24, 24));
         QIcon icon11;
         icon11.addFile(QStringLiteral(":/new/prefix1/BMP/bottom.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_B->setIcon(icon11);
@@ -674,6 +673,16 @@ public:
         checkBox->setObjectName(QStringLiteral("checkBox"));
 
         verticalLayout_10->addWidget(checkBox);
+
+        checkBox_6 = new QCheckBox(page_1);
+        checkBox_6->setObjectName(QStringLiteral("checkBox_6"));
+
+        verticalLayout_10->addWidget(checkBox_6);
+
+        checkBox_7 = new QCheckBox(page_1);
+        checkBox_7->setObjectName(QStringLiteral("checkBox_7"));
+
+        verticalLayout_10->addWidget(checkBox_7);
 
         widget_4 = new QWidget(page_1);
         widget_4->setObjectName(QStringLiteral("widget_4"));
@@ -797,16 +806,14 @@ public:
         TMain_form->setWindowTitle(QApplication::translate("TMain_form", "sstsoft::Koperek32::Main::kopiowanie, przenoszenie, usuwanie, kompresja sp. z o. o.", 0));
         label_8->setText(QApplication::translate("TMain_form", "Kopiuje: C:\\KATALOG\\plik.rozszerzenie", 0));
         label_3->setText(QApplication::translate("TMain_form", "Z 'C:\\' do 'D:\\cel'", 0));
-        toolButton_F->setText(QApplication::translate("TMain_form", "v", 0));
         toolButton->setText(QApplication::translate("TMain_form", "CONSOLE", 0));
         label_4->setText(QApplication::translate("TMain_form", "Do zako\305\204czenia pozosta\305\202o: 1000 bajt\303\263w; 20 plik\303\263w, oko\305\202o 2 minuty", 0));
         toolButton_2->setText(QApplication::translate("TMain_form", "PAUSE", 0));
         toolButton_3->setText(QApplication::translate("TMain_form", "STOP", 0));
         toolButton_MENU->setText(QApplication::translate("TMain_form", "...", 0));
+        toolButton_F->setText(QApplication::translate("TMain_form", "v", 0));
         toolButton_D1->setText(QApplication::translate("TMain_form", "...", 0));
         label_6->setText(QApplication::translate("TMain_form", "See curent source file && directory preview, detailed informations , hash(if enabled - see the options)", 0));
-        checkBox_7->setText(QApplication::translate("TMain_form", "If enabled i will stop if found file simmilar to chosen one", 0));
-        checkBox_6->setText(QApplication::translate("TMain_form", "If enabled i will wait some time after each operation so you could watch", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("TMain_form", "Current file && directory in details", 0));
         label_2->setText(QApplication::translate("TMain_form", "Processed file list. You can pause current opperation, review all unfinished, add and delete if You want", 0));
         toolButton_P->setText(QApplication::translate("TMain_form", "+", 0));
@@ -817,9 +824,11 @@ public:
         toolButton_B->setText(QApplication::translate("TMain_form", "...", 0));
         tabWidget->setTabText(tabWidget->indexOf(tab_1), QApplication::translate("TMain_form", "File list", 0));
         label_7->setText(QApplication::translate("TMain_form", "File sizes rounded chart, click to see details, double click to enter lower level, right click to came back..", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("TMain_form", "File sizes chart", 0));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("TMain_form", "File chart", 0));
         label->setText(QApplication::translate("TMain_form", "Setting options will affect on current or next file operation", 0));
         checkBox->setText(QApplication::translate("TMain_form", "Remember window size and position", 0));
+        checkBox_6->setText(QApplication::translate("TMain_form", "If enabled i will wait some time after each operation so you could watch", 0));
+        checkBox_7->setText(QApplication::translate("TMain_form", "If enabled i will stop if found file simmilar to chosen one", 0));
         checkBox_2->setText(QApplication::translate("TMain_form", "Write watch; compare source && destination file after each write(2x slower)", 0));
         checkBox_3->setText(QApplication::translate("TMain_form", "Set each file && directory creation date(and modification if older) to:", 0));
         checkBox_4->setText(QApplication::translate("TMain_form", "Set each file &&& directory modification date to:", 0));

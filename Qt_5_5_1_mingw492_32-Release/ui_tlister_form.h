@@ -50,6 +50,7 @@ public:
         graphicsView->setObjectName(QStringLiteral("graphicsView"));
         graphicsView->setFrameShape(QFrame::Box);
         graphicsView->setFrameShadow(QFrame::Plain);
+        graphicsView->setLineWidth(1);
 
         verticalLayout->addWidget(graphicsView);
 
@@ -65,7 +66,7 @@ public:
         label_2 = new QLabel(TLister_form);
         label_2->setObjectName(QStringLiteral("label_2"));
         label_2->setFont(font);
-        label_2->setFrameShape(QFrame::Box);
+        label_2->setFrameShape(QFrame::NoFrame);
         label_2->setFrameShadow(QFrame::Plain);
         label_2->setTextFormat(Qt::PlainText);
         label_2->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
@@ -74,8 +75,12 @@ public:
 
         progressBar = new QProgressBar(TLister_form);
         progressBar->setObjectName(QStringLiteral("progressBar"));
+        QFont font1;
+        font1.setBold(false);
+        font1.setWeight(50);
+        progressBar->setFont(font1);
         progressBar->setValue(24);
-        progressBar->setTextVisible(false);
+        progressBar->setTextVisible(true);
         progressBar->setInvertedAppearance(false);
 
         verticalLayout->addWidget(progressBar);
@@ -93,6 +98,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(toolButton_2->sizePolicy().hasHeightForWidth());
         toolButton_2->setSizePolicy(sizePolicy);
+        toolButton_2->setMinimumSize(QSize(30, 30));
         QIcon icon;
         icon.addFile(QStringLiteral(":/new/prefix1/BMP/pause.PNG"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_2->setIcon(icon);
@@ -104,6 +110,7 @@ public:
         toolButton->setObjectName(QStringLiteral("toolButton"));
         sizePolicy.setHeightForWidth(toolButton->sizePolicy().hasHeightForWidth());
         toolButton->setSizePolicy(sizePolicy);
+        toolButton->setMinimumSize(QSize(30, 30));
         QIcon icon1;
         icon1.addFile(QStringLiteral(":/new/prefix1/BMP/stop.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton->setIcon(icon1);
@@ -116,7 +123,7 @@ public:
         toolButton_3->setEnabled(false);
         sizePolicy.setHeightForWidth(toolButton_3->sizePolicy().hasHeightForWidth());
         toolButton_3->setSizePolicy(sizePolicy);
-        toolButton_3->setMinimumSize(QSize(50, 0));
+        toolButton_3->setMinimumSize(QSize(50, 30));
         toolButton_3->setBaseSize(QSize(0, 0));
         QIcon icon2;
         icon2.addFile(QStringLiteral(":/new/prefix1/BMP/resume.PNG"), QSize(), QIcon::Normal, QIcon::Off);

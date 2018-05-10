@@ -44,7 +44,7 @@ public:
         verticalLayout = new QVBoxLayout(TAbout_form);
         verticalLayout->setSpacing(4);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        verticalLayout->setContentsMargins(4, 4, 4, 4);
+        verticalLayout->setContentsMargins(8, 8, 8, 8);
         label = new QLabel(TAbout_form);
         label->setObjectName(QStringLiteral("label"));
         label->setContextMenuPolicy(Qt::NoContextMenu);

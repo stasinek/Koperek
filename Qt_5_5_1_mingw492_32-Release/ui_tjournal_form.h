@@ -38,7 +38,9 @@ public:
             TJournal_form->setObjectName(QStringLiteral("TJournal_form"));
         TJournal_form->resize(400, 300);
         verticalLayout_2 = new QVBoxLayout(TJournal_form);
+        verticalLayout_2->setSpacing(4);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(8, 8, 8, 8);
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setSizeConstraint(QLayout::SetDefaultConstraint);

@@ -33,9 +33,11 @@ public:
     {
         if (TFinished_form->objectName().isEmpty())
             TFinished_form->setObjectName(QStringLiteral("TFinished_form"));
-        TFinished_form->resize(400, 300);
+        TFinished_form->resize(400, 116);
         verticalLayout = new QVBoxLayout(TFinished_form);
+        verticalLayout->setSpacing(4);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(8, 8, 8, 8);
         label = new QLabel(TFinished_form);
         label->setObjectName(QStringLiteral("label"));
         QFont font;

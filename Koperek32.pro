@@ -9,7 +9,7 @@ CONFIG += precompile_header
 CONFIG += warn_on exceptions
 CONFIG += c++11
 
-QMAKE_LFLAGS -= -static
+QMAKE_LFLAGS -= static
 QMAKE_CFLAGS_RELEASE += rtti_off stl_off exceptions_off
 
 contains(DEFINES, QT_GUI) {

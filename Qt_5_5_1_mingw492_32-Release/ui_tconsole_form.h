@@ -41,7 +41,9 @@ public:
             TConsole_form->setObjectName(QStringLiteral("TConsole_form"));
         TConsole_form->resize(400, 300);
         verticalLayout = new QVBoxLayout(TConsole_form);
+        verticalLayout->setSpacing(4);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(8, 8, 8, 8);
         listWidget = new QListWidget(TConsole_form);
         listWidget->setObjectName(QStringLiteral("listWidget"));
         QFont font;
@@ -104,7 +106,7 @@ public:
 
         toolButton_MENU = new QToolButton(TConsole_form);
         toolButton_MENU->setObjectName(QStringLiteral("toolButton_MENU"));
-        toolButton_MENU->setMinimumSize(QSize(30, 30));
+        toolButton_MENU->setMinimumSize(QSize(40, 30));
         QIcon icon3;
         icon3.addFile(QStringLiteral(":/new/prefix1/BMP/menu.PNG"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_MENU->setIcon(icon3);
