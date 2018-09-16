@@ -2,14 +2,9 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="default" />
-	<File name="..\..\..\x86_libraries\STK\cipher\stk_cipher_API.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\..\x86_libraries\STK\3D\stk_3Dvector.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2180" topLine="43" />
-		</Cursor>
-	</File>
-	<File name="..\..\..\x86_libraries\STK\cipher\FastAESinC\stk_aes.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1365" topLine="18" />
+			<Cursor1 position="93" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="..\..\..\x86_libraries\STK\cipher\FastAESinC\stk_aes.c" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -17,9 +12,24 @@
 			<Cursor1 position="23706" topLine="454" />
 		</Cursor>
 	</File>
-	<File name="..\..\..\x86_libraries\STK\cpu\stk_cpu.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\..\x86_libraries\STK\stk_MAIN.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="6367" topLine="248" />
+			<Cursor1 position="10379" topLine="242" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\x86_libraries\STK\cipher\stk_cipher_API.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2180" topLine="43" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\x86_libraries\STK\cpu\stk_cpu.h" open="1" top="1" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="119" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="..\..\..\x86_libraries\STK\cipher\FastAESinC\stk_aes.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1365" topLine="18" />
 		</Cursor>
 	</File>
 	<File name="..\..\..\x86_libraries\STK\time\stk_time.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -37,32 +47,68 @@
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\..\..\x86_libraries\STK\3D\stk_3Dvector.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="93" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="..\..\..\x86_libraries\STK\cipher\stk_cipher_pair.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="..\..\..\x86_libraries\STK\stk_main.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="..\..\..\x86_libraries\STK\cpu\stk_cpu.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="10379" topLine="242" />
+			<Cursor1 position="6367" topLine="248" />
 		</Cursor>
 	</File>
-	<File name="..\..\..\x86_libraries\STK\cpu\stk_cpu.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="119" topLine="0" />
-		</Cursor>
-	</File>
+	<EditorTabsLayout layout="075afec85b9da1930001e2c300000002=0;Kop32_DEV:..\..\..\x86_libraries\STK\cipher\stk_cipher_API.h,2;Kop32_DEV:..\..\..\x86_libraries\STK\cipher\stk_cipher_API.cpp,3;Kop32_DEV:..\..\..\x86_libraries\STK\cipher\stk_cipher_mtf.h,4;Kop32_DEV:..\..\..\x86_libraries\STK\cipher\stk_cipher_pair.h,5;Kop32_DEV:..\..\..\x86_libraries\STK\cpu\stk_cpu.cpp,6;Kop32_DEV:..\..\..\x86_libraries\STK\3D\stk_3Dvector.cpp,7;Kop32_DEV:..\..\..\x86_libraries\STK\cipher\FastAESinC\stk_aes.c,8;Kop32_DEV:..\..\..\x86_libraries\STK\cipher\FastAESinC\stk_aes.h,9;Kop32_DEV:..\..\..\x86_libraries\STK\time\stk_time.h,*10;Kop32_DEV:..\..\..\x86_libraries\STK\cpu\stk_cpu.h@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=406;besth=300;minw=406;minh=300;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=075afec85b9da1930001e2c300000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|" />
 </CodeBlocks_layout_file>
 [Editors]
-Order=0
-Focused=0
+Order=60,0,55,52,23,51,91
+Focused=55
+[Editor_26]
+CursorCol=1
+CursorRow=11
+TopLine=1
+LeftChar=1
+[Editor_40]
+CursorCol=1
+CursorRow=583
+TopLine=571
+LeftChar=1
+[Editor_56]
+CursorCol=27
+CursorRow=58
+TopLine=46
+LeftChar=1
 [Editor_0]
-CursorCol=31
-CursorRow=19
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_23]
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_51]
+CursorCol=1
+CursorRow=1
+TopLine=58
+LeftChar=1
+[Editor_52]
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_55]
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_60]
+CursorCol=21
+CursorRow=7
+TopLine=94
+LeftChar=1
+[Editor_91]
+CursorCol=22
+CursorRow=13
 TopLine=1
 LeftChar=1

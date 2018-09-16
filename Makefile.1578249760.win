@@ -1,0 +1,174 @@
+# Project: Kop32_DEV
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+RES      = Kop32_DEV_private.res
+OBJ      = ../../x86_libraries/STK/cpu/stk_cpu.o ../../x86_libraries/STK/mem/stk_bsearch.o ../../x86_libraries/STK/io/stk_file_io.o ../../x86_libraries/STK/io/stk_rs232.o ../../x86_libraries/STK/io/stk_console.o ../../x86_libraries/STK/pharser/stk_pharse_command_line.o ../../x86_libraries/STK/pharser/stk_pharse_math.o ../../x86_libraries/STK/sockets/stk_sockets.o ../../x86_libraries/STK/time/stk_time.o ../../x86_libraries/STK/process_journal/stk_journal.o ../../x86_libraries/STK/text/stk_cstr_stack.o ../../x86_libraries/STK/text/stk_cstr_class.o ../../x86_libraries/STK/hash/stk_hash_API.o ../../x86_libraries/STK/hash/stk_hash_crc32.o ../../x86_libraries/STK/koperek/stk_kop32_console_API.o ../../x86_libraries/STK/koperek/stk_kop32_controler.o ../../x86_libraries/STK/koperek/stk_kop32_socket_server.o ../../x86_libraries/STK/koperek/stk_kop32_search.o ../../x86_libraries/STK/koperek/stk_kop32_API.o ../../x86_libraries/STK/koperek/stk_kop32_class.o ../../x86_libraries/STK/database/stk_database_items.o ../../x86_libraries/STK/compression/stk_compression_API.o ../../x86_libraries/STK/database/stk_database.o ../../x86_libraries/STK/cipher/stk_cipher_API.o ../../x86_libraries/STK/cipher/stk_cipher_mtf.o ../../x86_libraries/STK/cipher/stk_cipher_pair.o ../../x86_libraries/STK/compression/stk_compression_bwt_matrix2.o ../../x86_libraries/STK/compression/stk_compression_huff.o ../../x86_libraries/STK/hash/stk_hash_md5.o ../../x86_libraries/STK/hash/stk_hash_ssc1.o ../../x86_libraries/STK/hash/stk_hash_password.o ../../x86_libraries/STK/compression/stk_compression_ari.o ../../x86_libraries/STK/compression/stk_compression_static_huff.o ../../x86_libraries/STK/stk_test.o ../../x86_libraries/STK/mem/stk_qsort.o ../../x86_libraries/STK/mem/stk_mem.o ../../x86_libraries/STK/text/stk_cstr_utils.o ../../x86_libraries/STK/compression/stk_compression_lzstv4.o ../../x86_libraries/STK/file/ini/stk_file_ini.o ../../x86_libraries/STK/cipher/stk_base64.o ../../x86_libraries/STK/stasm/stk_stasm.o ../../x86_libraries/STK/file/eno/stk_file_lzst_header.o ../../X86_LIBRARIES/STK/threads/stk_idle.o ../../X86_LIBRARIES/STK/threads/stk_threads.o ../../X86_LIBRARIES/STK/mem/stk_btree.o ../../X86_LIBRARIES/STK/koperek/stk_kop32_options.o ../../X86_LIBRARIES/STK/file/stk_file_mime_types.o ../../X86_LIBRARIES/STK/koperek/stk_kop32_list.o $(RES)
+LINKOBJ  = ../../x86_libraries/STK/cpu/stk_cpu.o ../../x86_libraries/STK/mem/stk_bsearch.o ../../x86_libraries/STK/io/stk_file_io.o ../../x86_libraries/STK/io/stk_rs232.o ../../x86_libraries/STK/io/stk_console.o ../../x86_libraries/STK/pharser/stk_pharse_command_line.o ../../x86_libraries/STK/pharser/stk_pharse_math.o ../../x86_libraries/STK/sockets/stk_sockets.o ../../x86_libraries/STK/time/stk_time.o ../../x86_libraries/STK/process_journal/stk_journal.o ../../x86_libraries/STK/text/stk_cstr_stack.o ../../x86_libraries/STK/text/stk_cstr_class.o ../../x86_libraries/STK/hash/stk_hash_API.o ../../x86_libraries/STK/hash/stk_hash_crc32.o ../../x86_libraries/STK/koperek/stk_kop32_console_API.o ../../x86_libraries/STK/koperek/stk_kop32_controler.o ../../x86_libraries/STK/koperek/stk_kop32_socket_server.o ../../x86_libraries/STK/koperek/stk_kop32_search.o ../../x86_libraries/STK/koperek/stk_kop32_API.o ../../x86_libraries/STK/koperek/stk_kop32_class.o ../../x86_libraries/STK/database/stk_database_items.o ../../x86_libraries/STK/compression/stk_compression_API.o ../../x86_libraries/STK/database/stk_database.o ../../x86_libraries/STK/cipher/stk_cipher_API.o ../../x86_libraries/STK/cipher/stk_cipher_mtf.o ../../x86_libraries/STK/cipher/stk_cipher_pair.o ../../x86_libraries/STK/compression/stk_compression_bwt_matrix2.o ../../x86_libraries/STK/compression/stk_compression_huff.o ../../x86_libraries/STK/hash/stk_hash_md5.o ../../x86_libraries/STK/hash/stk_hash_ssc1.o ../../x86_libraries/STK/hash/stk_hash_password.o ../../x86_libraries/STK/compression/stk_compression_ari.o ../../x86_libraries/STK/compression/stk_compression_static_huff.o ../../x86_libraries/STK/stk_test.o ../../x86_libraries/STK/mem/stk_qsort.o ../../x86_libraries/STK/mem/stk_mem.o ../../x86_libraries/STK/text/stk_cstr_utils.o ../../x86_libraries/STK/compression/stk_compression_lzstv4.o ../../x86_libraries/STK/file/ini/stk_file_ini.o ../../x86_libraries/STK/cipher/stk_base64.o ../../x86_libraries/STK/stasm/stk_stasm.o ../../x86_libraries/STK/file/eno/stk_file_lzst_header.o ../../X86_LIBRARIES/STK/threads/stk_idle.o ../../X86_LIBRARIES/STK/threads/stk_threads.o ../../X86_LIBRARIES/STK/mem/stk_btree.o ../../X86_LIBRARIES/STK/koperek/stk_kop32_options.o ../../X86_LIBRARIES/STK/file/stk_file_mime_types.o ../../X86_LIBRARIES/STK/koperek/stk_kop32_list.o $(RES)
+LIBS     = -L"C:/hubiC/IDE/Dev-Cpp/MinGW64/lib32" -L"C:/hubiC/IDE/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -L"C:/SRC/x86_libraries/STK" -mwindows -lwsock32 -lmingwex    -ladvapi32   -lshell32 -luser32 -lkernel32    -lmsvcrt    -lwinmm -lmoldname  -lgomp -pg -lcrypt32 -m32 -g3
+INCS     = -I"C:/hubiC/IDE/Dev-Cpp/MinGW64/include" -I"C:/hubiC/IDE/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/hubiC/IDE/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/SRC/x86_libraries/STK"
+CXXINCS  = -I"C:/hubiC/IDE/Dev-Cpp/MinGW64/include" -I"C:/hubiC/IDE/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/hubiC/IDE/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/hubiC/IDE/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++" -I"C:/SRC/x86_libraries/STK"
+BIN      = Kop32_DEV.exe
+CXXFLAGS = $(CXXINCS) -march=pentium4 -msse -m32 -g3 -Wno-write-strings  -Wno-unused-variable  -Wno-unused-parameter -Wno-unused-value -Wno-unused-label -fopenmp -fverbose-asm -save-temps -DBUILD_STK_LIBRARY
+CFLAGS   = $(INCS) -march=pentium4 -msse -m32 -g3 -Wno-write-strings  -Wno-unused-variable  -Wno-unused-parameter -Wno-unused-value -Wno-unused-label -save-temps -DBUILD_STK_LIBRARY
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+../../x86_libraries/STK/cpu/stk_cpu.o: ../../x86_libraries/STK/cpu/stk_cpu.cpp
+	$(CPP) -c ../../x86_libraries/STK/cpu/stk_cpu.cpp -o ../../x86_libraries/STK/cpu/stk_cpu.o $(CXXFLAGS)
+
+../../x86_libraries/STK/mem/stk_bsearch.o: ../../x86_libraries/STK/mem/stk_bsearch.cpp
+	$(CPP) -c ../../x86_libraries/STK/mem/stk_bsearch.cpp -o ../../x86_libraries/STK/mem/stk_bsearch.o $(CXXFLAGS)
+
+../../x86_libraries/STK/io/stk_file_io.o: ../../x86_libraries/STK/io/stk_file_io.cpp
+	$(CPP) -c ../../x86_libraries/STK/io/stk_file_io.cpp -o ../../x86_libraries/STK/io/stk_file_io.o $(CXXFLAGS)
+
+../../x86_libraries/STK/io/stk_rs232.o: ../../x86_libraries/STK/io/stk_rs232.cpp
+	$(CPP) -c ../../x86_libraries/STK/io/stk_rs232.cpp -o ../../x86_libraries/STK/io/stk_rs232.o $(CXXFLAGS)
+
+../../x86_libraries/STK/io/stk_console.o: ../../x86_libraries/STK/io/stk_console.cpp
+	$(CPP) -c ../../x86_libraries/STK/io/stk_console.cpp -o ../../x86_libraries/STK/io/stk_console.o $(CXXFLAGS)
+
+../../x86_libraries/STK/pharser/stk_pharse_command_line.o: ../../x86_libraries/STK/pharser/stk_pharse_command_line.cpp
+	$(CPP) -c ../../x86_libraries/STK/pharser/stk_pharse_command_line.cpp -o ../../x86_libraries/STK/pharser/stk_pharse_command_line.o $(CXXFLAGS)
+
+../../x86_libraries/STK/pharser/stk_pharse_math.o: ../../x86_libraries/STK/pharser/stk_pharse_math.cpp
+	$(CPP) -c ../../x86_libraries/STK/pharser/stk_pharse_math.cpp -o ../../x86_libraries/STK/pharser/stk_pharse_math.o $(CXXFLAGS)
+
+../../x86_libraries/STK/sockets/stk_sockets.o: ../../x86_libraries/STK/sockets/stk_sockets.cpp
+	$(CPP) -c ../../x86_libraries/STK/sockets/stk_sockets.cpp -o ../../x86_libraries/STK/sockets/stk_sockets.o $(CXXFLAGS)
+
+../../x86_libraries/STK/time/stk_time.o: ../../x86_libraries/STK/time/stk_time.cpp
+	$(CPP) -c ../../x86_libraries/STK/time/stk_time.cpp -o ../../x86_libraries/STK/time/stk_time.o $(CXXFLAGS)
+
+../../x86_libraries/STK/process_journal/stk_journal.o: ../../x86_libraries/STK/process_journal/stk_journal.cpp
+	$(CPP) -c ../../x86_libraries/STK/process_journal/stk_journal.cpp -o ../../x86_libraries/STK/process_journal/stk_journal.o $(CXXFLAGS)
+
+../../x86_libraries/STK/text/stk_cstr_stack.o: ../../x86_libraries/STK/text/stk_cstr_stack.cpp
+	$(CPP) -c ../../x86_libraries/STK/text/stk_cstr_stack.cpp -o ../../x86_libraries/STK/text/stk_cstr_stack.o $(CXXFLAGS)
+
+../../x86_libraries/STK/text/stk_cstr_class.o: ../../x86_libraries/STK/text/stk_cstr_class.cpp
+	$(CPP) -c ../../x86_libraries/STK/text/stk_cstr_class.cpp -o ../../x86_libraries/STK/text/stk_cstr_class.o $(CXXFLAGS)
+
+../../x86_libraries/STK/hash/stk_hash_API.o: ../../x86_libraries/STK/hash/stk_hash_API.cpp
+	$(CPP) -c ../../x86_libraries/STK/hash/stk_hash_API.cpp -o ../../x86_libraries/STK/hash/stk_hash_API.o $(CXXFLAGS)
+
+../../x86_libraries/STK/hash/stk_hash_crc32.o: ../../x86_libraries/STK/hash/stk_hash_crc32.cpp
+	$(CPP) -c ../../x86_libraries/STK/hash/stk_hash_crc32.cpp -o ../../x86_libraries/STK/hash/stk_hash_crc32.o $(CXXFLAGS)
+
+../../x86_libraries/STK/koperek/stk_kop32_console_API.o: ../../x86_libraries/STK/koperek/stk_kop32_console_API.cpp
+	$(CPP) -c ../../x86_libraries/STK/koperek/stk_kop32_console_API.cpp -o ../../x86_libraries/STK/koperek/stk_kop32_console_API.o $(CXXFLAGS)
+
+../../x86_libraries/STK/koperek/stk_kop32_controler.o: ../../x86_libraries/STK/koperek/stk_kop32_controler.cpp
+	$(CPP) -c ../../x86_libraries/STK/koperek/stk_kop32_controler.cpp -o ../../x86_libraries/STK/koperek/stk_kop32_controler.o $(CXXFLAGS)
+
+../../x86_libraries/STK/koperek/stk_kop32_socket_server.o: ../../x86_libraries/STK/koperek/stk_kop32_socket_server.cpp
+	$(CPP) -c ../../x86_libraries/STK/koperek/stk_kop32_socket_server.cpp -o ../../x86_libraries/STK/koperek/stk_kop32_socket_server.o $(CXXFLAGS)
+
+../../x86_libraries/STK/koperek/stk_kop32_search.o: ../../x86_libraries/STK/koperek/stk_kop32_search.cpp
+	$(CPP) -c ../../x86_libraries/STK/koperek/stk_kop32_search.cpp -o ../../x86_libraries/STK/koperek/stk_kop32_search.o $(CXXFLAGS)
+
+../../x86_libraries/STK/koperek/stk_kop32_API.o: ../../x86_libraries/STK/koperek/stk_kop32_API.cpp
+	$(CPP) -c ../../x86_libraries/STK/koperek/stk_kop32_API.cpp -o ../../x86_libraries/STK/koperek/stk_kop32_API.o $(CXXFLAGS)
+
+../../x86_libraries/STK/koperek/stk_kop32_class.o: ../../x86_libraries/STK/koperek/stk_kop32_class.cpp
+	$(CPP) -c ../../x86_libraries/STK/koperek/stk_kop32_class.cpp -o ../../x86_libraries/STK/koperek/stk_kop32_class.o $(CXXFLAGS)
+
+../../x86_libraries/STK/database/stk_database_items.o: ../../x86_libraries/STK/database/stk_database_items.cpp
+	$(CPP) -c ../../x86_libraries/STK/database/stk_database_items.cpp -o ../../x86_libraries/STK/database/stk_database_items.o $(CXXFLAGS)
+
+../../x86_libraries/STK/compression/stk_compression_API.o: ../../x86_libraries/STK/compression/stk_compression_API.cpp
+	$(CPP) -c ../../x86_libraries/STK/compression/stk_compression_API.cpp -o ../../x86_libraries/STK/compression/stk_compression_API.o $(CXXFLAGS)
+
+../../x86_libraries/STK/database/stk_database.o: ../../x86_libraries/STK/database/stk_database.cpp
+	$(CPP) -c ../../x86_libraries/STK/database/stk_database.cpp -o ../../x86_libraries/STK/database/stk_database.o $(CXXFLAGS)
+
+../../x86_libraries/STK/cipher/stk_cipher_API.o: ../../x86_libraries/STK/cipher/stk_cipher_API.cpp
+	$(CPP) -c ../../x86_libraries/STK/cipher/stk_cipher_API.cpp -o ../../x86_libraries/STK/cipher/stk_cipher_API.o $(CXXFLAGS)
+
+../../x86_libraries/STK/cipher/stk_cipher_mtf.o: ../../x86_libraries/STK/cipher/stk_cipher_mtf.cpp
+	$(CPP) -c ../../x86_libraries/STK/cipher/stk_cipher_mtf.cpp -o ../../x86_libraries/STK/cipher/stk_cipher_mtf.o $(CXXFLAGS)
+
+../../x86_libraries/STK/cipher/stk_cipher_pair.o: ../../x86_libraries/STK/cipher/stk_cipher_pair.cpp
+	$(CPP) -c ../../x86_libraries/STK/cipher/stk_cipher_pair.cpp -o ../../x86_libraries/STK/cipher/stk_cipher_pair.o $(CXXFLAGS)
+
+../../x86_libraries/STK/compression/stk_compression_bwt_matrix2.o: ../../x86_libraries/STK/compression/stk_compression_bwt_matrix2.cpp
+	$(CPP) -c ../../x86_libraries/STK/compression/stk_compression_bwt_matrix2.cpp -o ../../x86_libraries/STK/compression/stk_compression_bwt_matrix2.o $(CXXFLAGS)
+
+../../x86_libraries/STK/compression/stk_compression_huff.o: ../../x86_libraries/STK/compression/stk_compression_huff.cpp
+	$(CPP) -c ../../x86_libraries/STK/compression/stk_compression_huff.cpp -o ../../x86_libraries/STK/compression/stk_compression_huff.o $(CXXFLAGS)
+
+../../x86_libraries/STK/hash/stk_hash_md5.o: ../../x86_libraries/STK/hash/stk_hash_md5.cpp
+	$(CPP) -c ../../x86_libraries/STK/hash/stk_hash_md5.cpp -o ../../x86_libraries/STK/hash/stk_hash_md5.o $(CXXFLAGS)
+
+../../x86_libraries/STK/hash/stk_hash_ssc1.o: ../../x86_libraries/STK/hash/stk_hash_ssc1.cpp
+	$(CPP) -c ../../x86_libraries/STK/hash/stk_hash_ssc1.cpp -o ../../x86_libraries/STK/hash/stk_hash_ssc1.o $(CXXFLAGS)
+
+../../x86_libraries/STK/hash/stk_hash_password.o: ../../x86_libraries/STK/hash/stk_hash_password.cpp
+	$(CPP) -c ../../x86_libraries/STK/hash/stk_hash_password.cpp -o ../../x86_libraries/STK/hash/stk_hash_password.o $(CXXFLAGS)
+
+../../x86_libraries/STK/compression/stk_compression_ari.o: ../../x86_libraries/STK/compression/stk_compression_ari.cpp
+	$(CPP) -c ../../x86_libraries/STK/compression/stk_compression_ari.cpp -o ../../x86_libraries/STK/compression/stk_compression_ari.o $(CXXFLAGS)
+
+../../x86_libraries/STK/compression/stk_compression_static_huff.o: ../../x86_libraries/STK/compression/stk_compression_static_huff.cpp
+	$(CPP) -c ../../x86_libraries/STK/compression/stk_compression_static_huff.cpp -o ../../x86_libraries/STK/compression/stk_compression_static_huff.o $(CXXFLAGS)
+
+../../x86_libraries/STK/stk_test.o: ../../x86_libraries/STK/stk_test.cpp
+	$(CPP) -c ../../x86_libraries/STK/stk_test.cpp -o ../../x86_libraries/STK/stk_test.o $(CXXFLAGS)
+
+../../x86_libraries/STK/mem/stk_qsort.o: ../../x86_libraries/STK/mem/stk_qsort.cpp
+	$(CPP) -c ../../x86_libraries/STK/mem/stk_qsort.cpp -o ../../x86_libraries/STK/mem/stk_qsort.o $(CXXFLAGS)
+
+../../x86_libraries/STK/mem/stk_mem.o: ../../x86_libraries/STK/mem/stk_mem.cpp
+	$(CPP) -c ../../x86_libraries/STK/mem/stk_mem.cpp -o ../../x86_libraries/STK/mem/stk_mem.o $(CXXFLAGS)
+
+../../x86_libraries/STK/text/stk_cstr_utils.o: ../../x86_libraries/STK/text/stk_cstr_utils.cpp
+	$(CPP) -c ../../x86_libraries/STK/text/stk_cstr_utils.cpp -o ../../x86_libraries/STK/text/stk_cstr_utils.o $(CXXFLAGS)
+
+../../x86_libraries/STK/compression/stk_compression_lzstv4.o: ../../x86_libraries/STK/compression/stk_compression_lzstv4.cpp
+	$(CPP) -c ../../x86_libraries/STK/compression/stk_compression_lzstv4.cpp -o ../../x86_libraries/STK/compression/stk_compression_lzstv4.o $(CXXFLAGS)
+
+../../x86_libraries/STK/file/ini/stk_file_ini.o: ../../x86_libraries/STK/file/ini/stk_file_ini.cpp
+	$(CPP) -c ../../x86_libraries/STK/file/ini/stk_file_ini.cpp -o ../../x86_libraries/STK/file/ini/stk_file_ini.o $(CXXFLAGS)
+
+../../x86_libraries/STK/cipher/stk_base64.o: ../../x86_libraries/STK/cipher/stk_base64.cpp
+	$(CPP) -c ../../x86_libraries/STK/cipher/stk_base64.cpp -o ../../x86_libraries/STK/cipher/stk_base64.o $(CXXFLAGS)
+
+../../x86_libraries/STK/stasm/stk_stasm.o: ../../x86_libraries/STK/stasm/stk_stasm.cpp
+	$(CPP) -c ../../x86_libraries/STK/stasm/stk_stasm.cpp -o ../../x86_libraries/STK/stasm/stk_stasm.o $(CXXFLAGS)
+
+../../x86_libraries/STK/file/eno/stk_file_lzst_header.o: ../../x86_libraries/STK/file/eno/stk_file_lzst_header.cpp
+	$(CPP) -c ../../x86_libraries/STK/file/eno/stk_file_lzst_header.cpp -o ../../x86_libraries/STK/file/eno/stk_file_lzst_header.o $(CXXFLAGS)
+
+../../X86_LIBRARIES/STK/threads/stk_idle.o: ../../X86_LIBRARIES/STK/threads/stk_idle.cpp
+	$(CPP) -c ../../X86_LIBRARIES/STK/threads/stk_idle.cpp -o ../../X86_LIBRARIES/STK/threads/stk_idle.o $(CXXFLAGS)
+
+../../X86_LIBRARIES/STK/threads/stk_threads.o: ../../X86_LIBRARIES/STK/threads/stk_threads.cpp
+	$(CPP) -c ../../X86_LIBRARIES/STK/threads/stk_threads.cpp -o ../../X86_LIBRARIES/STK/threads/stk_threads.o $(CXXFLAGS)
+
+../../X86_LIBRARIES/STK/mem/stk_btree.o: ../../X86_LIBRARIES/STK/mem/stk_btree.cpp
+	$(CPP) -c ../../X86_LIBRARIES/STK/mem/stk_btree.cpp -o ../../X86_LIBRARIES/STK/mem/stk_btree.o $(CXXFLAGS)
+
+../../X86_LIBRARIES/STK/koperek/stk_kop32_options.o: ../../X86_LIBRARIES/STK/koperek/stk_kop32_options.cpp
+	$(CPP) -c ../../X86_LIBRARIES/STK/koperek/stk_kop32_options.cpp -o ../../X86_LIBRARIES/STK/koperek/stk_kop32_options.o $(CXXFLAGS)
+
+../../X86_LIBRARIES/STK/file/stk_file_mime_types.o: ../../X86_LIBRARIES/STK/file/stk_file_mime_types.cpp
+	$(CPP) -c ../../X86_LIBRARIES/STK/file/stk_file_mime_types.cpp -o ../../X86_LIBRARIES/STK/file/stk_file_mime_types.o $(CXXFLAGS)
+
+../../X86_LIBRARIES/STK/koperek/stk_kop32_list.o: ../../X86_LIBRARIES/STK/koperek/stk_kop32_list.cpp
+	$(CPP) -c ../../X86_LIBRARIES/STK/koperek/stk_kop32_list.cpp -o ../../X86_LIBRARIES/STK/koperek/stk_kop32_list.o $(CXXFLAGS)
+
+Kop32_DEV_private.res: Kop32_DEV_private.rc 
+	$(WINDRES) -i Kop32_DEV_private.rc -F pe-i386 --input-format=rc -o Kop32_DEV_private.res -O coff  --include-dir C:/SRC/X86_LI~1/STK
+

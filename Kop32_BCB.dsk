@@ -14,8 +14,7 @@ File_9=SourceModule,'D:\stasiek\My SugarSync\My Projects\X86_LIBRARIES\STK\cpu\s
 Module0=C:\PROGS\CPP\Kop32\Kop32_main.cpp
 Module1=C:\PROGRAM FILES\BORLAND\CBUILDER5\INCLUDE\conio.h
 Module2=C:\PROGS\CPP\Kop32\Kop32_main.h
-Module3=D:\stasiek\My SugarSync\My Projects\X86_LIBRARIES\STK\stk_MAIN.h
-Count=4
+Count=3
 EditWindowCount=1
 
 [C:\PROGS\CPP\Kop32\Kop32_main.cpp]
@@ -33,26 +32,20 @@ ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[D:\stasiek\My SugarSync\My Projects\X86_LIBRARIES\STK\stk_MAIN.h]
-ModuleType=SourceModule
+[C:\Program Files\Borland\CBuilder5\Projects\ProjectGroup1.bpg]
 FormState=0
 FormOnTop=0
 
-[D:\stasiek\My SugarSync\My Projects\PROGS\CPP\Kop32\ProjectGroup1.bpg]
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My SugarSync\My Projects\PROGS\CPP\Kop32\Kop32_BCB.bpr]
+[C:\PROGS\CPP\Kop32\Kop32_BCB.bpr]
 FormState=0
 FormOnTop=0
 
 [EditWindow0]
-ViewCount=4
+ViewCount=3
 CurrentView=0
 View0=0
 View1=1
 View2=2
-View3=3
 MessageView=MessageView@EditWindow0
 Create=1
 Visible=1
@@ -69,9 +62,9 @@ ClientWidth=1280
 ClientHeight=649
 LeftPanelSize=0
 RightPanelSize=0
-BottomPanelSize=0
+BottomPanelSize=52
 BottomPanelClients=MessageView@EditWindow0
-BottomPanelData=00000400010000000B0000004D657373616765566965770000000000000000000000000000000000FFFFFFFF
+BottomPanelData=000004000000000000000000000000000000000000000000000100000000000000000B0000004D65737361676556696577FFFFFFFF
 
 [View0]
 Module=C:\PROGS\CPP\Kop32\Kop32_main.cpp
@@ -92,13 +85,6 @@ Module=C:\PROGRAM FILES\BORLAND\CBUILDER5\INCLUDE\conio.h
 CursorX=7
 CursorY=137
 TopLine=120
-LeftCol=1
-
-[View3]
-Module=D:\stasiek\My SugarSync\My Projects\X86_LIBRARIES\STK\stk_MAIN.h
-CursorX=78
-CursorY=231
-TopLine=216
 LeftCol=1
 
 [Watches]
@@ -196,7 +182,7 @@ ShowStatusBar=1
 
 [MessageView@EditWindow0]
 Create=1
-Visible=0
+Visible=1
 State=0
 Left=12
 Top=0

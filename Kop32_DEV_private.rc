@@ -5,11 +5,18 @@
 
 
 //
+// SUPPORT FOR WINDOWS XP THEMES:
+// THIS WILL MAKE THE PROGRAM USE THE COMMON CONTROLS
+// LIBRARY VERSION 6.0 (IF IT IS AVAILABLE)
+//
+1 24 "Kop32_DEV.exe.Manifest"
+
+//
 // TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
 //
 1 VERSIONINFO
-FILEVERSION 0,8,0,2474
-PRODUCTVERSION 0,8,0,2474
+FILEVERSION 0,8,0,2490
+PRODUCTVERSION 0,8,0,2490
 FILETYPE VFT_APP
 {
   BLOCK "StringFileInfo"
@@ -17,14 +24,14 @@ FILETYPE VFT_APP
     BLOCK "040904E4"
     {
       VALUE "CompanyName", ""
-      VALUE "FileVersion", "0.8.0.2474"
+      VALUE "FileVersion", "0.8.0.2490"
       VALUE "FileDescription", "Developed using the Dev-C++ IDE"
       VALUE "InternalName", ""
       VALUE "LegalCopyright", ""
       VALUE "LegalTrademarks", ""
       VALUE "OriginalFilename", ""
       VALUE "ProductName", ""
-      VALUE "ProductVersion", "0.8.0.2474"
+      VALUE "ProductVersion", "0.8.0.2490"
     }
   }
   BLOCK "VarFileInfo"

@@ -13,7 +13,7 @@ CC            = gcc
 CXX           = g++
 DEFINES       = -DUNICODE -DQT_GUI -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_NEEDS_QMAIN
 CFLAGS        = -pipe -fno-keep-inline-dllexport -g -Wall -Wextra $(DEFINES)
-CXXFLAGS      = -fno-keep-inline-dllexport -save-temps -Wno-write-strings -Wno-unused-variable -Wno-unused-parameter -Wno-unused-label -Wno-unused-value -Wno-inline -Wunknown-pragmas -Wattributes -Winline -Wshadow -Wno-multichar -Wall -fverbose-asm -fstrict-aliasing -dD -g -std=gnu++0x -pthread -g -std=c++0x -fexceptions -mthreads -Wall -Wextra -frtti $(DEFINES)
+CXXFLAGS      = -pipe -fno-keep-inline-dllexport -pipe -save-temps -Wno-write-strings -Wno-unused-variable -Wno-unused-parameter -Wno-unused-label -Wno-unused-value -Wno-inline -Wunknown-pragmas -Wattributes -Winline -Wshadow -Wno-multichar -Wall -dD -g -std=gnu++0x -pthread -g -std=c++0x -fexceptions -mthreads -Wall -Wextra -frtti $(DEFINES)
 INCPATH       = -I..\..\Kop32 -I. -I..\..\..\..\x86_libraries\STK -IC:\Qt\Qt5.5.1\5.5\mingw492_32\include -IC:\Qt\Qt5.5.1\5.5\mingw492_32\include\QtWidgets -IC:\Qt\Qt5.5.1\5.5\mingw492_32\include\QtGui -IC:\Qt\Qt5.5.1\5.5\mingw492_32\include\QtANGLE -IC:\Qt\Qt5.5.1\5.5\mingw492_32\include\QtCore -Idebug -I. -IC:\Qt\Qt5.5.1\5.5\mingw492_32\mkspecs\win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -mthreads -Wl,-subsystem,windows

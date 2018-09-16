@@ -4,11 +4,13 @@
   <MACROS>
     <VERSION value="BCB.05.03"/>
     <PROJECT value="Kop32_BCB.exe"/>
-    <OBJFILES value="Kop32_main.obj"/>
+    <OBJFILES value=""/>
     <RESFILES value="Kop32_BCB.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
     <DEFFILE value=""/>
     <RESDEPEN value="$(RESFILES)"/>
-    <LIBFILES value="C:\X86_LIBRARIES\STK\stk_BCB.lib"/>
+    <LIBFILES value=""/>
     <LIBRARIES value=""/>
     <SPARELIBS value=""/>
     <PACKAGES value="Vcl50.bpi Vclx50.bpi dclusr50.bpi"/>
@@ -27,28 +29,43 @@
     <WARNINGS value=""/>
   </MACROS>
   <OPTIONS>
-    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl50.csm -Hc -Q -Jgx -Vx -Ve -xf -xp -VC -Vd -Vmp -VF 
-      -C -ff -X- -ps -a8 -6 -b -d -k -y -v -vi- -tWC -tWM -c"/>
+    <IDLCFLAGS value="-I..\..\..\X86_LIBRARIES\STK\file\vfs 
+      -I..\..\..\X86_LIBRARIES\STK\file\json 
+      -I..\..\..\X86_LIBRARIES\STK\file\xml -I..\..\..\X86_LIBRARIES\STK\time 
+      -I..\..\..\X86_LIBRARIES\STK\text -I..\..\..\X86_LIBRARIES\STK\sthreads 
+      -I..\..\..\X86_LIBRARIES\STK\sockets 
+      -I..\..\..\X86_LIBRARIES\STK\process_journal 
+      -I..\..\..\X86_LIBRARIES\STK\pharser -I..\..\..\X86_LIBRARIES\STK\io 
+      -I..\..\..\X86_LIBRARIES\STK\hash -I..\..\..\X86_LIBRARIES\STK\cipher 
+      -I..\..\..\X86_LIBRARIES\STK\compression -I..\..\..\X86_LIBRARIES\STK\3D 
+      -I..\..\..\X86_LIBRARIES\STK\database 
+      -I..\..\..\X86_LIBRARIES\STK\file\eno -I..\..\..\X86_LIBRARIES\STK\file\ini 
+      -I..\..\..\X86_LIBRARIES\STK\file -I..\..\..\X86_LIBRARIES\STK\mem 
+      -I..\..\..\X86_LIBRARIES\STK\stasm -I..\..\..\X86_LIBRARIES\STK\cpu 
+      -I..\..\..\X86_LIBRARIES\STK -IC:\PROGS\CPP\Kop32\. -I$(BCB)\include 
+      -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-vGc -vGt -vGd -O2 -H=$(BCB)\lib\vcl50.csm -Hc -Q -Jgx -Vx -Ve -xf -xp -VC 
+      -Vd -Vmp -VF -C -ff -X- -ps -a8 -6 -b -d -k -y -v -vi- -tWC -tWM -c"/>
     <PFLAGS value="-$YD -$W -$T -$R -$Q -$B -v -JPHNE -M"/>
     <RFLAGS value=""/>
-    <AFLAGS value="/mx /w2 /zd"/>
+    <AFLAGS value="/ml /w2 /zi /la /z /x /n /c"/>
     <LFLAGS value="-D&quot;&quot; -Rr -Gz -ap -Tpe -GD -s -Gn -v"/>
   </OPTIONS>
   <LINKER>
     <ALLOBJ value="c0x32.obj $(OBJFILES)"/>
     <ALLRES value="$(RESFILES)"/>
-    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32mt.lib"/>
+    <ALLLIB value="cg32.lib $(LIBFILES) $(LIBRARIES) import32.lib cw32mt.lib"/>
   </LINKER>
   <IDEOPTIONS>
 [Version Info]
 IncludeVerInfo=1
 AutoIncBuild=0
-MajorVer=1
-MinorVer=0
-Release=0
-Build=0
+MajorVer=3
+MinorVer=3
+Release=1
+Build=700
 Debug=0
-PreRelease=0
+PreRelease=1
 Special=0
 Private=0
 DLL=0
@@ -58,7 +75,7 @@ CodePage=1250
 [Version Info Keys]
 CompanyName=SSTSOFT.pl
 FileDescription=
-FileVersion=1.0.0.0
+FileVersion=3.3.1.700
 InternalName=KOPEREK32
 LegalCopyright=
 LegalTrademarks=
@@ -68,8 +85,8 @@ ProductVersion=1.0.0.0
 Comments=
 
 [Excluded Packages]
-$(BCB)\Bin\bcbsmp50.bpl=Borland C++ Sample Components
 $(BCB)\Bin\dcl31w50.bpl=Delphi 1.0 Compatibility Components
+$(BCB)\Bin\bcbsmp50.bpl=Borland C++ Sample Components
 $(BCB)\Bin\dclocx50.bpl=Borland Sample Imported ActiveX Controls
 $(BCB)\Bin\bcb2kaxserver50.bpl=Borland C++Builder COM Server Components Sample Package
 
@@ -111,5 +128,16 @@ RemoteDebug=0
 [Compiler]
 ShowInfoMsgs=1
 LinkDebugVcl=1
+LinkCGLIB=1
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
   </IDEOPTIONS>
 </PROJECT>

@@ -41,10 +41,10 @@ TARGET = Kop32
 CONFIG += console
 }
 
-INCLUDEPATH += ./../../../x86_libraries/STK
+INCLUDEPATH += ./../../x86_libraries/STK
 
 win32-g++: {
-QMAKE_CXXFLAGS -= -pipe
+QMAKE_CXXFLAGS += -pipe
 QMAKE_CXXFLAGS += -save-temps
 
 QMAKE_CXXFLAGS += -Wno-write-strings
@@ -59,18 +59,10 @@ QMAKE_CXXFLAGS += -Winline
 QMAKE_CXXFLAGS += -Wshadow
 QMAKE_CXXFLAGS += -Wno-multichar
 QMAKE_CXXFLAGS += -Wall
-QMAKE_CXXFLAGS += -fverbose-asm
-QMAKE_CXXFLAGS += -fstrict-aliasing
 QMAKE_CXXFLAGS += -dD
 QMAKE_CXXFLAGS += -g
 QMAKE_CXXFLAGS += -std=gnu++0x -pthread
 
-QMAKE_CXXFLAGS_RELEASE += -malign-double
-QMAKE_CXXFLAGS_RELEASE += -momit-leaf-frame-pointer
-QMAKE_CXXFLAGS_RELEASE += -fwrapv
-QMAKE_CXXFLAGS_RELEASE += -funroll-loops
-QMAKE_CXXFLAGS_RELEASE += -m32 -mfpmath=sse -flto -O3
-QMAKE_CXXFLAGS_RELEASE += -mpreferred-stack-boundary=8
 QMAKE_CXXFLAGS_RELEASE += -mmmx -msse -msse2 #-msse3
 
 }
@@ -94,24 +86,14 @@ QMAKE_CXXFLAGS += -Wunknown-pragmas
 QMAKE_CXXFLAGS += -Wattributes
 QMAKE_CXXFLAGS += -Winline
 QMAKE_CXXFLAGS += -Wshadow
+QMAKE_CXXFLAGS += -Wno-multichar
 QMAKE_CXXFLAGS += -Wall
 QMAKE_CXXFLAGS += -Qunused-arguments -Wno-error=unused-command-line-argument-hard-error-in-future
-QMAKE_CXXFLAGS += -fverbose-asm
-QMAKE_CXXFLAGS += -fstrict-aliasing
 QMAKE_CXXFLAGS += -dD
 QMAKE_CXXFLAGS += -g
 QMAKE_CXXFLAGS += -std=gnu++0x -pthread
-QMAKE_CXXFLAGS += -Wno-multichar
 
-QMAKE_CXXFLAGS_RELEASE += -malign-double
-QMAKE_CXXFLAGS_RELEASE += -momit-leaf-frame-pointer
-QMAKE_CXXFLAGS_RELEASE += -fwrapv
-QMAKE_CXXFLAGS_RELEASE += -funroll-loops
-QMAKE_CXXFLAGS_RELEASE += -m32 --32 -mfpmath=sse -flto -O3
-QMAKE_CXXFLAGS_RELEASE += -mpreferred-stack-boundary=8
 QMAKE_CXXFLAGS_RELEASE += -mmmx -msse -msse2 #-msse3
-QMAKE_CXXFLAGS_RELEASE -= -fno-keep-inline-dllexport
-QMAKE_CXXFLAGS_RELEASE -= -finline-small-functions
 
 QMAKE_CC  = clang
 
@@ -139,7 +121,7 @@ contains(DEFINES, QT_GUI) {
         tconsole_form.cpp
 }
 HEADERS += \
-    ../Kop32/kop32_main.h
+    ./../Kop32/kop32_main.h
 
 contains(DEFINES, QT_GUI) {
 HEADERS += \
@@ -176,7 +158,7 @@ LIBS += -L"./../../../../x86_libraries/STK/Desktop_Qt_5_5_1_MSVC2010_32bit-Relea
 contains(DEFINES, __clang__) {
 LIBS += -lwinmm -lgomp
 LIBS += -lwsock32 -lws2_32 -lcrypt32 -lgdi32 -luser32 -lshell32
-LIBS += -L"./../../../../x86_libraries/STK/Qt_5_5_1_mingw492_32-Release/release/libstk.a"
+LIBS += -dL"./../../../../x86_libraries/STK/Qt_5_5_1_mingw492_32-Release/release/libstk.a"
 }
 
 contains(DEFINES, QT_GUI) {
@@ -206,5 +188,5 @@ win32:RC_ICONS += ICO/icon7.ico
 win32:RC_ICONS += ICO/icon8.ico
 
 DISTFILES   += \
-    ../../../../x86_libraries/SSTSOFT/test.txt
+    ./../../../../x86_libraries/STK/test.txt
 OTHER_FILES +=

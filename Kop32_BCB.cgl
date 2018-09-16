@@ -1,0 +1,19 @@
+Error 00019. 0x130410 (Thread 0x09D8):
+Access overrun: Attempt to access 1 byte(s) at 0x00D23E04, that is at offset
+ 108 in heap block 0x00D23D98 which is only 108 bytes long.
+Call Tree:
+   0x003B040B(=STK_BCB.DLL:0x01:02F40B)
+   0x003B03B0(=STK_BCB.DLL:0x01:02F3B0)
+   0x00381864(=STK_BCB.DLL:0x01:000864)
+   0x004011E9(=Kop32_BCB.exe:0x01:0001E9) C:\Documents and Settings\stasiek.TC12\My Documents\My Projects\PROGS\CPP\Kop32\Kop32_main.cpp#258
+   0x0040956A(=Kop32_BCB.exe:0x01:00856A)
+
+The memory block (0x00D23D98) [size: 108 bytes] was allocated with malloc
+Call Tree:
+   0x0039DDD6(=STK_BCB.DLL:0x01:01CDD6)
+   0x00382D9D(=STK_BCB.DLL:0x01:001D9D)
+   0x0038183C(=STK_BCB.DLL:0x01:00083C)
+   0x004011E9(=Kop32_BCB.exe:0x01:0001E9) C:\Documents and Settings\stasiek.TC12\My Documents\My Projects\PROGS\CPP\Kop32\Kop32_main.cpp#258
+   0x0040956A(=Kop32_BCB.exe:0x01:00856A)
+
+------------------------------------------
