@@ -1,5 +1,3 @@
-USEUNIT("Kop32_main.cpp");
 USERES("Kop32_BCB.res");
-USELIB("C:\X86_LIBRARIES\STK\stk_BCB.lib");
 //---------------------------------------------------------------------------
 This file is used by the project manager only and should be treated like the project file main

@@ -32,26 +32,25 @@
 			<Add library="moldname" />
 			<Add library="gomp" />
 		</Linker>
-		<Unit filename="../../../X86_LIBRARIES/STK/compression/stk_compression_lzssv4.cpp" />
-		<Unit filename="../../../X86_LIBRARIES/STK/compression/stk_compression_lzssv4.h" />
-		<Unit filename="../../../X86_LIBRARIES/STK/file/xml/XML.CPP" />
-		<Unit filename="../../../X86_LIBRARIES/STK/io/stk_file_ini.h" />
-		<Unit filename="../../../X86_LIBRARIES/STK/io/stk_file_lzss_header.cpp" />
-		<Unit filename="../../../X86_LIBRARIES/STK/io/stk_file_lzss_header.h" />
-		<Unit filename="../../../X86_LIBRARIES/STK/io/stk_file_memdisk.cpp" />
-		<Unit filename="../../../X86_LIBRARIES/STK/io/stk_file_memdisk.h" />
-		<Unit filename="../../../X86_LIBRARIES/STK/io/stk_file_mime_types.cpp" />
-		<Unit filename="../../../X86_LIBRARIES/STK/io/stk_file_mime_types.h" />
-		<Unit filename="../../../X86_LIBRARIES/STK/kop32_main.h" />
-		<Unit filename="../../../X86_LIBRARIES/STK/koperek/kop_CON.h" />
-		<Unit filename="../../../X86_LIBRARIES/STK/mem/stk_mem32.cpp" />
-		<Unit filename="../../../X86_LIBRARIES/STK/mem/stk_mem32.h" />
-		<Unit filename="../../../X86_LIBRARIES/STK/stasm/__stasm.cpp" />
-		<Unit filename="../../../X86_LIBRARIES/STK/stasm/__stasm.h" />
-		<Unit filename="../../../X86_LIBRARIES/STK/text/stk_cstr_manipulation.cpp" />
-		<Unit filename="../../../X86_LIBRARIES/STK/text/stk_cstr_manipulation.h" />
-		<Unit filename="../../../X86_LIBRARIES/STK/threads/stk_threads.cpp" />
-		<Unit filename="../../../X86_LIBRARIES/STK/threads/stk_threads.h" />
+		<Unit filename="../../../X86_LIBRARIES/STK/file/xml/xml.h" />
+		<Unit filename="../../../X86_LIBRARIES/STK/hash/md5/md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../X86_LIBRARIES/STK/hash/sha1/hmac_sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../X86_LIBRARIES/STK/hash/sha1/sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../X86_LIBRARIES/STK/kop32_lib.cpp" />
+		<Unit filename="../../../X86_LIBRARIES/STK/kop32_lib.res" />
+		<Unit filename="../../../X86_LIBRARIES/STK/sthreads/stk_idle.cpp" />
+		<Unit filename="../../../X86_LIBRARIES/STK/sthreads/stk_idle.h" />
+		<Unit filename="../../../X86_LIBRARIES/STK/sthreads/stk_threads.cpp" />
+		<Unit filename="../../../X86_LIBRARIES/STK/sthreads/stk_threads.h" />
+		<Unit filename="../../../X86_LIBRARIES/STK/stk.res" />
+		<Unit filename="../../../X86_LIBRARIES/STK/stk_variable.cpp" />
+		<Unit filename="../../../X86_LIBRARIES/STK/stk_vector.cpp" />
 		<Unit filename="../../../x86_libraries/STK/3D/stk_3Dvector.cpp" />
 		<Unit filename="../../../x86_libraries/STK/3D/stk_3Dvector.h" />
 		<Unit filename="../../../x86_libraries/STK/cipher/FastAESinC/stk_aes.c">
@@ -109,7 +108,6 @@
 		<Unit filename="../../../x86_libraries/STK/file/stk_file_mime_types.h" />
 		<Unit filename="../../../x86_libraries/STK/file/vfs/stk_file_vfs.cpp" />
 		<Unit filename="../../../x86_libraries/STK/file/vfs/stk_file_vfs.h" />
-		<Unit filename="../../../x86_libraries/STK/file/xml/xml.h" />
 		<Unit filename="../../../x86_libraries/STK/file/xml/xml.java" />
 		<Unit filename="../../../x86_libraries/STK/file/zip/example1.c">
 			<Option compilerVar="CC" />
@@ -132,9 +130,6 @@
 		<Unit filename="../../../x86_libraries/STK/file/zip/tinfl.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../x86_libraries/STK/hash/md5/md5.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="../../../x86_libraries/STK/hash/md5/md5.h" />
 		<Unit filename="../../../x86_libraries/STK/hash/md5/md5main.c">
 			<Option compilerVar="CC" />
@@ -142,17 +137,11 @@
 		<Unit filename="../../../x86_libraries/STK/hash/sha1/confighelp.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../x86_libraries/STK/hash/sha1/hmac_sha1.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="../../../x86_libraries/STK/hash/sha1/hmac_sha1.h" />
 		<Unit filename="../../../x86_libraries/STK/hash/sha1/hmac_test.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../../../x86_libraries/STK/hash/sha1/sha.h" />
-		<Unit filename="../../../x86_libraries/STK/hash/sha1/sha1.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="../../../x86_libraries/STK/hash/stk_hash_API.cpp" />
 		<Unit filename="../../../x86_libraries/STK/hash/stk_hash_API.h" />
 		<Unit filename="../../../x86_libraries/STK/hash/stk_hash_crc32.cpp" />
@@ -174,8 +163,6 @@
 		<Unit filename="../../../x86_libraries/STK/io/stk_file_io.h" />
 		<Unit filename="../../../x86_libraries/STK/io/stk_rs232.cpp" />
 		<Unit filename="../../../x86_libraries/STK/io/stk_rs232.h" />
-		<Unit filename="../../../x86_libraries/STK/kop32_lib.cpp" />
-		<Unit filename="../../../x86_libraries/STK/kop32_lib.res" />
 		<Unit filename="../../../x86_libraries/STK/koperek/stk_kop32_API.cpp" />
 		<Unit filename="../../../x86_libraries/STK/koperek/stk_kop32_API.h" />
 		<Unit filename="../../../x86_libraries/STK/koperek/stk_kop32_class.cpp" />
@@ -210,11 +197,7 @@
 		<Unit filename="../../../x86_libraries/STK/stasm/copy_of_stk_MAIN.h" />
 		<Unit filename="../../../x86_libraries/STK/stasm/stk_stasm.cpp" />
 		<Unit filename="../../../x86_libraries/STK/stasm/stk_stasm.h" />
-		<Unit filename="../../../x86_libraries/STK/sthreads/stk_idle.cpp" />
-		<Unit filename="../../../x86_libraries/STK/sthreads/stk_idle.h" />
-		<Unit filename="../../../x86_libraries/STK/sthreads/stk_threads.cpp" />
-		<Unit filename="../../../x86_libraries/STK/sthreads/stk_threads.h" />
-		<Unit filename="../../../x86_libraries/STK/stk.res" />
+		<Unit filename="../../../x86_libraries/STK/stk_MAIN.h" />
 		<Unit filename="../../../x86_libraries/STK/stk_bbtree.cpp" />
 		<Unit filename="../../../x86_libraries/STK/stk_bbtree.h" />
 		<Unit filename="../../../x86_libraries/STK/stk_bitset.cpp" />
@@ -224,16 +207,13 @@
 		<Unit filename="../../../x86_libraries/STK/stk_hash_chain.h" />
 		<Unit filename="../../../x86_libraries/STK/stk_list.cpp" />
 		<Unit filename="../../../x86_libraries/STK/stk_list.h" />
-		<Unit filename="../../../x86_libraries/STK/stk_main.h" />
 		<Unit filename="../../../x86_libraries/STK/stk_map.cpp" />
 		<Unit filename="../../../x86_libraries/STK/stk_map.h" />
 		<Unit filename="../../../x86_libraries/STK/stk_set.cpp" />
 		<Unit filename="../../../x86_libraries/STK/stk_set.h" />
 		<Unit filename="../../../x86_libraries/STK/stk_tree.h" />
-		<Unit filename="../../../x86_libraries/STK/stk_variable.cpp" />
 		<Unit filename="../../../x86_libraries/STK/stk_variable.h" />
 		<Unit filename="../../../x86_libraries/STK/stk_variable.s" />
-		<Unit filename="../../../x86_libraries/STK/stk_vector.cpp" />
 		<Unit filename="../../../x86_libraries/STK/stk_vector.h" />
 		<Unit filename="../../../x86_libraries/STK/text/stk_cstr.h" />
 		<Unit filename="../../../x86_libraries/STK/text/stk_cstr_class.cpp" />
