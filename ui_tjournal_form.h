@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'tjournal_form.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.12.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,12 +10,9 @@
 #define UI_TJOURNAL_FORM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QVBoxLayout>
@@ -35,25 +32,27 @@ public:
     void setupUi(QDialog *TJournal_form)
     {
         if (TJournal_form->objectName().isEmpty())
-            TJournal_form->setObjectName(QStringLiteral("TJournal_form"));
+            TJournal_form->setObjectName(QString::fromUtf8("TJournal_form"));
         TJournal_form->resize(400, 300);
         verticalLayout_2 = new QVBoxLayout(TJournal_form);
-        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        verticalLayout_2->setSpacing(4);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(8, 8, 8, 8);
         verticalLayout = new QVBoxLayout();
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setSizeConstraint(QLayout::SetDefaultConstraint);
         verticalLayout_7 = new QVBoxLayout();
         verticalLayout_7->setSpacing(5);
-        verticalLayout_7->setObjectName(QStringLiteral("verticalLayout_7"));
+        verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
         label_5 = new QLabel(TJournal_form);
-        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setObjectName(QString::fromUtf8("label_5"));
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(label_5->sizePolicy().hasHeightForWidth());
         label_5->setSizePolicy(sizePolicy);
         QFont font;
-        font.setFamily(QStringLiteral("Tahoma"));
+        font.setFamily(QString::fromUtf8("Tahoma"));
         font.setBold(true);
         font.setWeight(75);
         label_5->setFont(font);
@@ -61,7 +60,7 @@ public:
         verticalLayout_7->addWidget(label_5);
 
         listWidget_7 = new QListWidget(TJournal_form);
-        listWidget_7->setObjectName(QStringLiteral("listWidget_7"));
+        listWidget_7->setObjectName(QString::fromUtf8("listWidget_7"));
         QPalette palette;
         QBrush brush(QColor(0, 0, 0, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -82,7 +81,7 @@ public:
         palette.setBrush(QPalette::Disabled, QPalette::Base, brush3);
         listWidget_7->setPalette(palette);
         QFont font1;
-        font1.setFamily(QStringLiteral("Lucida Sans Unicode"));
+        font1.setFamily(QString::fromUtf8("Lucida Sans Unicode"));
         font1.setBold(true);
         font1.setWeight(75);
         listWidget_7->setFont(font1);
@@ -96,7 +95,7 @@ public:
         verticalLayout->addLayout(verticalLayout_7);
 
         buttonBox = new QDialogButtonBox(TJournal_form);
-        buttonBox->setObjectName(QStringLiteral("buttonBox"));
+        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Close|QDialogButtonBox::Ok|QDialogButtonBox::Save);
 
@@ -115,8 +114,8 @@ public:
 
     void retranslateUi(QDialog *TJournal_form)
     {
-        TJournal_form->setWindowTitle(QApplication::translate("TJournal_form", "Dialog", 0));
-        label_5->setText(QApplication::translate("TJournal_form", "Process journal viewer:", 0));
+        TJournal_form->setWindowTitle(QApplication::translate("TJournal_form", "Dialog", nullptr));
+        label_5->setText(QApplication::translate("TJournal_form", "Process journal viewer:", nullptr));
     } // retranslateUi
 
 };

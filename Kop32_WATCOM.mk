@@ -1,3 +1,3 @@
-project : D:\PROGS\CPP\Kop32\Kop32_WATCOM.exe .SYMBOLIC
+project : Z:\SRC\PROGS\CPP\Kop32\Kop32_WATCOM.exe .SYMBOLIC
 
-!include D:\PROGS\CPP\Kop32\Kop32_WATCOM.mk1
+!include Z:\SRC\PROGS\CPP\Kop32\Kop32_WATCOM.mk1

@@ -1,30 +1,31 @@
 !define BLANK ""
-D:\PROGS\CPP\Kop32\Kop32_main.obj : D:\PROGS\CPP\Kop32\Kop32_main.cpp .AUTOD&
+Z:\SRC\PROGS\CPP\Kop32\Kop32_main.obj : Z:\SRC\PROGS\CPP\Kop32\Kop32_main.cp&
+p .AUTODEPEND
+ @Z:
+ cd Z:\SRC\PROGS\CPP\Kop32
+ *wpp386 Kop32_main.cpp -i="C:\WATCOM/h;C:\WATCOM/h/nt;C:/SRC/X86_LIBRARIES/&
+STK" -fh -w1 -e25 -zq -otexan -ob -ol -ol+ -oc -oi -or -oh -om -d2 -hd -db -&
+en -6s -bt=nt -fo=.obj -mf -xs -xr
+
+Z:\SRC\PROGS\CPP\Kop32\stdafx.obj : Z:\SRC\PROGS\CPP\Kop32\stdafx.cpp .AUTOD&
 EPEND
- @D:
- cd D:\PROGS\CPP\Kop32
- *wpp386 Kop32_main.cpp -i="C:\hubiC\CPP\WATCOM/h;C:\hubiC\CPP\WATCOM/h/nt;D&
-:/X86_LIBRARIES/STK" -w0 -e25 -zq -otexan -ob -ol -ol+ -oc -oi -or -oh -om -&
-d2 -hd -db -en -6s -bt=nt -fo=.obj -mf -xs -xr
+ @Z:
+ cd Z:\SRC\PROGS\CPP\Kop32
+ *wpp386 stdafx.cpp -i="C:\WATCOM/h;C:\WATCOM/h/nt;C:/SRC/X86_LIBRARIES/STK"&
+ -fh -w1 -e25 -zq -otexan -ob -ol -ol+ -oc -oi -or -oh -om -d2 -hd -db -en -&
+6s -bt=nt -fo=.obj -mf -xs -xr
 
-D:\PROGS\CPP\Kop32\stdafx.obj : D:\PROGS\CPP\Kop32\stdafx.cpp .AUTODEPEND
- @D:
- cd D:\PROGS\CPP\Kop32
- *wpp386 stdafx.cpp -i="C:\hubiC\CPP\WATCOM/h;C:\hubiC\CPP\WATCOM/h/nt;D:/X8&
-6_LIBRARIES/STK" -w0 -e25 -zq -otexan -ob -ol -ol+ -oc -oi -or -oh -om -d2 -&
-hd -db -en -6s -bt=nt -fo=.obj -mf -xs -xr
-
-D:\PROGS\CPP\Kop32\Kop32_WATCOM.exe : D:\PROGS\CPP\Kop32\Kop32_main.obj D:\P&
-ROGS\CPP\Kop32\stdafx.obj D:\WATCOM\lib386\nt\advapi32.lib D:\WATCOM\lib386\&
-nt\crypt32.lib D:\WATCOM\lib386\nt\winmm.lib D:\WATCOM\lib386\nt\ws2_32.lib &
-D:\WATCOM\lib386\nt\wsock32.lib D:\X86_LIBRARIES\STK\stk_WATCOM.lib .AUTODEP&
-END
- @D:
- cd D:\PROGS\CPP\Kop32
+Z:\SRC\PROGS\CPP\Kop32\Kop32_WATCOM.exe : Z:\SRC\PROGS\CPP\Kop32\Kop32_main.&
+obj Z:\SRC\PROGS\CPP\Kop32\stdafx.obj Z:\WATCOM\lib386\nt\advapi32.lib Z:\WA&
+TCOM\lib386\nt\crypt32.lib Z:\WATCOM\lib386\nt\winmm.lib Z:\WATCOM\lib386\nt&
+\ws2_32.lib Z:\WATCOM\lib386\nt\wsock32.lib Z:\SRC\X86_LIBRARIES\STK\stk_WAT&
+COM.lib .AUTODEPEND
+ @Z:
+ cd Z:\SRC\PROGS\CPP\Kop32
  @%write Kop32_WATCOM.lk1 FIL Kop32_main.obj,stdafx.obj
  @%append Kop32_WATCOM.lk1 LIBR \WATCOM\lib386\nt\advapi32.lib,\WATCOM\lib38&
 6\nt\crypt32.lib,\WATCOM\lib386\nt\winmm.lib,\WATCOM\lib386\nt\ws2_32.lib,\W&
-ATCOM\lib386\nt\wsock32.lib,\X86_LIBRARIES\STK\stk_WATCOM.lib
+ATCOM\lib386\nt\wsock32.lib,..\..\..\X86_LIBRARIES\STK\stk_WATCOM.lib
 !ifneq BLANK ""
  *wlib -q -n -b Kop32_WATCOM.imp 
  @%append Kop32_WATCOM.lk1 LIBR Kop32_WATCOM.imp
@@ -32,6 +33,6 @@ ATCOM\lib386\nt\wsock32.lib,\X86_LIBRARIES\STK\stk_WATCOM.lib
 !ifneq BLANK ""
  @%append Kop32_WATCOM.lk1 
 !endif
- *wlink name Kop32_WATCOM d all sys nt_win op m libr crypt32 op c op maxe=25&
- op u op q op symf op el @Kop32_WATCOM.lk1
+ *wlink name Kop32_WATCOM d all sys nt op m libr crypt32 op c op maxe=25 op &
+u op q op symf op el @Kop32_WATCOM.lk1
 

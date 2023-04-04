@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'tpassword_form.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.12.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,15 +10,13 @@
 #define UI_TPASSWORD_FORM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QSpacerItem>
@@ -45,12 +43,12 @@ public:
     void setupUi(QDialog *TPassword_form)
     {
         if (TPassword_form->objectName().isEmpty())
-            TPassword_form->setObjectName(QStringLiteral("TPassword_form"));
+            TPassword_form->setObjectName(QString::fromUtf8("TPassword_form"));
         TPassword_form->resize(400, 275);
         verticalLayout = new QVBoxLayout(TPassword_form);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         graphicsView = new QGraphicsView(TPassword_form);
-        graphicsView->setObjectName(QStringLiteral("graphicsView"));
+        graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
         graphicsView->setFrameShape(QFrame::Box);
         graphicsView->setFrameShadow(QFrame::Plain);
         graphicsView->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -59,7 +57,7 @@ public:
         verticalLayout->addWidget(graphicsView);
 
         label_2 = new QLabel(TPassword_form);
-        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setObjectName(QString::fromUtf8("label_2"));
         QFont font;
         font.setBold(true);
         font.setWeight(75);
@@ -68,37 +66,37 @@ public:
         verticalLayout->addWidget(label_2);
 
         lineEdit = new QLineEdit(TPassword_form);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
 
         verticalLayout->addWidget(lineEdit);
 
         label = new QLabel(TPassword_form);
-        label->setObjectName(QStringLiteral("label"));
+        label->setObjectName(QString::fromUtf8("label"));
         label->setFont(font);
         label->setLayoutDirection(Qt::LeftToRight);
 
         verticalLayout->addWidget(label);
 
         lineEdit_2 = new QLineEdit(TPassword_form);
-        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
 
         verticalLayout->addWidget(lineEdit_2);
 
         checkBox = new QCheckBox(TPassword_form);
-        checkBox->setObjectName(QStringLiteral("checkBox"));
+        checkBox->setObjectName(QString::fromUtf8("checkBox"));
         checkBox->setFont(font);
         checkBox->setLayoutDirection(Qt::RightToLeft);
 
         verticalLayout->addWidget(checkBox);
 
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(-1, 0, -1, -1);
         toolButton = new QToolButton(TPassword_form);
-        toolButton->setObjectName(QStringLiteral("toolButton"));
-        toolButton->setMinimumSize(QSize(45, 45));
+        toolButton->setObjectName(QString::fromUtf8("toolButton"));
+        toolButton->setMinimumSize(QSize(50, 42));
         QIcon icon;
-        icon.addFile(QStringLiteral(":/new/prefix1/ICO/Icon8.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/new/prefix1/ICO/Icon7.ico"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton->setIcon(icon);
         toolButton->setIconSize(QSize(32, 32));
         toolButton->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
@@ -114,7 +112,7 @@ public:
         verticalLayout->addLayout(horizontalLayout);
 
         buttonBox = new QDialogButtonBox(TPassword_form);
-        buttonBox->setObjectName(QStringLiteral("buttonBox"));
+        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
 
@@ -130,11 +128,14 @@ public:
 
     void retranslateUi(QDialog *TPassword_form)
     {
-        TPassword_form->setWindowTitle(QApplication::translate("TPassword_form", "Koperek32::Enter Password!", 0));
-        label_2->setText(QApplication::translate("TPassword_form", "Set password:", 0));
-        label->setText(QApplication::translate("TPassword_form", "Repeat:", 0));
-        checkBox->setText(QApplication::translate("TPassword_form", "Show text", 0));
-        toolButton->setText(QApplication::translate("TPassword_form", "OR LOAD/SAVE IT FROM...", 0));
+        TPassword_form->setWindowTitle(QApplication::translate("TPassword_form", "Koperek32::Enter Password!", nullptr));
+        label_2->setText(QApplication::translate("TPassword_form", "Set password:", nullptr));
+        label->setText(QApplication::translate("TPassword_form", "Repeat:", nullptr));
+        checkBox->setText(QApplication::translate("TPassword_form", "Show text", nullptr));
+        toolButton->setText(QApplication::translate("TPassword_form", "Load/Save It From/To...", nullptr));
+#ifndef QT_NO_SHORTCUT
+        toolButton->setShortcut(QApplication::translate("TPassword_form", "2, 4, Return", nullptr));
+#endif // QT_NO_SHORTCUT
     } // retranslateUi
 
 };

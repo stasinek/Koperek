@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'tabout_form.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.12.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,14 +10,11 @@
 #define UI_TABOUT_FORM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QFrame>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QVBoxLayout>
@@ -37,16 +34,16 @@ public:
     void setupUi(QDialog *TAbout_form)
     {
         if (TAbout_form->objectName().isEmpty())
-            TAbout_form->setObjectName(QStringLiteral("TAbout_form"));
+            TAbout_form->setObjectName(QString::fromUtf8("TAbout_form"));
         TAbout_form->setWindowModality(Qt::NonModal);
         TAbout_form->resize(424, 294);
         TAbout_form->setModal(false);
         verticalLayout = new QVBoxLayout(TAbout_form);
         verticalLayout->setSpacing(4);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        verticalLayout->setContentsMargins(4, 4, 4, 4);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(8, 8, 8, 8);
         label = new QLabel(TAbout_form);
-        label->setObjectName(QStringLiteral("label"));
+        label->setObjectName(QString::fromUtf8("label"));
         label->setContextMenuPolicy(Qt::NoContextMenu);
         label->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/BMP/logo2_mini.bmp")));
         label->setScaledContents(false);
@@ -54,27 +51,27 @@ public:
         verticalLayout->addWidget(label);
 
         textBrowser = new QTextBrowser(TAbout_form);
-        textBrowser->setObjectName(QStringLiteral("textBrowser"));
+        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
         textBrowser->setAcceptRichText(false);
-        textBrowser->setSource(QUrl(QStringLiteral("qrc:/new/prefix1/Koperek32_license.txt")));
+        textBrowser->setSource(QUrl(QString::fromUtf8("qrc:/new/prefix1/Koperek32_license.txt")));
 
         verticalLayout->addWidget(textBrowser);
 
         checkBox = new QCheckBox(TAbout_form);
-        checkBox->setObjectName(QStringLiteral("checkBox"));
+        checkBox->setObjectName(QString::fromUtf8("checkBox"));
         checkBox->setContextMenuPolicy(Qt::NoContextMenu);
 
         verticalLayout->addWidget(checkBox);
 
         line = new QFrame(TAbout_form);
-        line->setObjectName(QStringLiteral("line"));
+        line->setObjectName(QString::fromUtf8("line"));
         line->setFrameShape(QFrame::HLine);
         line->setFrameShadow(QFrame::Sunken);
 
         verticalLayout->addWidget(line);
 
         buttonBox = new QDialogButtonBox(TAbout_form);
-        buttonBox->setObjectName(QStringLiteral("buttonBox"));
+        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
         buttonBox->setContextMenuPolicy(Qt::NoContextMenu);
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
@@ -91,9 +88,9 @@ public:
 
     void retranslateUi(QDialog *TAbout_form)
     {
-        TAbout_form->setWindowTitle(QApplication::translate("TAbout_form", "Koperek32::About the autor", 0));
+        TAbout_form->setWindowTitle(QApplication::translate("TAbout_form", "Koperek32::About the autor", nullptr));
         label->setText(QString());
-        checkBox->setText(QApplication::translate("TAbout_form", "I understand and accept the license from above!", 0));
+        checkBox->setText(QApplication::translate("TAbout_form", "I understand and accept the license from above!", nullptr));
     } // retranslateUi
 
 };

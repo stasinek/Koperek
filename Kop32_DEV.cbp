@@ -4,13 +4,15 @@
 	<Project>
 		<Option title="Kop32_DEV" />
 		<Option pch_mode="2" />
-		<Option compiler="msvc10" />
+		<Option compiler="bcc" />
 		<Build>
 			<Target title="default">
 				<Option output="Kop32_DEV" prefix_auto="1" extension_auto="1" />
 				<Option type="1" />
-				<Option compiler="msvc10" />
+				<Option compiler="ow" />
 				<Compiler>
+					<Add option="-bt=windows" />
+					<Add option="-bcl=windows" />
 					<Add directory="../../../x86_libraries/STK" />
 				</Compiler>
 			</Target>
@@ -33,6 +35,9 @@
 			<Add library="gomp" />
 		</Linker>
 		<Unit filename="../../../X86_LIBRARIES/STK/file/xml/xml.h" />
+		<Unit filename="../../../X86_LIBRARIES/STK/file/zip/miniz.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="../../../X86_LIBRARIES/STK/hash/md5/md5.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -44,6 +49,7 @@
 		</Unit>
 		<Unit filename="../../../X86_LIBRARIES/STK/kop32_lib.cpp" />
 		<Unit filename="../../../X86_LIBRARIES/STK/kop32_lib.res" />
+		<Unit filename="../../../X86_LIBRARIES/STK/stasm/copy_of_stk_MAIN.h" />
 		<Unit filename="../../../X86_LIBRARIES/STK/sthreads/stk_idle.cpp" />
 		<Unit filename="../../../X86_LIBRARIES/STK/sthreads/stk_idle.h" />
 		<Unit filename="../../../X86_LIBRARIES/STK/sthreads/stk_threads.cpp" />
@@ -51,6 +57,7 @@
 		<Unit filename="../../../X86_LIBRARIES/STK/stk.res" />
 		<Unit filename="../../../X86_LIBRARIES/STK/stk_variable.cpp" />
 		<Unit filename="../../../X86_LIBRARIES/STK/stk_vector.cpp" />
+		<Unit filename="../../../X86_LIBRARIES/STK/text/stk_cstr_utils[Conflict].cpp" />
 		<Unit filename="../../../x86_libraries/STK/3D/stk_3Dvector.cpp" />
 		<Unit filename="../../../x86_libraries/STK/3D/stk_3Dvector.h" />
 		<Unit filename="../../../x86_libraries/STK/cipher/FastAESinC/stk_aes.c">
@@ -124,9 +131,6 @@
 		<Unit filename="../../../x86_libraries/STK/file/zip/example5.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="../../../x86_libraries/STK/file/zip/miniz.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="../../../x86_libraries/STK/file/zip/tinfl.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -194,10 +198,8 @@
 		<Unit filename="../../../x86_libraries/STK/process_journal/stk_journal.h" />
 		<Unit filename="../../../x86_libraries/STK/sockets/stk_sockets.cpp" />
 		<Unit filename="../../../x86_libraries/STK/sockets/stk_sockets.h" />
-		<Unit filename="../../../x86_libraries/STK/stasm/copy_of_stk_MAIN.h" />
 		<Unit filename="../../../x86_libraries/STK/stasm/stk_stasm.cpp" />
 		<Unit filename="../../../x86_libraries/STK/stasm/stk_stasm.h" />
-		<Unit filename="../../../x86_libraries/STK/stk_MAIN.h" />
 		<Unit filename="../../../x86_libraries/STK/stk_bbtree.cpp" />
 		<Unit filename="../../../x86_libraries/STK/stk_bbtree.h" />
 		<Unit filename="../../../x86_libraries/STK/stk_bitset.cpp" />
@@ -207,6 +209,7 @@
 		<Unit filename="../../../x86_libraries/STK/stk_hash_chain.h" />
 		<Unit filename="../../../x86_libraries/STK/stk_list.cpp" />
 		<Unit filename="../../../x86_libraries/STK/stk_list.h" />
+		<Unit filename="../../../x86_libraries/STK/stk_main.h" />
 		<Unit filename="../../../x86_libraries/STK/stk_map.cpp" />
 		<Unit filename="../../../x86_libraries/STK/stk_map.h" />
 		<Unit filename="../../../x86_libraries/STK/stk_set.cpp" />
@@ -222,7 +225,6 @@
 		<Unit filename="../../../x86_libraries/STK/text/stk_cstr_stack.h" />
 		<Unit filename="../../../x86_libraries/STK/text/stk_cstr_utils.cpp" />
 		<Unit filename="../../../x86_libraries/STK/text/stk_cstr_utils.h" />
-		<Unit filename="../../../x86_libraries/STK/text/stk_cstr_utils[Conflict].cpp" />
 		<Unit filename="../../../x86_libraries/STK/time/stk_time.cpp" />
 		<Unit filename="../../../x86_libraries/STK/time/stk_time.h" />
 		<Unit filename="../../../x86_libraries/STK/uuidxx/uuidxx.cpp" />
