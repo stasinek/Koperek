@@ -1,3 +1,5 @@
 USERES("Kop32_BCB.res");
+USEUNIT("Kop32_main.cpp");
+USEUNIT("stdafx.cpp");
 //---------------------------------------------------------------------------
 This file is used by the project manager only and should be treated like the project file main

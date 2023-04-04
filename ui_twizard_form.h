@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'twizard_form.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.12.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,16 +10,13 @@
 #define UI_TWIZARD_FORM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
@@ -132,22 +129,22 @@ public:
     void setupUi(QDialog *TWizard_form)
     {
         if (TWizard_form->objectName().isEmpty())
-            TWizard_form->setObjectName(QStringLiteral("TWizard_form"));
+            TWizard_form->setObjectName(QString::fromUtf8("TWizard_form"));
         TWizard_form->setWindowModality(Qt::ApplicationModal);
         TWizard_form->resize(553, 508);
         verticalLayout = new QVBoxLayout(TWizard_form);
         verticalLayout->setSpacing(4);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(4, 4, 4, 4);
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(8);
-        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(-1, 4, -1, -1);
         verticalLayout_11 = new QVBoxLayout();
-        verticalLayout_11->setObjectName(QStringLiteral("verticalLayout_11"));
+        verticalLayout_11->setObjectName(QString::fromUtf8("verticalLayout_11"));
         verticalLayout_11->setContentsMargins(2, 2, 2, 2);
         widget = new QWidget(TWizard_form);
-        widget->setObjectName(QStringLiteral("widget"));
+        widget->setObjectName(QString::fromUtf8("widget"));
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -155,16 +152,16 @@ public:
         widget->setSizePolicy(sizePolicy);
         widget->setMinimumSize(QSize(135, 260));
         widget->setMaximumSize(QSize(135, 260));
-        widget->setStyleSheet(QStringLiteral("background-image: url(:/new/prefix1/BMP/LEFT.BMP);"));
+        widget->setStyleSheet(QString::fromUtf8("background-image: url(:/new/prefix1/BMP/LEFT.BMP);"));
         label_2 = new QLabel(widget);
-        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(67, 22, 48, 48));
         sizePolicy.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
         label_2->setSizePolicy(sizePolicy);
         label_2->setMinimumSize(QSize(48, 48));
         label_2->setMaximumSize(QSize(48, 48));
         label_2->setAutoFillBackground(false);
-        label_2->setStyleSheet(QStringLiteral("background-color: rgb(255, 255, 255);"));
+        label_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         label_2->setFrameShape(QFrame::NoFrame);
         label_2->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/ICO/8.ICO")));
         label_2->setScaledContents(false);
@@ -181,10 +178,10 @@ public:
         horizontalLayout_2->addLayout(verticalLayout_11);
 
         verticalLayout_2 = new QVBoxLayout();
-        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(-1, -1, -1, 6);
         label = new QLabel(TWizard_form);
-        label->setObjectName(QStringLiteral("label"));
+        label->setObjectName(QString::fromUtf8("label"));
         QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
@@ -201,16 +198,16 @@ public:
         verticalLayout_2->addWidget(label);
 
         tabWidget = new QTabWidget(TWizard_form);
-        tabWidget->setObjectName(QStringLiteral("tabWidget"));
+        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         tabWidget->setTabShape(QTabWidget::Rounded);
         tabWidget->setDocumentMode(true);
         tabWidget->setTabsClosable(false);
         tab_6 = new QWidget();
-        tab_6->setObjectName(QStringLiteral("tab_6"));
+        tab_6->setObjectName(QString::fromUtf8("tab_6"));
         verticalLayout_14 = new QVBoxLayout(tab_6);
-        verticalLayout_14->setObjectName(QStringLiteral("verticalLayout_14"));
+        verticalLayout_14->setObjectName(QString::fromUtf8("verticalLayout_14"));
         listWidget = new QListWidget(tab_6);
-        listWidget->setObjectName(QStringLiteral("listWidget"));
+        listWidget->setObjectName(QString::fromUtf8("listWidget"));
         listWidget->setFrameShape(QFrame::Box);
         listWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
         listWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
@@ -219,29 +216,29 @@ public:
 
         tabWidget->addTab(tab_6, QString());
         tab = new QWidget();
-        tab->setObjectName(QStringLiteral("tab"));
+        tab->setObjectName(QString::fromUtf8("tab"));
         verticalLayout_4 = new QVBoxLayout(tab);
-        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
+        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
         verticalLayout_3 = new QVBoxLayout();
-        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         label_3 = new QLabel(tab);
-        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setObjectName(QString::fromUtf8("label_3"));
 
         verticalLayout_3->addWidget(label_3);
 
         lineEdit_2 = new QLineEdit(tab);
-        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
         lineEdit_2->setClearButtonEnabled(false);
 
         verticalLayout_3->addWidget(lineEdit_2);
 
         label_4 = new QLabel(tab);
-        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setObjectName(QString::fromUtf8("label_4"));
 
         verticalLayout_3->addWidget(label_4);
 
         lineEdit = new QLineEdit(tab);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
 
         verticalLayout_3->addWidget(lineEdit);
 
@@ -250,24 +247,24 @@ public:
         verticalLayout_3->addItem(verticalSpacer_2);
 
         label_5 = new QLabel(tab);
-        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setObjectName(QString::fromUtf8("label_5"));
 
         verticalLayout_3->addWidget(label_5);
 
         horizontalLayout_4 = new QHBoxLayout();
-        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
+        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
         comboBox = new QComboBox(tab);
-        comboBox->setObjectName(QStringLiteral("comboBox"));
+        comboBox->setObjectName(QString::fromUtf8("comboBox"));
 
         horizontalLayout_4->addWidget(comboBox);
 
         toolButton_3 = new QToolButton(tab);
-        toolButton_3->setObjectName(QStringLiteral("toolButton_3"));
+        toolButton_3->setObjectName(QString::fromUtf8("toolButton_3"));
 
         horizontalLayout_4->addWidget(toolButton_3);
 
         toolButton_5 = new QToolButton(tab);
-        toolButton_5->setObjectName(QStringLiteral("toolButton_5"));
+        toolButton_5->setObjectName(QString::fromUtf8("toolButton_5"));
 
         horizontalLayout_4->addWidget(toolButton_5);
 
@@ -275,24 +272,24 @@ public:
         verticalLayout_3->addLayout(horizontalLayout_4);
 
         label_6 = new QLabel(tab);
-        label_6->setObjectName(QStringLiteral("label_6"));
+        label_6->setObjectName(QString::fromUtf8("label_6"));
 
         verticalLayout_3->addWidget(label_6);
 
         horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         comboBox_2 = new QComboBox(tab);
-        comboBox_2->setObjectName(QStringLiteral("comboBox_2"));
+        comboBox_2->setObjectName(QString::fromUtf8("comboBox_2"));
 
         horizontalLayout_3->addWidget(comboBox_2);
 
         toolButton_4 = new QToolButton(tab);
-        toolButton_4->setObjectName(QStringLiteral("toolButton_4"));
+        toolButton_4->setObjectName(QString::fromUtf8("toolButton_4"));
 
         horizontalLayout_3->addWidget(toolButton_4);
 
         toolButton_6 = new QToolButton(tab);
-        toolButton_6->setObjectName(QStringLiteral("toolButton_6"));
+        toolButton_6->setObjectName(QString::fromUtf8("toolButton_6"));
 
         horizontalLayout_3->addWidget(toolButton_6);
 
@@ -300,25 +297,25 @@ public:
         verticalLayout_3->addLayout(horizontalLayout_3);
 
         horizontalLayout_7 = new QHBoxLayout();
-        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
+        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
         horizontalLayout_7->setContentsMargins(-1, 5, -1, -1);
 
         verticalLayout_3->addLayout(horizontalLayout_7);
 
         checkBox_7 = new QCheckBox(tab);
-        checkBox_7->setObjectName(QStringLiteral("checkBox_7"));
+        checkBox_7->setObjectName(QString::fromUtf8("checkBox_7"));
         checkBox_7->setEnabled(false);
 
         verticalLayout_3->addWidget(checkBox_7);
 
         checkBox_15 = new QCheckBox(tab);
-        checkBox_15->setObjectName(QStringLiteral("checkBox_15"));
+        checkBox_15->setObjectName(QString::fromUtf8("checkBox_15"));
         checkBox_15->setEnabled(false);
 
         verticalLayout_3->addWidget(checkBox_15);
 
         checkBox_16 = new QCheckBox(tab);
-        checkBox_16->setObjectName(QStringLiteral("checkBox_16"));
+        checkBox_16->setObjectName(QString::fromUtf8("checkBox_16"));
 
         verticalLayout_3->addWidget(checkBox_16);
 
@@ -327,38 +324,48 @@ public:
 
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
-        tab_2->setObjectName(QStringLiteral("tab_2"));
+        tab_2->setObjectName(QString::fromUtf8("tab_2"));
         verticalLayout_6 = new QVBoxLayout(tab_2);
-        verticalLayout_6->setObjectName(QStringLiteral("verticalLayout_6"));
+        verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
         verticalLayout_5 = new QVBoxLayout();
-        verticalLayout_5->setObjectName(QStringLiteral("verticalLayout_5"));
+        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
         comboBox_5 = new QComboBox(tab_2);
-        comboBox_5->setObjectName(QStringLiteral("comboBox_5"));
+        comboBox_5->addItem(QString());
+        comboBox_5->addItem(QString());
+        comboBox_5->addItem(QString());
+        comboBox_5->addItem(QString());
+        comboBox_5->addItem(QString());
+        comboBox_5->addItem(QString());
+        comboBox_5->setObjectName(QString::fromUtf8("comboBox_5"));
 
         verticalLayout_5->addWidget(comboBox_5);
 
         line_4 = new QFrame(tab_2);
-        line_4->setObjectName(QStringLiteral("line_4"));
+        line_4->setObjectName(QString::fromUtf8("line_4"));
         line_4->setFrameShape(QFrame::HLine);
         line_4->setFrameShadow(QFrame::Sunken);
 
         verticalLayout_5->addWidget(line_4);
 
         checkBox_2 = new QCheckBox(tab_2);
-        checkBox_2->setObjectName(QStringLiteral("checkBox_2"));
+        checkBox_2->setObjectName(QString::fromUtf8("checkBox_2"));
 
         verticalLayout_5->addWidget(checkBox_2);
 
         horizontalLayout_5 = new QHBoxLayout();
-        horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
+        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
         label_7 = new QLabel(tab_2);
-        label_7->setObjectName(QStringLiteral("label_7"));
+        label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_5->addWidget(label_7);
 
         comboBox_3 = new QComboBox(tab_2);
-        comboBox_3->setObjectName(QStringLiteral("comboBox_3"));
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->setObjectName(QString::fromUtf8("comboBox_3"));
 
         horizontalLayout_5->addWidget(comboBox_3);
 
@@ -366,27 +373,31 @@ public:
         verticalLayout_5->addLayout(horizontalLayout_5);
 
         line_2 = new QFrame(tab_2);
-        line_2->setObjectName(QStringLiteral("line_2"));
+        line_2->setObjectName(QString::fromUtf8("line_2"));
         line_2->setFrameShape(QFrame::HLine);
         line_2->setFrameShadow(QFrame::Sunken);
 
         verticalLayout_5->addWidget(line_2);
 
         checkBox = new QCheckBox(tab_2);
-        checkBox->setObjectName(QStringLiteral("checkBox"));
+        checkBox->setObjectName(QString::fromUtf8("checkBox"));
 
         verticalLayout_5->addWidget(checkBox);
 
         horizontalLayout_6 = new QHBoxLayout();
-        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
+        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
         label_10 = new QLabel(tab_2);
-        label_10->setObjectName(QStringLiteral("label_10"));
+        label_10->setObjectName(QString::fromUtf8("label_10"));
         label_10->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_6->addWidget(label_10);
 
         comboBox_4 = new QComboBox(tab_2);
-        comboBox_4->setObjectName(QStringLiteral("comboBox_4"));
+        comboBox_4->addItem(QString());
+        comboBox_4->addItem(QString());
+        comboBox_4->addItem(QString());
+        comboBox_4->addItem(QString());
+        comboBox_4->setObjectName(QString::fromUtf8("comboBox_4"));
 
         horizontalLayout_6->addWidget(comboBox_4);
 
@@ -394,43 +405,43 @@ public:
         verticalLayout_5->addLayout(horizontalLayout_6);
 
         line_3 = new QFrame(tab_2);
-        line_3->setObjectName(QStringLiteral("line_3"));
+        line_3->setObjectName(QString::fromUtf8("line_3"));
         line_3->setFrameShape(QFrame::HLine);
         line_3->setFrameShadow(QFrame::Sunken);
 
         verticalLayout_5->addWidget(line_3);
 
         checkBox_3 = new QCheckBox(tab_2);
-        checkBox_3->setObjectName(QStringLiteral("checkBox_3"));
+        checkBox_3->setObjectName(QString::fromUtf8("checkBox_3"));
 
         verticalLayout_5->addWidget(checkBox_3);
 
         line_5 = new QFrame(tab_2);
-        line_5->setObjectName(QStringLiteral("line_5"));
+        line_5->setObjectName(QString::fromUtf8("line_5"));
         line_5->setFrameShape(QFrame::HLine);
         line_5->setFrameShadow(QFrame::Sunken);
 
         verticalLayout_5->addWidget(line_5);
 
         checkBox_4 = new QCheckBox(tab_2);
-        checkBox_4->setObjectName(QStringLiteral("checkBox_4"));
+        checkBox_4->setObjectName(QString::fromUtf8("checkBox_4"));
 
         verticalLayout_5->addWidget(checkBox_4);
 
         checkBox_5 = new QCheckBox(tab_2);
-        checkBox_5->setObjectName(QStringLiteral("checkBox_5"));
+        checkBox_5->setObjectName(QString::fromUtf8("checkBox_5"));
 
         verticalLayout_5->addWidget(checkBox_5);
 
         line_6 = new QFrame(tab_2);
-        line_6->setObjectName(QStringLiteral("line_6"));
+        line_6->setObjectName(QString::fromUtf8("line_6"));
         line_6->setFrameShape(QFrame::HLine);
         line_6->setFrameShadow(QFrame::Sunken);
 
         verticalLayout_5->addWidget(line_6);
 
         checkBox_6 = new QCheckBox(tab_2);
-        checkBox_6->setObjectName(QStringLiteral("checkBox_6"));
+        checkBox_6->setObjectName(QString::fromUtf8("checkBox_6"));
 
         verticalLayout_5->addWidget(checkBox_6);
 
@@ -439,7 +450,7 @@ public:
         verticalLayout_5->addItem(verticalSpacer_3);
 
         toolButton_7 = new QToolButton(tab_2);
-        toolButton_7->setObjectName(QStringLiteral("toolButton_7"));
+        toolButton_7->setObjectName(QString::fromUtf8("toolButton_7"));
 
         verticalLayout_5->addWidget(toolButton_7, 0, Qt::AlignRight);
 
@@ -448,23 +459,23 @@ public:
 
         tabWidget->addTab(tab_2, QString());
         tab_3 = new QWidget();
-        tab_3->setObjectName(QStringLiteral("tab_3"));
+        tab_3->setObjectName(QString::fromUtf8("tab_3"));
         verticalLayout_8 = new QVBoxLayout(tab_3);
-        verticalLayout_8->setObjectName(QStringLiteral("verticalLayout_8"));
+        verticalLayout_8->setObjectName(QString::fromUtf8("verticalLayout_8"));
         verticalLayout_7 = new QVBoxLayout();
-        verticalLayout_7->setObjectName(QStringLiteral("verticalLayout_7"));
+        verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
         checkBox_8 = new QCheckBox(tab_3);
-        checkBox_8->setObjectName(QStringLiteral("checkBox_8"));
+        checkBox_8->setObjectName(QString::fromUtf8("checkBox_8"));
 
         verticalLayout_7->addWidget(checkBox_8);
 
         checkBox_9 = new QCheckBox(tab_3);
-        checkBox_9->setObjectName(QStringLiteral("checkBox_9"));
+        checkBox_9->setObjectName(QString::fromUtf8("checkBox_9"));
 
         verticalLayout_7->addWidget(checkBox_9);
 
         checkBox_10 = new QCheckBox(tab_3);
-        checkBox_10->setObjectName(QStringLiteral("checkBox_10"));
+        checkBox_10->setObjectName(QString::fromUtf8("checkBox_10"));
 
         verticalLayout_7->addWidget(checkBox_10);
 
@@ -473,22 +484,22 @@ public:
         verticalLayout_7->addItem(verticalSpacer);
 
         label_8 = new QLabel(tab_3);
-        label_8->setObjectName(QStringLiteral("label_8"));
+        label_8->setObjectName(QString::fromUtf8("label_8"));
 
         verticalLayout_7->addWidget(label_8);
 
         lineEdit_4 = new QLineEdit(tab_3);
-        lineEdit_4->setObjectName(QStringLiteral("lineEdit_4"));
+        lineEdit_4->setObjectName(QString::fromUtf8("lineEdit_4"));
 
         verticalLayout_7->addWidget(lineEdit_4);
 
         label_9 = new QLabel(tab_3);
-        label_9->setObjectName(QStringLiteral("label_9"));
+        label_9->setObjectName(QString::fromUtf8("label_9"));
 
         verticalLayout_7->addWidget(label_9);
 
         lineEdit_3 = new QLineEdit(tab_3);
-        lineEdit_3->setObjectName(QStringLiteral("lineEdit_3"));
+        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
 
         verticalLayout_7->addWidget(lineEdit_3);
 
@@ -497,28 +508,28 @@ public:
 
         tabWidget->addTab(tab_3, QString());
         tab_4 = new QWidget();
-        tab_4->setObjectName(QStringLiteral("tab_4"));
+        tab_4->setObjectName(QString::fromUtf8("tab_4"));
         verticalLayout_10 = new QVBoxLayout(tab_4);
-        verticalLayout_10->setObjectName(QStringLiteral("verticalLayout_10"));
+        verticalLayout_10->setObjectName(QString::fromUtf8("verticalLayout_10"));
         verticalLayout_9 = new QVBoxLayout();
-        verticalLayout_9->setObjectName(QStringLiteral("verticalLayout_9"));
+        verticalLayout_9->setObjectName(QString::fromUtf8("verticalLayout_9"));
         checkBox_11 = new QCheckBox(tab_4);
-        checkBox_11->setObjectName(QStringLiteral("checkBox_11"));
+        checkBox_11->setObjectName(QString::fromUtf8("checkBox_11"));
 
         verticalLayout_9->addWidget(checkBox_11);
 
         checkBox_14 = new QCheckBox(tab_4);
-        checkBox_14->setObjectName(QStringLiteral("checkBox_14"));
+        checkBox_14->setObjectName(QString::fromUtf8("checkBox_14"));
 
         verticalLayout_9->addWidget(checkBox_14);
 
         checkBox_13 = new QCheckBox(tab_4);
-        checkBox_13->setObjectName(QStringLiteral("checkBox_13"));
+        checkBox_13->setObjectName(QString::fromUtf8("checkBox_13"));
 
         verticalLayout_9->addWidget(checkBox_13);
 
         checkBox_12 = new QCheckBox(tab_4);
-        checkBox_12->setObjectName(QStringLiteral("checkBox_12"));
+        checkBox_12->setObjectName(QString::fromUtf8("checkBox_12"));
 
         verticalLayout_9->addWidget(checkBox_12);
 
@@ -531,21 +542,25 @@ public:
 
         tabWidget->addTab(tab_4, QString());
         tab_5 = new QWidget();
-        tab_5->setObjectName(QStringLiteral("tab_5"));
+        tab_5->setObjectName(QString::fromUtf8("tab_5"));
         verticalLayout_13 = new QVBoxLayout(tab_5);
-        verticalLayout_13->setObjectName(QStringLiteral("verticalLayout_13"));
+        verticalLayout_13->setObjectName(QString::fromUtf8("verticalLayout_13"));
         verticalLayout_12 = new QVBoxLayout();
-        verticalLayout_12->setObjectName(QStringLiteral("verticalLayout_12"));
+        verticalLayout_12->setObjectName(QString::fromUtf8("verticalLayout_12"));
         horizontalLayout_8 = new QHBoxLayout();
-        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
+        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
         horizontalLayout_8->setContentsMargins(-1, 5, -1, -1);
         label_11 = new QLabel(tab_5);
-        label_11->setObjectName(QStringLiteral("label_11"));
+        label_11->setObjectName(QString::fromUtf8("label_11"));
 
         horizontalLayout_8->addWidget(label_11);
 
         comboBox_6 = new QComboBox(tab_5);
-        comboBox_6->setObjectName(QStringLiteral("comboBox_6"));
+        comboBox_6->addItem(QString());
+        comboBox_6->addItem(QString());
+        comboBox_6->addItem(QString());
+        comboBox_6->addItem(QString());
+        comboBox_6->setObjectName(QString::fromUtf8("comboBox_6"));
 
         horizontalLayout_8->addWidget(comboBox_6);
 
@@ -553,15 +568,16 @@ public:
         verticalLayout_12->addLayout(horizontalLayout_8);
 
         horizontalLayout_9 = new QHBoxLayout();
-        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
+        horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
         horizontalLayout_9->setContentsMargins(-1, 5, -1, -1);
         label_12 = new QLabel(tab_5);
-        label_12->setObjectName(QStringLiteral("label_12"));
+        label_12->setObjectName(QString::fromUtf8("label_12"));
 
         horizontalLayout_9->addWidget(label_12);
 
         comboBox_7 = new QComboBox(tab_5);
-        comboBox_7->setObjectName(QStringLiteral("comboBox_7"));
+        comboBox_7->addItem(QString());
+        comboBox_7->setObjectName(QString::fromUtf8("comboBox_7"));
 
         horizontalLayout_9->addWidget(comboBox_7);
 
@@ -580,7 +596,7 @@ public:
         verticalLayout_2->addWidget(tabWidget);
 
         pushButton = new QPushButton(TWizard_form);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
         verticalLayout_2->addWidget(pushButton);
 
@@ -591,27 +607,27 @@ public:
         verticalLayout->addLayout(horizontalLayout_2);
 
         lineEdit_5 = new QLineEdit(TWizard_form);
-        lineEdit_5->setObjectName(QStringLiteral("lineEdit_5"));
+        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
 
         verticalLayout->addWidget(lineEdit_5);
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(4);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         toolButton_2 = new QToolButton(TWizard_form);
-        toolButton_2->setObjectName(QStringLiteral("toolButton_2"));
+        toolButton_2->setObjectName(QString::fromUtf8("toolButton_2"));
         toolButton_2->setMaximumSize(QSize(20, 20));
 
         horizontalLayout->addWidget(toolButton_2, 0, Qt::AlignLeft);
 
         toolButton = new QToolButton(TWizard_form);
-        toolButton->setObjectName(QStringLiteral("toolButton"));
+        toolButton->setObjectName(QString::fromUtf8("toolButton"));
         toolButton->setMaximumSize(QSize(20, 20));
 
         horizontalLayout->addWidget(toolButton, 0, Qt::AlignLeft);
 
         line = new QFrame(TWizard_form);
-        line->setObjectName(QStringLiteral("line"));
+        line->setObjectName(QString::fromUtf8("line"));
         QSizePolicy sizePolicy2(QSizePolicy::Expanding, QSizePolicy::Fixed);
         sizePolicy2.setHorizontalStretch(0);
         sizePolicy2.setVerticalStretch(0);
@@ -626,7 +642,7 @@ public:
         verticalLayout->addLayout(horizontalLayout);
 
         buttonBox = new QDialogButtonBox(TWizard_form);
-        buttonBox->setObjectName(QStringLiteral("buttonBox"));
+        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
 
@@ -645,84 +661,74 @@ public:
 
     void retranslateUi(QDialog *TWizard_form)
     {
-        TWizard_form->setWindowTitle(QApplication::translate("TWizard_form", "sstsoft::Koperek32::Wizard", 0));
+        TWizard_form->setWindowTitle(QApplication::translate("TWizard_form", "sstsoft::Koperek32::Wizard", nullptr));
         label_2->setText(QString());
-        label->setText(QApplication::translate("TWizard_form", "Koperek7 Wizzard", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("TWizard_form", "ARGS", 0));
-        label_3->setText(QApplication::translate("TWizard_form", "Lister expression", 0));
-        label_4->setText(QApplication::translate("TWizard_form", "File name and extension mask", 0));
-        label_5->setText(QApplication::translate("TWizard_form", "Source files and directories", 0));
-        toolButton_3->setText(QApplication::translate("TWizard_form", "+", 0));
-        toolButton_5->setText(QApplication::translate("TWizard_form", "X", 0));
-        label_6->setText(QApplication::translate("TWizard_form", "Destinations", 0));
-        toolButton_4->setText(QApplication::translate("TWizard_form", "+", 0));
-        toolButton_6->setText(QApplication::translate("TWizard_form", "X", 0));
-        checkBox_7->setText(QApplication::translate("TWizard_form", "Verify after succesful copy or move", 0));
-        checkBox_15->setText(QApplication::translate("TWizard_form", "Create temporary file and replace after sucessful operation", 0));
-        checkBox_16->setText(QApplication::translate("TWizard_form", "Don't replace files with same date/size", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("TWizard_form", "MAIN OPTIONS", 0));
-        comboBox_5->clear();
-        comboBox_5->insertItems(0, QStringList()
-         << QApplication::translate("TWizard_form", "Default 100% (CRC32+LZ77+HUFF)", 0)
-         << QApplication::translate("TWizard_form", "Fast 50% (LZ77)", 0)
-         << QApplication::translate("TWizard_form", "Better 110% (CRC32+LZ77+ARI)", 0)
-         << QApplication::translate("TWizard_form", "Ultra 120% (SSC1+LZ77+MTF+HUFF+ARI)", 0)
-         << QApplication::translate("TWizard_form", "EXPERIMENTAL 130% (MD5+BWT+Ultra)", 0)
-         << QApplication::translate("TWizard_form", "Store -5% (CRC32)", 0)
-        );
-        comboBox_5->setCurrentText(QApplication::translate("TWizard_form", "Default 100% (CRC32+LZ77+HUFF)", 0));
-        checkBox_2->setText(QApplication::translate("TWizard_form", "RLE + LZ77  lexical compression", 0));
-        label_7->setText(QApplication::translate("TWizard_form", "Maximum dict size for LZ77", 0));
-        comboBox_3->clear();
-        comboBox_3->insertItems(0, QStringList()
-         << QApplication::translate("TWizard_form", "256", 0)
-         << QApplication::translate("TWizard_form", "4096", 0)
-         << QApplication::translate("TWizard_form", "65536", 0)
-         << QApplication::translate("TWizard_form", "1048576", 0)
-        );
-        checkBox->setText(QApplication::translate("TWizard_form", "BWT Burrows-Weeler context transform", 0));
-        label_10->setText(QApplication::translate("TWizard_form", "Block size for BWT", 0));
-        comboBox_4->clear();
-        comboBox_4->insertItems(0, QStringList()
-         << QApplication::translate("TWizard_form", "256", 0)
-         << QApplication::translate("TWizard_form", "4096", 0)
-         << QApplication::translate("TWizard_form", "65536", 0)
-         << QApplication::translate("TWizard_form", "1048576", 0)
-        );
-        checkBox_3->setText(QApplication::translate("TWizard_form", "Move-To-Front, most repeted charters to lowest value", 0));
-        checkBox_4->setText(QApplication::translate("TWizard_form", "Dynamic Huffman byte compression, simmilar is used in ZIP", 0));
-        checkBox_5->setText(QApplication::translate("TWizard_form", "Arithmetical byte compression(uses a lot of CPU)", 0));
-        checkBox_6->setText(QApplication::translate("TWizard_form", "Reserved", 0));
-        toolButton_7->setText(QApplication::translate("TWizard_form", "?", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("TWizard_form", "COMPRESSION", 0));
-        checkBox_8->setText(QApplication::translate("TWizard_form", "XOR simple symetrical password cipher", 0));
-        checkBox_9->setText(QApplication::translate("TWizard_form", "SXQ mixer-cipher", 0));
-        checkBox_10->setText(QApplication::translate("TWizard_form", "Reserved", 0));
-        label_8->setText(QApplication::translate("TWizard_form", "Password text", 0));
-        label_9->setText(QApplication::translate("TWizard_form", "Repeat", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("TWizard_form", "CIPHER", 0));
-        checkBox_11->setText(QApplication::translate("TWizard_form", "CRC32 simple and fast", 0));
-        checkBox_14->setText(QApplication::translate("TWizard_form", "SSH1 256 bit as criptographic grade unique file hasher", 0));
-        checkBox_13->setText(QApplication::translate("TWizard_form", "MD5 slower and older 256 bit file hasher", 0));
-        checkBox_12->setText(QApplication::translate("TWizard_form", "SSC1 exprerimental1024-bit hash", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("TWizard_form", "HASH", 0));
-        label_11->setText(QApplication::translate("TWizard_form", "Maximum buffer size:", 0));
-        comboBox_6->clear();
-        comboBox_6->insertItems(0, QStringList()
-         << QApplication::translate("TWizard_form", "256", 0)
-         << QApplication::translate("TWizard_form", "4096", 0)
-         << QApplication::translate("TWizard_form", "65536", 0)
-         << QApplication::translate("TWizard_form", "1048576", 0)
-        );
-        label_12->setText(QApplication::translate("TWizard_form", "I don't know?", 0));
-        comboBox_7->clear();
-        comboBox_7->insertItems(0, QStringList()
-         << QApplication::translate("TWizard_form", "Whatever?", 0)
-        );
-        tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("TWizard_form", "ADVANCED", 0));
-        pushButton->setText(QApplication::translate("TWizard_form", ">>", 0));
-        toolButton_2->setText(QApplication::translate("TWizard_form", "+", 0));
-        toolButton->setText(QApplication::translate("TWizard_form", "...", 0));
+        label->setText(QApplication::translate("TWizard_form", "Koperek7 Wizzard", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("TWizard_form", "ARGS", nullptr));
+        label_3->setText(QApplication::translate("TWizard_form", "Lister expression", nullptr));
+        label_4->setText(QApplication::translate("TWizard_form", "File name and extension mask", nullptr));
+        label_5->setText(QApplication::translate("TWizard_form", "Source files and directories", nullptr));
+        toolButton_3->setText(QApplication::translate("TWizard_form", "+", nullptr));
+        toolButton_5->setText(QApplication::translate("TWizard_form", "X", nullptr));
+        label_6->setText(QApplication::translate("TWizard_form", "Destinations", nullptr));
+        toolButton_4->setText(QApplication::translate("TWizard_form", "+", nullptr));
+        toolButton_6->setText(QApplication::translate("TWizard_form", "X", nullptr));
+        checkBox_7->setText(QApplication::translate("TWizard_form", "Verify after succesful copy or move", nullptr));
+        checkBox_15->setText(QApplication::translate("TWizard_form", "Create temporary file and replace after sucessful operation", nullptr));
+        checkBox_16->setText(QApplication::translate("TWizard_form", "Don't replace files with same date/size", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("TWizard_form", "MAIN OPTIONS", nullptr));
+        comboBox_5->setItemText(0, QApplication::translate("TWizard_form", "Default 100% (CRC32+LZ77+HUFF)", nullptr));
+        comboBox_5->setItemText(1, QApplication::translate("TWizard_form", "Fast 50% (LZ77)", nullptr));
+        comboBox_5->setItemText(2, QApplication::translate("TWizard_form", "Better 110% (CRC32+LZ77+ARI)", nullptr));
+        comboBox_5->setItemText(3, QApplication::translate("TWizard_form", "Ultra 120% (SSC1+LZ77+MTF+HUFF+ARI)", nullptr));
+        comboBox_5->setItemText(4, QApplication::translate("TWizard_form", "EXPERIMENTAL 130% (MD5+BWT+Ultra)", nullptr));
+        comboBox_5->setItemText(5, QApplication::translate("TWizard_form", "Store -5% (CRC32)", nullptr));
+
+        comboBox_5->setCurrentText(QApplication::translate("TWizard_form", "Default 100% (CRC32+LZ77+HUFF)", nullptr));
+        checkBox_2->setText(QApplication::translate("TWizard_form", "RLE + LZ77  lexical compression", nullptr));
+        label_7->setText(QApplication::translate("TWizard_form", "Maximum dict size for LZ77", nullptr));
+        comboBox_3->setItemText(0, QApplication::translate("TWizard_form", "256", nullptr));
+        comboBox_3->setItemText(1, QApplication::translate("TWizard_form", "4096", nullptr));
+        comboBox_3->setItemText(2, QApplication::translate("TWizard_form", "65536", nullptr));
+        comboBox_3->setItemText(3, QApplication::translate("TWizard_form", "1048576", nullptr));
+
+        checkBox->setText(QApplication::translate("TWizard_form", "BWT Burrows-Weeler context transform", nullptr));
+        label_10->setText(QApplication::translate("TWizard_form", "Block size for BWT", nullptr));
+        comboBox_4->setItemText(0, QApplication::translate("TWizard_form", "256", nullptr));
+        comboBox_4->setItemText(1, QApplication::translate("TWizard_form", "4096", nullptr));
+        comboBox_4->setItemText(2, QApplication::translate("TWizard_form", "65536", nullptr));
+        comboBox_4->setItemText(3, QApplication::translate("TWizard_form", "1048576", nullptr));
+
+        checkBox_3->setText(QApplication::translate("TWizard_form", "Move-To-Front, most repeted charters to lowest value", nullptr));
+        checkBox_4->setText(QApplication::translate("TWizard_form", "Dynamic Huffman byte compression, simmilar is used in ZIP", nullptr));
+        checkBox_5->setText(QApplication::translate("TWizard_form", "Arithmetical byte compression(uses a lot of CPU)", nullptr));
+        checkBox_6->setText(QApplication::translate("TWizard_form", "Reserved", nullptr));
+        toolButton_7->setText(QApplication::translate("TWizard_form", "?", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("TWizard_form", "COMPRESSION", nullptr));
+        checkBox_8->setText(QApplication::translate("TWizard_form", "XOR simple symetrical password cipher", nullptr));
+        checkBox_9->setText(QApplication::translate("TWizard_form", "SXQ mixer-cipher", nullptr));
+        checkBox_10->setText(QApplication::translate("TWizard_form", "Reserved", nullptr));
+        label_8->setText(QApplication::translate("TWizard_form", "Password text", nullptr));
+        label_9->setText(QApplication::translate("TWizard_form", "Repeat", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("TWizard_form", "CIPHER", nullptr));
+        checkBox_11->setText(QApplication::translate("TWizard_form", "CRC32 simple and fast", nullptr));
+        checkBox_14->setText(QApplication::translate("TWizard_form", "SSH1 256 bit as criptographic grade unique file hasher", nullptr));
+        checkBox_13->setText(QApplication::translate("TWizard_form", "MD5 slower and older 256 bit file hasher", nullptr));
+        checkBox_12->setText(QApplication::translate("TWizard_form", "SSC1 exprerimental1024-bit hash", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("TWizard_form", "HASH", nullptr));
+        label_11->setText(QApplication::translate("TWizard_form", "Maximum buffer size:", nullptr));
+        comboBox_6->setItemText(0, QApplication::translate("TWizard_form", "256", nullptr));
+        comboBox_6->setItemText(1, QApplication::translate("TWizard_form", "4096", nullptr));
+        comboBox_6->setItemText(2, QApplication::translate("TWizard_form", "65536", nullptr));
+        comboBox_6->setItemText(3, QApplication::translate("TWizard_form", "1048576", nullptr));
+
+        label_12->setText(QApplication::translate("TWizard_form", "I don't know?", nullptr));
+        comboBox_7->setItemText(0, QApplication::translate("TWizard_form", "Whatever?", nullptr));
+
+        tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("TWizard_form", "ADVANCED", nullptr));
+        pushButton->setText(QApplication::translate("TWizard_form", ">>", nullptr));
+        toolButton_2->setText(QApplication::translate("TWizard_form", "+", nullptr));
+        toolButton->setText(QApplication::translate("TWizard_form", "...", nullptr));
     } // retranslateUi
 
 };

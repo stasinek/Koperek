@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'tmain_form.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.12.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,9 +10,8 @@
 #define UI_TMAIN_FORM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QDateTimeEdit>
 #include <QtWidgets/QDialog>
@@ -50,7 +49,6 @@ public:
     QProgressBar *progressBar_1;
     QFrame *line_2;
     QHBoxLayout *horizontalLayout;
-    QToolButton *toolButton_F;
     QToolButton *toolButton;
     QSpacerItem *horizontalSpacer_2;
     QLabel *label_4;
@@ -59,6 +57,7 @@ public:
     QToolButton *toolButton_2;
     QToolButton *toolButton_3;
     QToolButton *toolButton_MENU;
+    QToolButton *toolButton_F;
     QSpacerItem *verticalSpacer_3;
     QWidget *widget_5;
     QVBoxLayout *verticalLayout_12;
@@ -73,8 +72,6 @@ public:
     QToolButton *toolButton_D1;
     QListView *listView;
     QLabel *label_6;
-    QCheckBox *checkBox_7;
-    QCheckBox *checkBox_6;
     QWidget *widget_2;
     QWidget *tab_1;
     QGridLayout *gridLayout;
@@ -103,6 +100,8 @@ public:
     QWidget *page_1;
     QVBoxLayout *verticalLayout_10;
     QCheckBox *checkBox;
+    QCheckBox *checkBox_6;
+    QCheckBox *checkBox_7;
     QWidget *widget_4;
     QWidget *page_3;
     QVBoxLayout *verticalLayout_2;
@@ -126,7 +125,7 @@ public:
     void setupUi(QDialog *TMain_form)
     {
         if (TMain_form->objectName().isEmpty())
-            TMain_form->setObjectName(QStringLiteral("TMain_form"));
+            TMain_form->setObjectName(QString::fromUtf8("TMain_form"));
         TMain_form->resize(701, 527);
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy.setHorizontalStretch(0);
@@ -136,16 +135,16 @@ public:
         TMain_form->setMinimumSize(QSize(700, 500));
         TMain_form->setContextMenuPolicy(Qt::DefaultContextMenu);
         QIcon icon;
-        icon.addFile(QStringLiteral(":/new/prefix1/ICO/Icon4.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/new/prefix1/ICO/Icon4.ico"), QSize(), QIcon::Normal, QIcon::Off);
         TMain_form->setWindowIcon(icon);
         TMain_form->setSizeGripEnabled(true);
         verticalLayout_4 = new QVBoxLayout(TMain_form);
         verticalLayout_4->setSpacing(0);
-        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
+        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
         verticalLayout_4->setSizeConstraint(QLayout::SetMinimumSize);
-        verticalLayout_4->setContentsMargins(4, 4, 4, 4);
+        verticalLayout_4->setContentsMargins(8, 8, 8, 8);
         widget_7 = new QWidget(TMain_form);
-        widget_7->setObjectName(QStringLiteral("widget_7"));
+        widget_7->setObjectName(QString::fromUtf8("widget_7"));
         QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Fixed);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
@@ -154,10 +153,10 @@ public:
         widget_7->setMinimumSize(QSize(500, 100));
         verticalLayout_14 = new QVBoxLayout(widget_7);
         verticalLayout_14->setSpacing(4);
-        verticalLayout_14->setObjectName(QStringLiteral("verticalLayout_14"));
+        verticalLayout_14->setObjectName(QString::fromUtf8("verticalLayout_14"));
         verticalLayout_14->setContentsMargins(0, 0, 0, 0);
         Animation_graphicsView = new QGraphicsView(widget_7);
-        Animation_graphicsView->setObjectName(QStringLiteral("Animation_graphicsView"));
+        Animation_graphicsView->setObjectName(QString::fromUtf8("Animation_graphicsView"));
         Animation_graphicsView->setEnabled(true);
         QSizePolicy sizePolicy2(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy2.setHorizontalStretch(0);
@@ -194,7 +193,7 @@ public:
         verticalLayout_14->addItem(verticalSpacer_4);
 
         label_8 = new QLabel(widget_7);
-        label_8->setObjectName(QStringLiteral("label_8"));
+        label_8->setObjectName(QString::fromUtf8("label_8"));
         QSizePolicy sizePolicy3(QSizePolicy::Minimum, QSizePolicy::Fixed);
         sizePolicy3.setHorizontalStretch(0);
         sizePolicy3.setVerticalStretch(0);
@@ -208,22 +207,24 @@ public:
         verticalLayout_14->addWidget(label_8);
 
         label_3 = new QLabel(widget_7);
-        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setObjectName(QString::fromUtf8("label_3"));
         sizePolicy3.setHeightForWidth(label_3->sizePolicy().hasHeightForWidth());
         label_3->setSizePolicy(sizePolicy3);
         label_3->setMaximumSize(QSize(16777215, 30));
         label_3->setFont(font);
+        label_3->setLayoutDirection(Qt::LeftToRight);
         label_3->setFrameShape(QFrame::NoFrame);
         label_3->setFrameShadow(QFrame::Sunken);
+        label_3->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         verticalLayout_14->addWidget(label_3);
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(0);
-        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(-1, -1, -1, 0);
         progressBar_2 = new QProgressBar(widget_7);
-        progressBar_2->setObjectName(QStringLiteral("progressBar_2"));
+        progressBar_2->setObjectName(QString::fromUtf8("progressBar_2"));
         QSizePolicy sizePolicy4(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy4.setHorizontalStretch(0);
         sizePolicy4.setVerticalStretch(0);
@@ -238,7 +239,7 @@ public:
         horizontalLayout_2->addWidget(progressBar_2);
 
         progressBar_1 = new QProgressBar(widget_7);
-        progressBar_1->setObjectName(QStringLiteral("progressBar_1"));
+        progressBar_1->setObjectName(QString::fromUtf8("progressBar_1"));
         sizePolicy1.setHeightForWidth(progressBar_1->sizePolicy().hasHeightForWidth());
         progressBar_1->setSizePolicy(sizePolicy1);
         progressBar_1->setMinimumSize(QSize(0, 15));
@@ -256,7 +257,7 @@ public:
         verticalLayout_14->addLayout(horizontalLayout_2);
 
         line_2 = new QFrame(widget_7);
-        line_2->setObjectName(QStringLiteral("line_2"));
+        line_2->setObjectName(QString::fromUtf8("line_2"));
         line_2->setFrameShape(QFrame::HLine);
         line_2->setFrameShadow(QFrame::Sunken);
 
@@ -264,33 +265,19 @@ public:
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(0);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(-1, 0, 0, 0);
-        toolButton_F = new QToolButton(widget_7);
-        toolButton_F->setObjectName(QStringLiteral("toolButton_F"));
-        sizePolicy4.setHeightForWidth(toolButton_F->sizePolicy().hasHeightForWidth());
-        toolButton_F->setSizePolicy(sizePolicy4);
-        toolButton_F->setMinimumSize(QSize(40, 30));
-        QIcon icon1;
-        icon1.addFile(QStringLiteral(":/new/prefix1/BMP/ZWIN.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_F->setIcon(icon1);
-        toolButton_F->setCheckable(true);
-        toolButton_F->setChecked(true);
-        toolButton_F->setAutoRaise(true);
-
-        horizontalLayout->addWidget(toolButton_F);
-
         toolButton = new QToolButton(widget_7);
-        toolButton->setObjectName(QStringLiteral("toolButton"));
+        toolButton->setObjectName(QString::fromUtf8("toolButton"));
         QSizePolicy sizePolicy5(QSizePolicy::Fixed, QSizePolicy::Expanding);
         sizePolicy5.setHorizontalStretch(0);
         sizePolicy5.setVerticalStretch(0);
         sizePolicy5.setHeightForWidth(toolButton->sizePolicy().hasHeightForWidth());
         toolButton->setSizePolicy(sizePolicy5);
         toolButton->setMinimumSize(QSize(40, 30));
-        QIcon icon2;
-        icon2.addFile(QStringLiteral(":/new/prefix1/BMP/console.bmp"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton->setIcon(icon2);
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/new/prefix1/BMP/console.bmp"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton->setIcon(icon1);
 
         horizontalLayout->addWidget(toolButton);
 
@@ -299,7 +286,7 @@ public:
         horizontalLayout->addItem(horizontalSpacer_2);
 
         label_4 = new QLabel(widget_7);
-        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setObjectName(QString::fromUtf8("label_4"));
         sizePolicy.setHeightForWidth(label_4->sizePolicy().hasHeightForWidth());
         label_4->setSizePolicy(sizePolicy);
         QFont font1;
@@ -320,16 +307,16 @@ public:
         horizontalLayout->addItem(horizontalSpacer_3);
 
         toolButton_2 = new QToolButton(widget_7);
-        toolButton_2->setObjectName(QStringLiteral("toolButton_2"));
+        toolButton_2->setObjectName(QString::fromUtf8("toolButton_2"));
         sizePolicy4.setHeightForWidth(toolButton_2->sizePolicy().hasHeightForWidth());
         toolButton_2->setSizePolicy(sizePolicy4);
         toolButton_2->setMinimumSize(QSize(40, 30));
         toolButton_2->setLayoutDirection(Qt::RightToLeft);
         toolButton_2->setAutoFillBackground(false);
-        QIcon icon3;
-        icon3.addFile(QStringLiteral(":/new/prefix1/BMP/pause.PNG"), QSize(), QIcon::Normal, QIcon::Off);
-        icon3.addFile(QStringLiteral(":/new/prefix1/BMP/resume.PNG"), QSize(), QIcon::Normal, QIcon::On);
-        toolButton_2->setIcon(icon3);
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8(":/new/prefix1/BMP/pause.PNG"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QString::fromUtf8(":/new/prefix1/BMP/resume.PNG"), QSize(), QIcon::Normal, QIcon::On);
+        toolButton_2->setIcon(icon2);
         toolButton_2->setIconSize(QSize(24, 24));
         toolButton_2->setCheckable(true);
         toolButton_2->setChecked(false);
@@ -338,15 +325,15 @@ public:
         horizontalLayout->addWidget(toolButton_2);
 
         toolButton_3 = new QToolButton(widget_7);
-        toolButton_3->setObjectName(QStringLiteral("toolButton_3"));
+        toolButton_3->setObjectName(QString::fromUtf8("toolButton_3"));
         sizePolicy4.setHeightForWidth(toolButton_3->sizePolicy().hasHeightForWidth());
         toolButton_3->setSizePolicy(sizePolicy4);
         toolButton_3->setMinimumSize(QSize(40, 30));
         toolButton_3->setLayoutDirection(Qt::RightToLeft);
         toolButton_3->setAutoFillBackground(false);
-        QIcon icon4;
-        icon4.addFile(QStringLiteral(":/new/prefix1/BMP/stop.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_3->setIcon(icon4);
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8(":/new/prefix1/BMP/stop.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_3->setIcon(icon3);
         toolButton_3->setIconSize(QSize(24, 24));
         toolButton_3->setCheckable(true);
         toolButton_3->setToolButtonStyle(Qt::ToolButtonIconOnly);
@@ -354,16 +341,30 @@ public:
         horizontalLayout->addWidget(toolButton_3);
 
         toolButton_MENU = new QToolButton(widget_7);
-        toolButton_MENU->setObjectName(QStringLiteral("toolButton_MENU"));
-        toolButton_MENU->setMinimumSize(QSize(30, 30));
+        toolButton_MENU->setObjectName(QString::fromUtf8("toolButton_MENU"));
+        toolButton_MENU->setMinimumSize(QSize(40, 30));
         toolButton_MENU->setMaximumSize(QSize(16777215, 30));
-        QIcon icon5;
-        icon5.addFile(QStringLiteral(":/new/prefix1/BMP/menu.PNG"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_MENU->setIcon(icon5);
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8(":/new/prefix1/BMP/menu.PNG"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_MENU->setIcon(icon4);
         toolButton_MENU->setIconSize(QSize(24, 24));
         toolButton_MENU->setAutoRaise(false);
 
         horizontalLayout->addWidget(toolButton_MENU);
+
+        toolButton_F = new QToolButton(widget_7);
+        toolButton_F->setObjectName(QString::fromUtf8("toolButton_F"));
+        sizePolicy4.setHeightForWidth(toolButton_F->sizePolicy().hasHeightForWidth());
+        toolButton_F->setSizePolicy(sizePolicy4);
+        toolButton_F->setMinimumSize(QSize(40, 30));
+        QIcon icon5;
+        icon5.addFile(QString::fromUtf8(":/new/prefix1/BMP/ZWIN.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_F->setIcon(icon5);
+        toolButton_F->setCheckable(true);
+        toolButton_F->setChecked(true);
+        toolButton_F->setAutoRaise(true);
+
+        horizontalLayout->addWidget(toolButton_F);
 
 
         verticalLayout_14->addLayout(horizontalLayout);
@@ -376,20 +377,20 @@ public:
         verticalLayout_4->addWidget(widget_7);
 
         widget_5 = new QWidget(TMain_form);
-        widget_5->setObjectName(QStringLiteral("widget_5"));
+        widget_5->setObjectName(QString::fromUtf8("widget_5"));
         sizePolicy2.setHeightForWidth(widget_5->sizePolicy().hasHeightForWidth());
         widget_5->setSizePolicy(sizePolicy2);
         widget_5->setMinimumSize(QSize(500, 250));
         verticalLayout_12 = new QVBoxLayout(widget_5);
         verticalLayout_12->setSpacing(4);
-        verticalLayout_12->setObjectName(QStringLiteral("verticalLayout_12"));
+        verticalLayout_12->setObjectName(QString::fromUtf8("verticalLayout_12"));
         verticalLayout_12->setContentsMargins(0, 0, 0, 5);
         verticalSpacer_2 = new QSpacerItem(20, 4, QSizePolicy::Minimum, QSizePolicy::Fixed);
 
         verticalLayout_12->addItem(verticalSpacer_2);
 
         line = new QFrame(widget_5);
-        line->setObjectName(QStringLiteral("line"));
+        line->setObjectName(QString::fromUtf8("line"));
         sizePolicy1.setHeightForWidth(line->sizePolicy().hasHeightForWidth());
         line->setSizePolicy(sizePolicy1);
         line->setMinimumSize(QSize(0, 0));
@@ -399,7 +400,7 @@ public:
         verticalLayout_12->addWidget(line);
 
         tabWidget = new QTabWidget(widget_5);
-        tabWidget->setObjectName(QStringLiteral("tabWidget"));
+        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         tabWidget->setEnabled(true);
         tabWidget->setMinimumSize(QSize(0, 0));
         tabWidget->setTabPosition(QTabWidget::North);
@@ -410,13 +411,13 @@ public:
         tabWidget->setTabsClosable(false);
         tabWidget->setMovable(false);
         tab_3 = new QWidget();
-        tab_3->setObjectName(QStringLiteral("tab_3"));
+        tab_3->setObjectName(QString::fromUtf8("tab_3"));
         gridLayout_3 = new QGridLayout(tab_3);
-        gridLayout_3->setObjectName(QStringLiteral("gridLayout_3"));
+        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         graphicsView_2 = new QGraphicsView(tab_3);
-        graphicsView_2->setObjectName(QStringLiteral("graphicsView_2"));
+        graphicsView_2->setObjectName(QString::fromUtf8("graphicsView_2"));
         sizePolicy4.setHeightForWidth(graphicsView_2->sizePolicy().hasHeightForWidth());
         graphicsView_2->setSizePolicy(sizePolicy4);
         graphicsView_2->setMaximumSize(QSize(150, 150));
@@ -429,9 +430,10 @@ public:
         horizontalLayout_3->addWidget(graphicsView_2, 0, Qt::AlignLeft|Qt::AlignTop);
 
         verticalLayout_3 = new QVBoxLayout();
-        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         toolButton_D1 = new QToolButton(tab_3);
-        toolButton_D1->setObjectName(QStringLiteral("toolButton_D1"));
+        toolButton_D1->setObjectName(QString::fromUtf8("toolButton_D1"));
+        toolButton_D1->setMinimumSize(QSize(24, 24));
         toolButton_D1->setMaximumSize(QSize(30, 16777215));
 
         verticalLayout_3->addWidget(toolButton_D1, 0, Qt::AlignTop);
@@ -440,7 +442,7 @@ public:
         horizontalLayout_3->addLayout(verticalLayout_3);
 
         listView = new QListView(tab_3);
-        listView->setObjectName(QStringLiteral("listView"));
+        listView->setObjectName(QString::fromUtf8("listView"));
         sizePolicy1.setHeightForWidth(listView->sizePolicy().hasHeightForWidth());
         listView->setSizePolicy(sizePolicy1);
         listView->setMaximumSize(QSize(16777215, 150));
@@ -454,42 +456,32 @@ public:
         gridLayout_3->addLayout(horizontalLayout_3, 1, 0, 1, 1);
 
         label_6 = new QLabel(tab_3);
-        label_6->setObjectName(QStringLiteral("label_6"));
+        label_6->setObjectName(QString::fromUtf8("label_6"));
         sizePolicy3.setHeightForWidth(label_6->sizePolicy().hasHeightForWidth());
         label_6->setSizePolicy(sizePolicy3);
         label_6->setFont(font);
 
         gridLayout_3->addWidget(label_6, 0, 0, 1, 1);
 
-        checkBox_7 = new QCheckBox(tab_3);
-        checkBox_7->setObjectName(QStringLiteral("checkBox_7"));
-
-        gridLayout_3->addWidget(checkBox_7, 4, 0, 1, 1);
-
-        checkBox_6 = new QCheckBox(tab_3);
-        checkBox_6->setObjectName(QStringLiteral("checkBox_6"));
-
-        gridLayout_3->addWidget(checkBox_6, 3, 0, 1, 1);
-
         widget_2 = new QWidget(tab_3);
-        widget_2->setObjectName(QStringLiteral("widget_2"));
+        widget_2->setObjectName(QString::fromUtf8("widget_2"));
 
         gridLayout_3->addWidget(widget_2, 2, 0, 1, 1);
 
         tabWidget->addTab(tab_3, QString());
         tab_1 = new QWidget();
-        tab_1->setObjectName(QStringLiteral("tab_1"));
+        tab_1->setObjectName(QString::fromUtf8("tab_1"));
         gridLayout = new QGridLayout(tab_1);
-        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         verticalLayout_6 = new QVBoxLayout();
         verticalLayout_6->setSpacing(5);
-        verticalLayout_6->setObjectName(QStringLiteral("verticalLayout_6"));
+        verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
         label_2 = new QLabel(tab_1);
-        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setObjectName(QString::fromUtf8("label_2"));
         sizePolicy.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
         label_2->setSizePolicy(sizePolicy);
         QFont font2;
-        font2.setFamily(QStringLiteral("Tahoma"));
+        font2.setFamily(QString::fromUtf8("Tahoma"));
         font2.setBold(true);
         font2.setWeight(75);
         label_2->setFont(font2);
@@ -498,13 +490,13 @@ public:
 
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setSpacing(5);
-        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
+        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
         tableWidget = new QTableWidget(tab_1);
         if (tableWidget->columnCount() < 3)
             tableWidget->setColumnCount(3);
         if (tableWidget->rowCount() < 100)
             tableWidget->setRowCount(100);
-        tableWidget->setObjectName(QStringLiteral("tableWidget"));
+        tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
         tableWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
         tableWidget->setTextElideMode(Qt::ElideNone);
         tableWidget->setGridStyle(Qt::DotLine);
@@ -513,8 +505,8 @@ public:
         tableWidget->setColumnCount(3);
         tableWidget->horizontalHeader()->setVisible(false);
         tableWidget->horizontalHeader()->setCascadingSectionResizes(false);
-        tableWidget->horizontalHeader()->setDefaultSectionSize(200);
         tableWidget->horizontalHeader()->setMinimumSectionSize(20);
+        tableWidget->horizontalHeader()->setDefaultSectionSize(200);
         tableWidget->horizontalHeader()->setStretchLastSection(true);
         tableWidget->verticalHeader()->setDefaultSectionSize(20);
         tableWidget->verticalHeader()->setProperty("showSortIndicator", QVariant(false));
@@ -524,23 +516,25 @@ public:
 
         verticalLayout_5 = new QVBoxLayout();
         verticalLayout_5->setSpacing(0);
-        verticalLayout_5->setObjectName(QStringLiteral("verticalLayout_5"));
+        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
         toolButton_P = new QToolButton(tab_1);
-        toolButton_P->setObjectName(QStringLiteral("toolButton_P"));
+        toolButton_P->setObjectName(QString::fromUtf8("toolButton_P"));
         sizePolicy3.setHeightForWidth(toolButton_P->sizePolicy().hasHeightForWidth());
         toolButton_P->setSizePolicy(sizePolicy3);
+        toolButton_P->setMinimumSize(QSize(24, 24));
         QIcon icon6;
-        icon6.addFile(QStringLiteral(":/new/prefix1/BMP/PLUS2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon6.addFile(QString::fromUtf8(":/new/prefix1/BMP/PLUS2.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_P->setIcon(icon6);
 
         verticalLayout_5->addWidget(toolButton_P, 0, Qt::AlignTop);
 
         toolButton_M = new QToolButton(tab_1);
-        toolButton_M->setObjectName(QStringLiteral("toolButton_M"));
+        toolButton_M->setObjectName(QString::fromUtf8("toolButton_M"));
         sizePolicy3.setHeightForWidth(toolButton_M->sizePolicy().hasHeightForWidth());
         toolButton_M->setSizePolicy(sizePolicy3);
+        toolButton_M->setMinimumSize(QSize(24, 24));
         QIcon icon7;
-        icon7.addFile(QStringLiteral(":/new/prefix1/BMP/minus2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon7.addFile(QString::fromUtf8(":/new/prefix1/BMP/minus2.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_M->setIcon(icon7);
 
         verticalLayout_5->addWidget(toolButton_M, 0, Qt::AlignTop);
@@ -550,41 +544,45 @@ public:
         verticalLayout_5->addItem(verticalSpacer);
 
         toolButton_T = new QToolButton(tab_1);
-        toolButton_T->setObjectName(QStringLiteral("toolButton_T"));
+        toolButton_T->setObjectName(QString::fromUtf8("toolButton_T"));
         sizePolicy3.setHeightForWidth(toolButton_T->sizePolicy().hasHeightForWidth());
         toolButton_T->setSizePolicy(sizePolicy3);
+        toolButton_T->setMinimumSize(QSize(24, 24));
         QIcon icon8;
-        icon8.addFile(QStringLiteral(":/new/prefix1/BMP/top.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon8.addFile(QString::fromUtf8(":/new/prefix1/BMP/top.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_T->setIcon(icon8);
 
         verticalLayout_5->addWidget(toolButton_T);
 
         toolButton_U = new QToolButton(tab_1);
-        toolButton_U->setObjectName(QStringLiteral("toolButton_U"));
+        toolButton_U->setObjectName(QString::fromUtf8("toolButton_U"));
         sizePolicy3.setHeightForWidth(toolButton_U->sizePolicy().hasHeightForWidth());
         toolButton_U->setSizePolicy(sizePolicy3);
+        toolButton_U->setMinimumSize(QSize(24, 24));
         QIcon icon9;
-        icon9.addFile(QStringLiteral(":/new/prefix1/BMP/up.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon9.addFile(QString::fromUtf8(":/new/prefix1/BMP/up.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_U->setIcon(icon9);
 
         verticalLayout_5->addWidget(toolButton_U);
 
         toolButton_D = new QToolButton(tab_1);
-        toolButton_D->setObjectName(QStringLiteral("toolButton_D"));
+        toolButton_D->setObjectName(QString::fromUtf8("toolButton_D"));
         sizePolicy3.setHeightForWidth(toolButton_D->sizePolicy().hasHeightForWidth());
         toolButton_D->setSizePolicy(sizePolicy3);
+        toolButton_D->setMinimumSize(QSize(24, 24));
         QIcon icon10;
-        icon10.addFile(QStringLiteral(":/new/prefix1/BMP/down.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon10.addFile(QString::fromUtf8(":/new/prefix1/BMP/down.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_D->setIcon(icon10);
 
         verticalLayout_5->addWidget(toolButton_D);
 
         toolButton_B = new QToolButton(tab_1);
-        toolButton_B->setObjectName(QStringLiteral("toolButton_B"));
+        toolButton_B->setObjectName(QString::fromUtf8("toolButton_B"));
         sizePolicy3.setHeightForWidth(toolButton_B->sizePolicy().hasHeightForWidth());
         toolButton_B->setSizePolicy(sizePolicy3);
+        toolButton_B->setMinimumSize(QSize(24, 24));
         QIcon icon11;
-        icon11.addFile(QStringLiteral(":/new/prefix1/BMP/bottom.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon11.addFile(QString::fromUtf8(":/new/prefix1/BMP/bottom.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_B->setIcon(icon11);
 
         verticalLayout_5->addWidget(toolButton_B);
@@ -600,11 +598,11 @@ public:
 
         tabWidget->addTab(tab_1, QString());
         tab_2 = new QWidget();
-        tab_2->setObjectName(QStringLiteral("tab_2"));
+        tab_2->setObjectName(QString::fromUtf8("tab_2"));
         verticalLayout_11 = new QVBoxLayout(tab_2);
-        verticalLayout_11->setObjectName(QStringLiteral("verticalLayout_11"));
+        verticalLayout_11->setObjectName(QString::fromUtf8("verticalLayout_11"));
         label_7 = new QLabel(tab_2);
-        label_7->setObjectName(QStringLiteral("label_7"));
+        label_7->setObjectName(QString::fromUtf8("label_7"));
         sizePolicy.setHeightForWidth(label_7->sizePolicy().hasHeightForWidth());
         label_7->setSizePolicy(sizePolicy);
         label_7->setFont(font);
@@ -612,18 +610,18 @@ public:
         verticalLayout_11->addWidget(label_7);
 
         Chart_graphicsView = new QGraphicsView(tab_2);
-        Chart_graphicsView->setObjectName(QStringLiteral("Chart_graphicsView"));
+        Chart_graphicsView->setObjectName(QString::fromUtf8("Chart_graphicsView"));
         Chart_graphicsView->setFrameShape(QFrame::WinPanel);
 
         verticalLayout_11->addWidget(Chart_graphicsView);
 
         tabWidget->addTab(tab_2, QString());
         tab = new QWidget();
-        tab->setObjectName(QStringLiteral("tab"));
+        tab->setObjectName(QString::fromUtf8("tab"));
         verticalLayout_8 = new QVBoxLayout(tab);
-        verticalLayout_8->setObjectName(QStringLiteral("verticalLayout_8"));
+        verticalLayout_8->setObjectName(QString::fromUtf8("verticalLayout_8"));
         label = new QLabel(tab);
-        label->setObjectName(QStringLiteral("label"));
+        label->setObjectName(QString::fromUtf8("label"));
         sizePolicy.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
         label->setSizePolicy(sizePolicy);
         label->setFont(font);
@@ -631,14 +629,14 @@ public:
         verticalLayout_8->addWidget(label);
 
         horizontalLayout_7 = new QHBoxLayout();
-        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
+        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
         horizontalLayout_7->setContentsMargins(-1, 5, -1, -1);
         tableWidget_2 = new QTableWidget(tab);
         if (tableWidget_2->columnCount() < 1)
             tableWidget_2->setColumnCount(1);
         if (tableWidget_2->rowCount() < 5)
             tableWidget_2->setRowCount(5);
-        tableWidget_2->setObjectName(QStringLiteral("tableWidget_2"));
+        tableWidget_2->setObjectName(QString::fromUtf8("tableWidget_2"));
         QSizePolicy sizePolicy6(QSizePolicy::Fixed, QSizePolicy::Maximum);
         sizePolicy6.setHorizontalStretch(0);
         sizePolicy6.setVerticalStretch(0);
@@ -665,50 +663,60 @@ public:
         horizontalLayout_7->addWidget(tableWidget_2, 0, Qt::AlignLeft|Qt::AlignTop);
 
         stackedWidget = new QStackedWidget(tab);
-        stackedWidget->setObjectName(QStringLiteral("stackedWidget"));
+        stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
         page_1 = new QWidget();
-        page_1->setObjectName(QStringLiteral("page_1"));
+        page_1->setObjectName(QString::fromUtf8("page_1"));
         verticalLayout_10 = new QVBoxLayout(page_1);
-        verticalLayout_10->setObjectName(QStringLiteral("verticalLayout_10"));
+        verticalLayout_10->setObjectName(QString::fromUtf8("verticalLayout_10"));
         checkBox = new QCheckBox(page_1);
-        checkBox->setObjectName(QStringLiteral("checkBox"));
+        checkBox->setObjectName(QString::fromUtf8("checkBox"));
 
         verticalLayout_10->addWidget(checkBox);
 
+        checkBox_6 = new QCheckBox(page_1);
+        checkBox_6->setObjectName(QString::fromUtf8("checkBox_6"));
+
+        verticalLayout_10->addWidget(checkBox_6);
+
+        checkBox_7 = new QCheckBox(page_1);
+        checkBox_7->setObjectName(QString::fromUtf8("checkBox_7"));
+
+        verticalLayout_10->addWidget(checkBox_7);
+
         widget_4 = new QWidget(page_1);
-        widget_4->setObjectName(QStringLiteral("widget_4"));
+        widget_4->setObjectName(QString::fromUtf8("widget_4"));
 
         verticalLayout_10->addWidget(widget_4);
 
         stackedWidget->addWidget(page_1);
         page_3 = new QWidget();
-        page_3->setObjectName(QStringLiteral("page_3"));
+        page_3->setObjectName(QString::fromUtf8("page_3"));
         verticalLayout_2 = new QVBoxLayout(page_3);
-        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         checkBox_2 = new QCheckBox(page_3);
-        checkBox_2->setObjectName(QStringLiteral("checkBox_2"));
+        checkBox_2->setObjectName(QString::fromUtf8("checkBox_2"));
 
         verticalLayout_2->addWidget(checkBox_2);
 
         widget_3 = new QWidget(page_3);
-        widget_3->setObjectName(QStringLiteral("widget_3"));
+        widget_3->setObjectName(QString::fromUtf8("widget_3"));
 
         verticalLayout_2->addWidget(widget_3);
 
         stackedWidget->addWidget(page_3);
         page_2 = new QWidget();
-        page_2->setObjectName(QStringLiteral("page_2"));
+        page_2->setObjectName(QString::fromUtf8("page_2"));
         verticalLayout_9 = new QVBoxLayout(page_2);
-        verticalLayout_9->setObjectName(QStringLiteral("verticalLayout_9"));
+        verticalLayout_9->setObjectName(QString::fromUtf8("verticalLayout_9"));
         horizontalLayout_8 = new QHBoxLayout();
-        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
+        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
         checkBox_3 = new QCheckBox(page_2);
-        checkBox_3->setObjectName(QStringLiteral("checkBox_3"));
+        checkBox_3->setObjectName(QString::fromUtf8("checkBox_3"));
 
         horizontalLayout_8->addWidget(checkBox_3);
 
         dateTimeEdit = new QDateTimeEdit(page_2);
-        dateTimeEdit->setObjectName(QStringLiteral("dateTimeEdit"));
+        dateTimeEdit->setObjectName(QString::fromUtf8("dateTimeEdit"));
         sizePolicy4.setHeightForWidth(dateTimeEdit->sizePolicy().hasHeightForWidth());
         dateTimeEdit->setSizePolicy(sizePolicy4);
 
@@ -718,14 +726,14 @@ public:
         verticalLayout_9->addLayout(horizontalLayout_8);
 
         horizontalLayout_9 = new QHBoxLayout();
-        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
+        horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
         checkBox_4 = new QCheckBox(page_2);
-        checkBox_4->setObjectName(QStringLiteral("checkBox_4"));
+        checkBox_4->setObjectName(QString::fromUtf8("checkBox_4"));
 
         horizontalLayout_9->addWidget(checkBox_4);
 
         dateTimeEdit_2 = new QDateTimeEdit(page_2);
-        dateTimeEdit_2->setObjectName(QStringLiteral("dateTimeEdit_2"));
+        dateTimeEdit_2->setObjectName(QString::fromUtf8("dateTimeEdit_2"));
         sizePolicy4.setHeightForWidth(dateTimeEdit_2->sizePolicy().hasHeightForWidth());
         dateTimeEdit_2->setSizePolicy(sizePolicy4);
 
@@ -735,19 +743,19 @@ public:
         verticalLayout_9->addLayout(horizontalLayout_9);
 
         horizontalLayout_10 = new QHBoxLayout();
-        horizontalLayout_10->setObjectName(QStringLiteral("horizontalLayout_10"));
+        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
         checkBox_5 = new QCheckBox(page_2);
-        checkBox_5->setObjectName(QStringLiteral("checkBox_5"));
+        checkBox_5->setObjectName(QString::fromUtf8("checkBox_5"));
 
         horizontalLayout_10->addWidget(checkBox_5);
 
         lineEdit = new QLineEdit(page_2);
-        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
 
         horizontalLayout_10->addWidget(lineEdit);
 
         toolButton_8 = new QToolButton(page_2);
-        toolButton_8->setObjectName(QStringLiteral("toolButton_8"));
+        toolButton_8->setObjectName(QString::fromUtf8("toolButton_8"));
 
         horizontalLayout_10->addWidget(toolButton_8);
 
@@ -755,7 +763,7 @@ public:
         verticalLayout_9->addLayout(horizontalLayout_10);
 
         widget = new QWidget(page_2);
-        widget->setObjectName(QStringLiteral("widget"));
+        widget->setObjectName(QString::fromUtf8("widget"));
 
         verticalLayout_9->addWidget(widget);
 
@@ -771,7 +779,7 @@ public:
         verticalLayout_12->addWidget(tabWidget);
 
         label_9 = new QLabel(widget_5);
-        label_9->setObjectName(QStringLiteral("label_9"));
+        label_9->setObjectName(QString::fromUtf8("label_9"));
         label_9->setFrameShape(QFrame::NoFrame);
         label_9->setFrameShadow(QFrame::Sunken);
         label_9->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
@@ -794,39 +802,39 @@ public:
 
     void retranslateUi(QDialog *TMain_form)
     {
-        TMain_form->setWindowTitle(QApplication::translate("TMain_form", "sstsoft::Koperek32::Main::kopiowanie, przenoszenie, usuwanie, kompresja sp. z o. o.", 0));
-        label_8->setText(QApplication::translate("TMain_form", "Kopiuje: C:\\KATALOG\\plik.rozszerzenie", 0));
-        label_3->setText(QApplication::translate("TMain_form", "Z 'C:\\' do 'D:\\cel'", 0));
-        toolButton_F->setText(QApplication::translate("TMain_form", "v", 0));
-        toolButton->setText(QApplication::translate("TMain_form", "CONSOLE", 0));
-        label_4->setText(QApplication::translate("TMain_form", "Do zako\305\204czenia pozosta\305\202o: 1000 bajt\303\263w; 20 plik\303\263w, oko\305\202o 2 minuty", 0));
-        toolButton_2->setText(QApplication::translate("TMain_form", "PAUSE", 0));
-        toolButton_3->setText(QApplication::translate("TMain_form", "STOP", 0));
-        toolButton_MENU->setText(QApplication::translate("TMain_form", "...", 0));
-        toolButton_D1->setText(QApplication::translate("TMain_form", "...", 0));
-        label_6->setText(QApplication::translate("TMain_form", "See curent source file && directory preview, detailed informations , hash(if enabled - see the options)", 0));
-        checkBox_7->setText(QApplication::translate("TMain_form", "If enabled i will stop if found file simmilar to chosen one", 0));
-        checkBox_6->setText(QApplication::translate("TMain_form", "If enabled i will wait some time after each operation so you could watch", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("TMain_form", "Current file && directory in details", 0));
-        label_2->setText(QApplication::translate("TMain_form", "Processed file list. You can pause current opperation, review all unfinished, add and delete if You want", 0));
-        toolButton_P->setText(QApplication::translate("TMain_form", "+", 0));
-        toolButton_M->setText(QApplication::translate("TMain_form", "-", 0));
-        toolButton_T->setText(QApplication::translate("TMain_form", "...", 0));
-        toolButton_U->setText(QApplication::translate("TMain_form", "...", 0));
-        toolButton_D->setText(QApplication::translate("TMain_form", "...", 0));
-        toolButton_B->setText(QApplication::translate("TMain_form", "...", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_1), QApplication::translate("TMain_form", "File list", 0));
-        label_7->setText(QApplication::translate("TMain_form", "File sizes rounded chart, click to see details, double click to enter lower level, right click to came back..", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("TMain_form", "File sizes chart", 0));
-        label->setText(QApplication::translate("TMain_form", "Setting options will affect on current or next file operation", 0));
-        checkBox->setText(QApplication::translate("TMain_form", "Remember window size and position", 0));
-        checkBox_2->setText(QApplication::translate("TMain_form", "Write watch; compare source && destination file after each write(2x slower)", 0));
-        checkBox_3->setText(QApplication::translate("TMain_form", "Set each file && directory creation date(and modification if older) to:", 0));
-        checkBox_4->setText(QApplication::translate("TMain_form", "Set each file &&& directory modification date to:", 0));
-        checkBox_5->setText(QApplication::translate("TMain_form", "Set each file && directory name to:", 0));
-        toolButton_8->setText(QApplication::translate("TMain_form", "?", 0));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("TMain_form", "Options", 0));
-        label_9->setText(QApplication::translate("TMain_form", "Status...", 0));
+        TMain_form->setWindowTitle(QApplication::translate("TMain_form", "sstsoft::Koperek32::Main::kopiowanie, przenoszenie, usuwanie, kompresja sp. z o. o.", nullptr));
+        label_8->setText(QApplication::translate("TMain_form", "Kopiuje: C:\\KATALOG\\plik.rozszerzenie", nullptr));
+        label_3->setText(QApplication::translate("TMain_form", "Z 'C:\\' do 'D:\\cel'", nullptr));
+        toolButton->setText(QApplication::translate("TMain_form", "CONSOLE", nullptr));
+        label_4->setText(QApplication::translate("TMain_form", "Do zako\305\204czenia pozosta\305\202o: 1000 bajt\303\263w; 20 plik\303\263w, oko\305\202o 2 minuty", nullptr));
+        toolButton_2->setText(QApplication::translate("TMain_form", "PAUSE", nullptr));
+        toolButton_3->setText(QApplication::translate("TMain_form", "STOP", nullptr));
+        toolButton_MENU->setText(QApplication::translate("TMain_form", "...", nullptr));
+        toolButton_F->setText(QApplication::translate("TMain_form", "v", nullptr));
+        toolButton_D1->setText(QApplication::translate("TMain_form", "...", nullptr));
+        label_6->setText(QApplication::translate("TMain_form", "See curent source file && directory preview, detailed informations , hash(if enabled - see the options)", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("TMain_form", "Current file && directory in details", nullptr));
+        label_2->setText(QApplication::translate("TMain_form", "Processed file list. You can pause current opperation, review all unfinished, add and delete if You want", nullptr));
+        toolButton_P->setText(QApplication::translate("TMain_form", "+", nullptr));
+        toolButton_M->setText(QApplication::translate("TMain_form", "-", nullptr));
+        toolButton_T->setText(QApplication::translate("TMain_form", "...", nullptr));
+        toolButton_U->setText(QApplication::translate("TMain_form", "...", nullptr));
+        toolButton_D->setText(QApplication::translate("TMain_form", "...", nullptr));
+        toolButton_B->setText(QApplication::translate("TMain_form", "...", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_1), QApplication::translate("TMain_form", "File list", nullptr));
+        label_7->setText(QApplication::translate("TMain_form", "File sizes rounded chart, click to see details, double click to enter lower level, right click to came back..", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("TMain_form", "File chart", nullptr));
+        label->setText(QApplication::translate("TMain_form", "Setting options will affect on current or next file operation", nullptr));
+        checkBox->setText(QApplication::translate("TMain_form", "Remember window size and position", nullptr));
+        checkBox_6->setText(QApplication::translate("TMain_form", "If enabled i will wait some time after each operation so you could watch", nullptr));
+        checkBox_7->setText(QApplication::translate("TMain_form", "If enabled i will stop if found file simmilar to chosen one", nullptr));
+        checkBox_2->setText(QApplication::translate("TMain_form", "Write watch; compare source && destination file after each write(2x slower)", nullptr));
+        checkBox_3->setText(QApplication::translate("TMain_form", "Set each file && directory creation date(and modification if older) to:", nullptr));
+        checkBox_4->setText(QApplication::translate("TMain_form", "Set each file &&& directory modification date to:", nullptr));
+        checkBox_5->setText(QApplication::translate("TMain_form", "Set each file && directory name to:", nullptr));
+        toolButton_8->setText(QApplication::translate("TMain_form", "?", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("TMain_form", "Options", nullptr));
+        label_9->setText(QApplication::translate("TMain_form", "Status...", nullptr));
     } // retranslateUi
 
 };

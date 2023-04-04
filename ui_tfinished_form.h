@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'tfinished_form.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.12.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,12 +10,9 @@
 #define UI_TFINISHED_FORM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QDialogButtonBox>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QVBoxLayout>
 
@@ -32,12 +29,14 @@ public:
     void setupUi(QDialog *TFinished_form)
     {
         if (TFinished_form->objectName().isEmpty())
-            TFinished_form->setObjectName(QStringLiteral("TFinished_form"));
-        TFinished_form->resize(400, 300);
+            TFinished_form->setObjectName(QString::fromUtf8("TFinished_form"));
+        TFinished_form->resize(400, 116);
         verticalLayout = new QVBoxLayout(TFinished_form);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setSpacing(4);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(8, 8, 8, 8);
         label = new QLabel(TFinished_form);
-        label->setObjectName(QStringLiteral("label"));
+        label->setObjectName(QString::fromUtf8("label"));
         QFont font;
         font.setPointSize(19);
         font.setBold(true);
@@ -47,7 +46,7 @@ public:
         verticalLayout->addWidget(label);
 
         label_2 = new QLabel(TFinished_form);
-        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setObjectName(QString::fromUtf8("label_2"));
         QFont font1;
         font1.setBold(true);
         font1.setWeight(75);
@@ -57,7 +56,7 @@ public:
         verticalLayout->addWidget(label_2);
 
         buttonBox = new QDialogButtonBox(TFinished_form);
-        buttonBox->setObjectName(QStringLiteral("buttonBox"));
+        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
 
@@ -73,8 +72,8 @@ public:
 
     void retranslateUi(QDialog *TFinished_form)
     {
-        TFinished_form->setWindowTitle(QApplication::translate("TFinished_form", "Koperek32::Finished!", 0));
-        label->setText(QApplication::translate("TFinished_form", "Koniec!", 0));
+        TFinished_form->setWindowTitle(QApplication::translate("TFinished_form", "Koperek32::Finished!", nullptr));
+        label->setText(QApplication::translate("TFinished_form", "Koniec!", nullptr));
         label_2->setText(QString());
     } // retranslateUi
 

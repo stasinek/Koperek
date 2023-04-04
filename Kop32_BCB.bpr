@@ -4,7 +4,7 @@
   <MACROS>
     <VERSION value="BCB.05.03"/>
     <PROJECT value="Kop32_BCB.exe"/>
-    <OBJFILES value=""/>
+    <OBJFILES value="Kop32_main.obj stdafx.obj"/>
     <RESFILES value="Kop32_BCB.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
@@ -49,7 +49,7 @@
     <PFLAGS value="-$YD -$W -$T -$R -$Q -$B -v -JPHNE -M"/>
     <RFLAGS value=""/>
     <AFLAGS value="/ml /w2 /zi /la /z /x /n /c"/>
-    <LFLAGS value="-D&quot;&quot; -Rr -Gz -ap -Tpe -GD -s -Gn -v"/>
+    <LFLAGS value="-D&quot;&quot; -Rr -Gz -ap -Tpe -GD -s -Gn"/>
   </OPTIONS>
   <LINKER>
     <ALLOBJ value="c0x32.obj $(OBJFILES)"/>
@@ -85,8 +85,8 @@ ProductVersion=1.0.0.0
 Comments=
 
 [Excluded Packages]
-$(BCB)\Bin\dcl31w50.bpl=Delphi 1.0 Compatibility Components
 $(BCB)\Bin\bcbsmp50.bpl=Borland C++ Sample Components
+$(BCB)\Bin\dcl31w50.bpl=Delphi 1.0 Compatibility Components
 $(BCB)\Bin\dclocx50.bpl=Borland Sample Imported ActiveX Controls
 $(BCB)\Bin\bcb2kaxserver50.bpl=Borland C++Builder COM Server Components Sample Package
 

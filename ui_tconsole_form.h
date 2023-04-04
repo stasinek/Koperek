@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'tconsole_form.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.12.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,12 +10,10 @@
 #define UI_TCONSOLE_FORM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QToolButton>
@@ -38,14 +36,16 @@ public:
     void setupUi(QDialog *TConsole_form)
     {
         if (TConsole_form->objectName().isEmpty())
-            TConsole_form->setObjectName(QStringLiteral("TConsole_form"));
+            TConsole_form->setObjectName(QString::fromUtf8("TConsole_form"));
         TConsole_form->resize(400, 300);
         verticalLayout = new QVBoxLayout(TConsole_form);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setSpacing(4);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(8, 8, 8, 8);
         listWidget = new QListWidget(TConsole_form);
-        listWidget->setObjectName(QStringLiteral("listWidget"));
+        listWidget->setObjectName(QString::fromUtf8("listWidget"));
         QFont font;
-        font.setFamily(QStringLiteral("Courier New"));
+        font.setFamily(QString::fromUtf8("Courier New"));
         font.setBold(true);
         font.setWeight(75);
         listWidget->setFont(font);
@@ -62,10 +62,10 @@ public:
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(0);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(-1, 5, -1, -1);
         toolButton = new QToolButton(TConsole_form);
-        toolButton->setObjectName(QStringLiteral("toolButton"));
+        toolButton->setObjectName(QString::fromUtf8("toolButton"));
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -73,7 +73,7 @@ public:
         toolButton->setSizePolicy(sizePolicy);
         toolButton->setMinimumSize(QSize(40, 30));
         QIcon icon;
-        icon.addFile(QStringLiteral(":/new/prefix1/BMP/progress.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8(":/new/prefix1/BMP/progress.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton->setIcon(icon);
         toolButton->setIconSize(QSize(24, 24));
 
@@ -84,29 +84,29 @@ public:
         horizontalLayout->addItem(horizontalSpacer);
 
         toolButton_2 = new QToolButton(TConsole_form);
-        toolButton_2->setObjectName(QStringLiteral("toolButton_2"));
+        toolButton_2->setObjectName(QString::fromUtf8("toolButton_2"));
         toolButton_2->setMinimumSize(QSize(40, 30));
         QIcon icon1;
-        icon1.addFile(QStringLiteral(":/new/prefix1/BMP/pause.PNG"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8(":/new/prefix1/BMP/pause.PNG"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_2->setIcon(icon1);
 
         horizontalLayout->addWidget(toolButton_2);
 
         toolButton_3 = new QToolButton(TConsole_form);
-        toolButton_3->setObjectName(QStringLiteral("toolButton_3"));
+        toolButton_3->setObjectName(QString::fromUtf8("toolButton_3"));
         toolButton_3->setMinimumSize(QSize(40, 30));
         QIcon icon2;
-        icon2.addFile(QStringLiteral(":/new/prefix1/BMP/stop.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QString::fromUtf8(":/new/prefix1/BMP/stop.png"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_3->setIcon(icon2);
         toolButton_3->setIconSize(QSize(24, 24));
 
         horizontalLayout->addWidget(toolButton_3);
 
         toolButton_MENU = new QToolButton(TConsole_form);
-        toolButton_MENU->setObjectName(QStringLiteral("toolButton_MENU"));
-        toolButton_MENU->setMinimumSize(QSize(30, 30));
+        toolButton_MENU->setObjectName(QString::fromUtf8("toolButton_MENU"));
+        toolButton_MENU->setMinimumSize(QSize(40, 30));
         QIcon icon3;
-        icon3.addFile(QStringLiteral(":/new/prefix1/BMP/menu.PNG"), QSize(), QIcon::Normal, QIcon::Off);
+        icon3.addFile(QString::fromUtf8(":/new/prefix1/BMP/menu.PNG"), QSize(), QIcon::Normal, QIcon::Off);
         toolButton_MENU->setIcon(icon3);
         toolButton_MENU->setIconSize(QSize(24, 24));
 
@@ -123,11 +123,11 @@ public:
 
     void retranslateUi(QDialog *TConsole_form)
     {
-        TConsole_form->setWindowTitle(QApplication::translate("TConsole_form", "Koperek32::Console", 0));
-        toolButton->setText(QApplication::translate("TConsole_form", "BACK", 0));
-        toolButton_2->setText(QApplication::translate("TConsole_form", "PAUSE", 0));
-        toolButton_3->setText(QApplication::translate("TConsole_form", "STOP", 0));
-        toolButton_MENU->setText(QApplication::translate("TConsole_form", "MENU", 0));
+        TConsole_form->setWindowTitle(QApplication::translate("TConsole_form", "Koperek32::Console", nullptr));
+        toolButton->setText(QApplication::translate("TConsole_form", "BACK", nullptr));
+        toolButton_2->setText(QApplication::translate("TConsole_form", "PAUSE", nullptr));
+        toolButton_3->setText(QApplication::translate("TConsole_form", "STOP", nullptr));
+        toolButton_MENU->setText(QApplication::translate("TConsole_form", "MENU", nullptr));
     } // retranslateUi
 
 };

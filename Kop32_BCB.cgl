@@ -1,19 +1,36 @@
-Error 00019. 0x130410 (Thread 0x09D8):
-Access overrun: Attempt to access 1 byte(s) at 0x00D23E04, that is at offset
- 108 in heap block 0x00D23D98 which is only 108 bytes long.
-Call Tree:
-   0x003B040B(=STK_BCB.DLL:0x01:02F40B)
-   0x003B03B0(=STK_BCB.DLL:0x01:02F3B0)
-   0x00381864(=STK_BCB.DLL:0x01:000864)
-   0x004011E9(=Kop32_BCB.exe:0x01:0001E9) C:\Documents and Settings\stasiek.TC12\My Documents\My Projects\PROGS\CPP\Kop32\Kop32_main.cpp#258
-   0x0040956A(=Kop32_BCB.exe:0x01:00856A)
-
-The memory block (0x00D23D98) [size: 108 bytes] was allocated with malloc
-Call Tree:
-   0x0039DDD6(=STK_BCB.DLL:0x01:01CDD6)
-   0x00382D9D(=STK_BCB.DLL:0x01:001D9D)
-   0x0038183C(=STK_BCB.DLL:0x01:00083C)
-   0x004011E9(=Kop32_BCB.exe:0x01:0001E9) C:\Documents and Settings\stasiek.TC12\My Documents\My Projects\PROGS\CPP\Kop32\Kop32_main.cpp#258
-   0x0040956A(=Kop32_BCB.exe:0x01:00856A)
-
-------------------------------------------
+Functions called:
+ fflush (4 times)
+ access (1 times)
+ strcat (2 times)
+ printf (2 times)
+ free (11 times)
+ _msize (8 times)
+ realloc (1 times)
+ strdup (1 times)
+ fputs (20 times)
+ vsnprintf (20 times)
+ time (7 times)
+ memset (4 times)
+ calloc (2 times)
+ malloc (17 times)
+ strlen (200 times)
+ memcpy (4 times)
+Resource types used:
+ memory block (21 allocs, 19 max)
+Modules used:
+ 002A0000 03/30/2019 22:38:00 C:\SRC\PROGS\CPP\Kop32\STK_BCB.DLL
+ 00400000 04/10/2023 11:36:30 C:\SRC\PROGS\CPP\Kop32\Kop32_BCB.exe
+ 0CD00000 01/31/2000 05:00:00 C:\Program Files\Borland\CBuilder5\Bin\CG32.DLL
+ 758D0000 04/11/2009 15:19:50 C:\Windows\system32\apphelp.dll
+ 75CB0000 11/11/2016 18:59:02 C:\Windows\system32\USER32.DLL
+ 76110000 12/17/2017 00:59:12 C:\Windows\system32\msvcrt.dll
+ 76D40000 12/17/2017 02:01:42 C:\Windows\system32\kernel32.dll
+ 76E20000 12/17/2017 01:42:46 C:\Windows\system32\ADVAPI32.dll
+ 77160000 02/11/2017 18:54:52 C:\Windows\system32\USP10.dll
+ 771E0000 12/17/2017 01:42:46 C:\Windows\system32\RPCRT4.dll
+ 77310000 12/17/2017 01:52:00 C:\Windows\system32\MSCTF.dll
+ 773E0000 12/17/2017 02:01:42 C:\Windows\system32\ntdll.dll
+ 77530000 01/02/2011 22:00:00 C:\Windows\system32\LPK.DLL
+ 77540000 04/11/2009 15:19:58 C:\Windows\system32\IMM32.DLL
+ 77570000 12/17/2017 02:04:24 C:\Windows\system32\GDI32.dll
+==========================================
