@@ -4,12 +4,13 @@
 
 TEMPLATE = app
 DEFINES += QT_GUI
-CONFIG -= static
+
+#CONFIG -= static
 CONFIG += precompile_header
 CONFIG += warn_on exceptions
 CONFIG += c++11
 
-QMAKE_LFLAGS -= static
+#QMAKE_LFLAGS -= static
 QMAKE_CFLAGS_RELEASE += rtti_off stl_off exceptions_off
 
 contains(DEFINES, QT_GUI) {
@@ -34,17 +35,31 @@ QT -= dbus
 QT -= concurent
 QT -= printsupport
 QT -= testlib
-TARGET = Koperek32_Qt
+    contains(DEFINES, KOP32_STATIC) {
+    TARGET = Kop32_QT5_static
+    VPATH += $$absolute_path(./../../../X86_LIBRARIES/stk)
+    message($$VPATH)
+    }
+    else {
+    TARGET = Kop32_QT5
+    }
 }
 else {
-TARGET = Kop32
-CONFIG += console
+    CONFIG += console
+    contains(DEFINES, KOP32_STATIC) {
+    TARGET = Kop32_static
+    VPATH += $$absolute_path(./../../../X86_LIBRARIES/stk)
+    message($$VPATH)
+    }
+    else {
+    TARGET = Kop32
+    }
 }
 
 INCLUDEPATH += "./../../../X86_LIBRARIES/STK"
 
 win32-g++: {
-QMAKE_CXXFLAGS += -pipe
+QMAKE_CXXFLAGS -= -pipe
 QMAKE_CXXFLAGS += -save-temps
 
 QMAKE_CXXFLAGS += -Wno-write-strings
@@ -66,16 +81,18 @@ QMAKE_CXXFLAGS += -std=gnu++0x -pthread
 QMAKE_CXXFLAGS_RELEASE += -mmmx -msse -msse2 #-msse3
 
 }
+
 win32-msvc2010: {
 QMAKE_CXXFLAGS_RELEASE += /W0
 QMAKE_CXXFLAGS_RELEASE += /arch:SSE2
+#QMAKE_CXXFLAGS_RELEASE += /arch:SSE3
 QMAKE_CXXFLAGS_RELEASE += /w
 }
 
 contains(DEFINES, __clang__) {
 QMAKE_CXX = clang++
 QMAKE_CXXFLAGS += -save-temps
-QMAKE_CXXFLAGS += -pipe
+QMAKE_CXXFLAGS -= -pipe
 
 QMAKE_CXXFLAGS += -Wno-write-strings
 QMAKE_CXXFLAGS += -Wno-unused-variable
@@ -104,6 +121,65 @@ QMAKE_LFLAGS -= -mthreads
 SOURCES += \
     ../Kop32/kop32_main.cpp
 
+contains(DEFINES, KOP32_STATIC) {
+        SOURCES += \
+    stk_set.cpp \
+    stk_test.cpp \
+    stk_hash_chain.cpp \
+    stk_list.cpp \
+    stk_map.cpp \
+    cpu/stk_cpu.cpp \
+#    cipher/rsa/stk_rsa_single.c \
+    cipher/stk_base64.cpp \
+    cipher/stk_cipher_mtf.cpp \
+    cipher/stk_cipher_API.cpp \
+    cipher/stk_cipher_pair.cpp \
+    compression/stk_compression_ari.cpp \
+    compression/stk_compression_bwt_matrix2.cpp \
+    compression/stk_compression_huff.cpp \
+    compression/stk_compression_lzstv4.cpp \
+    compression/stk_compression_static_huff.cpp \
+    compression/stk_compression_API.cpp \
+    database/stk_database_items.cpp \
+    database/stk_database.cpp \
+    file/stk_file_mime_types.cpp \
+    file/ini/stk_file_ini.cpp \
+    file/eno/stk_file_lzst_header.cpp \
+    file/json/stk_json.cpp \
+    file/vfs/stk_file_vfs.cpp \
+#    file/xml/stk_xml.cpp \
+    hash/stk_hash_crc32.cpp \
+    hash/stk_hash_md5.cpp \
+    hash/stk_hash_password.cpp \
+    hash/stk_hash_ssc1.cpp \
+    io/stk_file_io.cpp \
+    io/stk_rs232.cpp \
+    io/stk_console.cpp \
+    koperek/stk_kop32_class.cpp \
+    koperek/stk_kop32_controler.cpp \
+    koperek/stk_kop32_search.cpp \
+#    koperek/stk_kop32_socket_server.cpp \
+    koperek/stk_kop32_API.cpp \
+    mem/stk_mem.cpp \
+    mem/stk_btree.cpp \
+    process_journal/stk_journal.cpp \
+    pharser/stk_pharse_command_line.cpp \
+    pharser/stk_pharse_math.cpp \
+#    sockets/stk_sockets.cpp \
+    stasm/stk_stasm.cpp \
+    threads/stk_threads.cpp \
+    text/stk_cstr_utils.cpp \
+    time/stk_time.cpp \
+    text/stk_cstr_class.cpp \
+    text/stk_cstr_stack.cpp \
+    koperek/stk_kop32_options.cpp \
+    koperek/stk_kop32_list.cpp \
+    hash/md5/md5.cpp \
+    hash/sha1/hmac_sha1.cpp \
+    hash/sha1/sha1.cpp \
+    file/zip/miniz.cpp
+    }
+
 contains(DEFINES, QT_GUI) {
         SOURCES += \
         tapplication.cpp \
@@ -122,6 +198,73 @@ contains(DEFINES, QT_GUI) {
 }
 HEADERS += \
     ./../Kop32/kop32_main.h
+
+contains(DEFINES, KOP32_STATIC) {
+        HEADERS += \
+    stk_hash_chain.h \
+    stk_list.h \
+    stk_main.h \
+    stk_map.h \
+    stk_set.h \
+    stk_vector.h \
+    3D/stk_3Dvector.h \
+    cpu/stk_cpu.h \
+    cipher/stk_cipher_API.h \
+    cipher/stk_cipher_mtf.h \
+    cipher/stk_cipher_pair.h \
+    cipher/stk_base64.h \
+    cipher/FastAESinC/stk_aes.h \
+    compression/stk_compression_static_huff.h \
+    compression/stk_compression_ari.h \
+    compression/stk_compression_bwt_matrix2.h \
+    compression/stk_compression_bwt_matrix3_suffix.h \
+    compression/stk_compression_huff.h \
+    compression/stk_compression_lzstv4.h \
+    compression/stk_compression_API.h \
+    database/stk_database.h \
+    database/stk_database_owner.h \
+    database/stk_database_alias.h \
+    database/stk_database_items.h \
+    file/stk_file_mime_types.h \
+    file/ini/stk_file_ini.h \
+    file/eno/stk_file_lzst_header.h \
+    file/json/stk_json.h \
+    file/vfs/stk_file_vfs.h \
+    file/xml/stk_xml.h \
+    hash/stk_hash_ssc1.h \
+    hash/stk_hash_crc32.h \
+    hash/stk_hash_md5.h \
+    hash/stk_hash_password.h \
+    hash/md5/md5.h \
+    hash/sha1/hmac_sha1.h \
+    hash/sha1/sha.h \
+    incbin/stk_incbin.h \
+    io/stk_file_io.h \
+    io/stk_rs232.h \
+    io/stk_console.h \
+    koperek/stk_kop32_class.h \
+    koperek/stk_kop32_search.h \
+    koperek/stk_kop32_controler.h \
+    koperek/stk_kop32_list.h \
+    koperek/stk_kop32_options.h \
+    koperek/stk_kop32_socket_server.h \
+    koperek/stk_kop32_API.h \
+    mem/stk_mem.h \
+    mem/stk_btree.h \
+    pharser/stk_pharse_math.h \
+    pharser/stk_pharse_command_line.h \
+    process_journal/stk_journal.h \
+    sockets/stk_sockets.h \
+    stasm/stk_stasm.h \
+    threads/stk_threads.h \
+    time/stk_time.h \
+    text/stk_cstr_class.h \
+    text/stk_cstr_stack.h \
+    text/stk_cstr_utils.h \
+    text/stk_cstr.h \
+    stk_test.h \
+    file/zip/miniz.h
+    }
 
 contains(DEFINES, QT_GUI) {
 HEADERS += \
@@ -142,7 +285,13 @@ HEADERS += \
 contains(DEFINES, __GNUC__) {
 LIBS += -lwinmm -lgomp
 LIBS += -lwsock32 -lws2_32 -lcrypt32 -lgdi32 -luser32 -lshell32
-LIBS += -static -L"./../../../../x86_libraries/STK/Qt_5_5_0_mingw492_32-Release/release/libstk.a"
+    contains(DEFINES, KOP32_STATIC) {
+    }
+    else {
+    LIBS += -static -L$$absolute_path("./../../../X86_LIBRARIES/STK/release/libstk.a")
+    LIBS += -L$$absolute_path("./../../../X86_LIBRARIES/openssl-win32/lib/MinGW") libcrypto
+    LIBS += -L$$absolute_path("./../../../X86_LIBRARIES/openssl-win32/lib/MinGW") libssl
+    }
 }
 contains(DEFINES, _MSC_VER) {
 LIBS += \
@@ -153,12 +302,20 @@ LIBS += \
 LIBS -= \
     gomp.lib \
     vcompd.lib
-LIBS += -L"./../../../../x86_libraries/STK/Desktop_Qt_5_5_0_MSVC2010_32bit-Release/release/libstk.lib"
+    contains(DEFINES, KOP32_STATIC) {
+    }
+    else {
+    LIBS += -L"./../../../../x86_libraries/STK/Desktop_Qt_5_5_0_MSVC2010_32bit-Release/release/libstk.lib"
+    }
 }
 contains(DEFINES, __clang__) {
 LIBS += -lwinmm -lgomp
 LIBS += -lwsock32 -lws2_32 -lcrypt32 -lgdi32 -luser32 -lshell32
-LIBS += -dL"./../../../../x86_libraries/STK/Qt_5_5_0_mingw492_32-Release/release/libstk.a"
+    contains(DEFINES, KOP32_STATIC) {
+    }
+    else {
+    LIBS += -dL"./../../../../x86_libraries/STK/Qt_5_5_0_mingw492_32-Release/release/libstk.a"
+    }
 }
 
 contains(DEFINES, QT_GUI) {

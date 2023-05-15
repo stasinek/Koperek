@@ -203,6 +203,7 @@ ehthumbs_vista.db
 [Dd]esktop.ini
 *.mbr
 /Desktop_*/*.*
+/Windows*/*.*
 /build_*/*.*
 /Qt_*/*.*
 /LLVM_*/*.*
