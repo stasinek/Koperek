@@ -4,7 +4,7 @@
   <MACROS>
     <VERSION value="BCB.05.03"/>
     <PROJECT value="Kop32_BCB.exe"/>
-    <OBJFILES value="Kop32_main.obj stdafx.obj"/>
+    <OBJFILES value="stdafx.obj kop32_main.obj"/>
     <RESFILES value="Kop32_BCB.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
