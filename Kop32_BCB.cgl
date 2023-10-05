@@ -1,36 +1,58 @@
-Functions called:
- fflush (4 times)
- access (1 times)
- strcat (2 times)
- printf (2 times)
- free (11 times)
- _msize (8 times)
- realloc (1 times)
- strdup (1 times)
- fputs (20 times)
- vsnprintf (20 times)
- time (7 times)
- memset (4 times)
- calloc (2 times)
- malloc (17 times)
- strlen (200 times)
- memcpy (4 times)
-Resource types used:
- memory block (21 allocs, 19 max)
-Modules used:
- 002A0000 03/30/2019 22:38:00 C:\SRC\PROGS\CPP\Kop32\STK_BCB.DLL
- 00400000 04/10/2023 11:36:30 C:\SRC\PROGS\CPP\Kop32\Kop32_BCB.exe
- 0CD00000 01/31/2000 05:00:00 C:\Program Files\Borland\CBuilder5\Bin\CG32.DLL
- 758D0000 04/11/2009 15:19:50 C:\Windows\system32\apphelp.dll
- 75CB0000 11/11/2016 18:59:02 C:\Windows\system32\USER32.DLL
- 76110000 12/17/2017 00:59:12 C:\Windows\system32\msvcrt.dll
- 76D40000 12/17/2017 02:01:42 C:\Windows\system32\kernel32.dll
- 76E20000 12/17/2017 01:42:46 C:\Windows\system32\ADVAPI32.dll
- 77160000 02/11/2017 18:54:52 C:\Windows\system32\USP10.dll
- 771E0000 12/17/2017 01:42:46 C:\Windows\system32\RPCRT4.dll
- 77310000 12/17/2017 01:52:00 C:\Windows\system32\MSCTF.dll
- 773E0000 12/17/2017 02:01:42 C:\Windows\system32\ntdll.dll
- 77530000 01/02/2011 22:00:00 C:\Windows\system32\LPK.DLL
- 77540000 04/11/2009 15:19:58 C:\Windows\system32\IMM32.DLL
- 77570000 12/17/2017 02:04:24 C:\Windows\system32\GDI32.dll
-==========================================
+Error 00001. 0x130410 (Thread 0x2FAC):
+Access overrun: Attempt to access 1 byte(s) at 0x01E653CA, that is at offset
+ 70 in heap block 0x01E65384 which is only 70 bytes long.
+Call Tree:
+   0x001710BF(=STK_BCB.DLL:0x01:0300BF)
+   0x00171064(=STK_BCB.DLL:0x01:030064)
+   0x00141864(=STK_BCB.DLL:0x01:000864)
+   0x0040146B(=Kop32_BCB.exe:0x01:00046B)
+   0x0040B006(=Kop32_BCB.exe:0x01:00A006)
+
+The memory block (0x01E65384) [size: 70 bytes] was allocated with malloc
+Call Tree:
+   0x0015DEE6(=STK_BCB.DLL:0x01:01CEE6)
+   0x00142D9D(=STK_BCB.DLL:0x01:001D9D)
+   0x0014183C(=STK_BCB.DLL:0x01:00083C)
+   0x0040146B(=Kop32_BCB.exe:0x01:00046B)
+   0x0040B006(=Kop32_BCB.exe:0x01:00A006)
+
+------------------------------------------
+Error 00002. 0x130210 (Thread 0x2FAC):
+Pointer arithmetic overrun: 0x01E653CA+1, that is at offset 70+1 in heap block
+ 0x01E65384 which is only 70 bytes long.
+Call Tree:
+   0x001710E1(=STK_BCB.DLL:0x01:0300E1)
+   0x00171064(=STK_BCB.DLL:0x01:030064)
+   0x00141864(=STK_BCB.DLL:0x01:000864)
+   0x0040146B(=Kop32_BCB.exe:0x01:00046B)
+   0x0040B006(=Kop32_BCB.exe:0x01:00A006)
+
+The memory block (0x01E65384) [size: 70 bytes] was allocated with malloc
+Call Tree:
+   0x0015DEE6(=STK_BCB.DLL:0x01:01CEE6)
+   0x00142D9D(=STK_BCB.DLL:0x01:001D9D)
+   0x0014183C(=STK_BCB.DLL:0x01:00083C)
+   0x0040146B(=Kop32_BCB.exe:0x01:00046B)
+   0x0040B006(=Kop32_BCB.exe:0x01:00A006)
+
+------------------------------------------
+Error 00003. 0x100400 (r) (Thread 0x2FAC):
+Access in invalid memory: Attempt to access 1 byte(s) at 0x01E653CB.
+Call Tree:
+   0x001710BF(=STK_BCB.DLL:0x01:0300BF)
+   0x00171064(=STK_BCB.DLL:0x01:030064)
+   0x00141864(=STK_BCB.DLL:0x01:000864)
+   0x0040146B(=Kop32_BCB.exe:0x01:00046B)
+   0x0040B006(=Kop32_BCB.exe:0x01:00A006)
+
+------------------------------------------
+Error 00004. 0x100200 (r) (Thread 0x2FAC):
+Pointer arithmetic in invalid memory: 0x01E653CB+1.
+Call Tree:
+   0x001710E1(=STK_BCB.DLL:0x01:0300E1)
+   0x00171064(=STK_BCB.DLL:0x01:030064)
+   0x00141864(=STK_BCB.DLL:0x01:000864)
+   0x0040146B(=Kop32_BCB.exe:0x01:00046B)
+   0x0040B006(=Kop32_BCB.exe:0x01:00A006)
+
+------------------------------------------
