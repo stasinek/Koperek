@@ -27,26 +27,26 @@ CommandLine=
 Folders=
 IncludeVersionInfo=1
 SupportXPThemes=1
-CompilerSet=5
-CompilerSettings=0000000000000010101000000
+CompilerSet=4
+CompilerSettings=000j0b0100000000001000000
 UnitCount=96
 
 [VersionInfo]
 Major=0
 Minor=8
 Release=0
-Build=2569
+Build=2571
 LanguageID=1045
 CharsetID=1252
 CompanyName=SSTSOFT.pl
-FileVersion=0.8.0.2569
+FileVersion=0.8.0.2571
 FileDescription=Developed using the Dev-C++ IDE
 InternalName=Koperek
 LegalCopyright=Stanislaw Stasiak
 LegalTrademarks=
 OriginalFilename=Kop32_DEV
 ProductName=Koperek
-ProductVersion=0.8.0.2569
+ProductVersion=0.8.0.2571
 AutoIncBuildNr=1
 SyncProduct=1
 

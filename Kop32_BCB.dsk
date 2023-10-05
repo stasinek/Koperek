@@ -1,44 +1,45 @@
 [Closed Files]
-File_0=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\main.h',0,1,1,31,4,0,0
-File_1=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\LIB\DLLKop32\TSoft_Kop32.h',0,1,153,1,165,0,0
-File_2=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\LIB\DLLKop32\TSoft_Stack.h',0,1,1,13,23,0,0
-File_3=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\Kop32_common.cpp',0,1,1,51,30,0,0
-File_4=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\Break_frm.cpp',0,1,1,27,10,1,0
-File_5=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\Koper_frm.cpp',0,1,31,32,40,1,0
-File_6=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\LIB\DLLDatabase\TSoft_Database.h',0,1,1,23,7,0,0
-File_7=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\LIB\DLLIO\TSoft_IO.h',0,1,1,1,1,0,0
-File_8=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\LIB\DLLIO\TSoft_IO.cpp',0,1,1,1,1,0,0
+File_0=SourceModule,'E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\Kop32_main_common.cpp',0,1,1,30,5,0,0
+File_1=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\main.h',0,1,1,31,4,0,0
+File_2=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\LIB\DLLKop32\TSoft_Kop32.h',0,1,153,1,165,0,0
+File_3=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\LIB\DLLKop32\TSoft_Stack.h',0,1,1,13,23,0,0
+File_4=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\Kop32_common.cpp',0,1,1,51,30,0,0
+File_5=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\Break_frm.cpp',0,1,1,27,10,1,0
+File_6=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\Koper_frm.cpp',0,1,31,32,40,1,0
+File_7=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\LIB\DLLDatabase\TSoft_Database.h',0,1,1,23,7,0,0
+File_8=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\LIB\DLLIO\TSoft_IO.h',0,1,1,1,1,0,0
+File_9=SourceModule,'C:\SRC\OBSOLETE\PROGS\Koperek.VCL\LIB\DLLIO\TSoft_IO.cpp',0,1,1,1,1,0,0
 
 [Modules]
-Module0=E:\SRC\PROGS\CPP\Kop32\Kop32_main.cpp
-Module1=E:\SRC\PROGS\CPP\Kop32\stdafx.h
-Module2=E:\SRC\PROGS\CPP\Kop32\stdafx.cpp
-Module3=E:\SRC\PROGS\CPP\Kop32\Kop32_main.h
-Module4=E:\SRC\X86_LIBRARIES\STK\stk_MAIN.h
+Module0=E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\kop32_main.cpp
+Module1=E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\Kop32_BCB.bpr
+Module2=E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\Kop32_main_common.h
+Module3=E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\kop32_main.h
+Module4=E:\MEGA\MEGAsync\My Projects\X86_LIBRARIES\STK\stk_MAIN.h
 Count=5
 EditWindowCount=1
 
-[E:\SRC\PROGS\CPP\Kop32\Kop32_main.cpp]
+[E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\kop32_main.cpp]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[E:\SRC\PROGS\CPP\Kop32\stdafx.h]
+[E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\Kop32_BCB.bpr]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[E:\SRC\PROGS\CPP\Kop32\stdafx.cpp]
+[E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\Kop32_main_common.h]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[E:\SRC\PROGS\CPP\Kop32\Kop32_main.h]
+[E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\kop32_main.h]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[E:\SRC\X86_LIBRARIES\STK\stk_MAIN.h]
+[E:\MEGA\MEGAsync\My Projects\X86_LIBRARIES\STK\stk_MAIN.h]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
@@ -47,13 +48,9 @@ FormOnTop=0
 FormState=0
 FormOnTop=0
 
-[E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\Kop32_BCB.bpr]
-FormState=0
-FormOnTop=0
-
 [EditWindow0]
 ViewCount=5
-CurrentView=2
+CurrentView=1
 View0=0
 View1=1
 View2=2
@@ -80,38 +77,38 @@ BottomPanelClients=MessageView@EditWindow0
 BottomPanelData=000004000000000000000000000000000000000000000000000100000000000000000B0000004D65737361676556696577FFFFFFFF
 
 [View0]
-Module=E:\SRC\PROGS\CPP\Kop32\stdafx.cpp
-CursorX=15
-CursorY=5
+Module=E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\Kop32_BCB.bpf
+CursorX=1
+CursorY=1
 TopLine=1
 LeftCol=1
 
 [View1]
-Module=E:\SRC\PROGS\CPP\Kop32\stdafx.h
-CursorX=2
+Module=E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\kop32_main.cpp
+CursorX=1
 CursorY=5
 TopLine=1
 LeftCol=1
 
 [View2]
-Module=E:\SRC\PROGS\CPP\Kop32\Kop32_main.cpp
-CursorX=18
-CursorY=5
+Module=E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\kop32_main.h
+CursorX=29
+CursorY=1
 TopLine=1
 LeftCol=1
 
 [View3]
-Module=E:\SRC\PROGS\CPP\Kop32\Kop32_main.h
-CursorX=17
+Module=E:\MEGA\MEGAsync\My Projects\PROGS\CPP\Kop32\Kop32_main_common.h
+CursorX=19
 CursorY=5
 TopLine=1
 LeftCol=1
 
 [View4]
-Module=E:\SRC\X86_LIBRARIES\STK\stk_MAIN.h
-CursorX=1
-CursorY=2
-TopLine=1
+Module=E:\MEGA\MEGAsync\My Projects\X86_LIBRARIES\STK\stk_MAIN.h
+CursorX=27
+CursorY=39
+TopLine=22
 LeftCol=1
 
 [Watches]
@@ -152,23 +149,6 @@ TBDockHeight=303
 LRDockWidth=438
 Dockable=1
 
-[CPUWindow]
-Create=1
-Visible=0
-State=0
-Left=373
-Top=223
-Width=533
-Height=353
-MaxLeft=-1
-MaxTop=-1
-ClientWidth=525
-ClientHeight=326
-DumpPane=79
-DisassemblyPane=187
-RegisterPane=231
-FlagPane=64
-
 [AlignmentPalette]
 Create=1
 Visible=0
@@ -203,22 +183,6 @@ SelectedItem=
 ExpandedItems=
 HiddenCategories=Legacy
 ShowStatusBar=1
-
-[CallStackWindow]
-Create=1
-Visible=0
-State=0
-Left=493
-Top=319
-Width=294
-Height=161
-MaxLeft=-1
-MaxTop=-1
-ClientWidth=286
-ClientHeight=137
-TBDockHeight=161
-LRDockWidth=294
-Dockable=1
 
 [MessageView@EditWindow0]
 Create=1
