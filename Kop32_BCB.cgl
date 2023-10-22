@@ -1,58 +1,58 @@
-Error 00001. 0x130410 (Thread 0x2FAC):
-Access overrun: Attempt to access 1 byte(s) at 0x01E653CA, that is at offset
- 70 in heap block 0x01E65384 which is only 70 bytes long.
+Error 00001. 0x130410 (Thread 0x1718):
+Access overrun: Attempt to access 1 byte(s) at 0x00D353F2, that is at offset
+ 98 in heap block 0x00D35390 which is only 98 bytes long.
 Call Tree:
-   0x001710BF(=STK_BCB.DLL:0x01:0300BF)
-   0x00171064(=STK_BCB.DLL:0x01:030064)
-   0x00141864(=STK_BCB.DLL:0x01:000864)
-   0x0040146B(=Kop32_BCB.exe:0x01:00046B)
+   0x003B10BF(=STK_BCB.DLL:0x01:0300BF)
+   0x003B1064(=STK_BCB.DLL:0x01:030064)
+   0x00381864(=STK_BCB.DLL:0x01:000864)
+   0x0040146B(=Kop32_BCB.exe:0x01:00046B) C:\Documents and Settings\stasiek\My Documents\My Projects\PROGS\CPP\Kop32\kop32_main.cpp#270
    0x0040B006(=Kop32_BCB.exe:0x01:00A006)
 
-The memory block (0x01E65384) [size: 70 bytes] was allocated with malloc
+The memory block (0x00D35390) [size: 98 bytes] was allocated with malloc
 Call Tree:
-   0x0015DEE6(=STK_BCB.DLL:0x01:01CEE6)
-   0x00142D9D(=STK_BCB.DLL:0x01:001D9D)
-   0x0014183C(=STK_BCB.DLL:0x01:00083C)
-   0x0040146B(=Kop32_BCB.exe:0x01:00046B)
-   0x0040B006(=Kop32_BCB.exe:0x01:00A006)
-
-------------------------------------------
-Error 00002. 0x130210 (Thread 0x2FAC):
-Pointer arithmetic overrun: 0x01E653CA+1, that is at offset 70+1 in heap block
- 0x01E65384 which is only 70 bytes long.
-Call Tree:
-   0x001710E1(=STK_BCB.DLL:0x01:0300E1)
-   0x00171064(=STK_BCB.DLL:0x01:030064)
-   0x00141864(=STK_BCB.DLL:0x01:000864)
-   0x0040146B(=Kop32_BCB.exe:0x01:00046B)
-   0x0040B006(=Kop32_BCB.exe:0x01:00A006)
-
-The memory block (0x01E65384) [size: 70 bytes] was allocated with malloc
-Call Tree:
-   0x0015DEE6(=STK_BCB.DLL:0x01:01CEE6)
-   0x00142D9D(=STK_BCB.DLL:0x01:001D9D)
-   0x0014183C(=STK_BCB.DLL:0x01:00083C)
-   0x0040146B(=Kop32_BCB.exe:0x01:00046B)
+   0x0039DEE6(=STK_BCB.DLL:0x01:01CEE6)
+   0x00382D9D(=STK_BCB.DLL:0x01:001D9D)
+   0x0038183C(=STK_BCB.DLL:0x01:00083C)
+   0x0040146B(=Kop32_BCB.exe:0x01:00046B) C:\Documents and Settings\stasiek\My Documents\My Projects\PROGS\CPP\Kop32\kop32_main.cpp#270
    0x0040B006(=Kop32_BCB.exe:0x01:00A006)
 
 ------------------------------------------
-Error 00003. 0x100400 (r) (Thread 0x2FAC):
-Access in invalid memory: Attempt to access 1 byte(s) at 0x01E653CB.
+Error 00002. 0x130210 (Thread 0x1718):
+Pointer arithmetic overrun: 0x00D353F2+1, that is at offset 98+1 in heap block
+ 0x00D35390 which is only 98 bytes long.
 Call Tree:
-   0x001710BF(=STK_BCB.DLL:0x01:0300BF)
-   0x00171064(=STK_BCB.DLL:0x01:030064)
-   0x00141864(=STK_BCB.DLL:0x01:000864)
-   0x0040146B(=Kop32_BCB.exe:0x01:00046B)
+   0x003B10E1(=STK_BCB.DLL:0x01:0300E1)
+   0x003B1064(=STK_BCB.DLL:0x01:030064)
+   0x00381864(=STK_BCB.DLL:0x01:000864)
+   0x0040146B(=Kop32_BCB.exe:0x01:00046B) C:\Documents and Settings\stasiek\My Documents\My Projects\PROGS\CPP\Kop32\kop32_main.cpp#270
+   0x0040B006(=Kop32_BCB.exe:0x01:00A006)
+
+The memory block (0x00D35390) [size: 98 bytes] was allocated with malloc
+Call Tree:
+   0x0039DEE6(=STK_BCB.DLL:0x01:01CEE6)
+   0x00382D9D(=STK_BCB.DLL:0x01:001D9D)
+   0x0038183C(=STK_BCB.DLL:0x01:00083C)
+   0x0040146B(=Kop32_BCB.exe:0x01:00046B) C:\Documents and Settings\stasiek\My Documents\My Projects\PROGS\CPP\Kop32\kop32_main.cpp#270
    0x0040B006(=Kop32_BCB.exe:0x01:00A006)
 
 ------------------------------------------
-Error 00004. 0x100200 (r) (Thread 0x2FAC):
-Pointer arithmetic in invalid memory: 0x01E653CB+1.
+Error 00003. 0x100400 (r) (Thread 0x1718):
+Access in invalid memory: Attempt to access 1 byte(s) at 0x00D353F3.
 Call Tree:
-   0x001710E1(=STK_BCB.DLL:0x01:0300E1)
-   0x00171064(=STK_BCB.DLL:0x01:030064)
-   0x00141864(=STK_BCB.DLL:0x01:000864)
-   0x0040146B(=Kop32_BCB.exe:0x01:00046B)
+   0x003B10BF(=STK_BCB.DLL:0x01:0300BF)
+   0x003B1064(=STK_BCB.DLL:0x01:030064)
+   0x00381864(=STK_BCB.DLL:0x01:000864)
+   0x0040146B(=Kop32_BCB.exe:0x01:00046B) C:\Documents and Settings\stasiek\My Documents\My Projects\PROGS\CPP\Kop32\kop32_main.cpp#270
+   0x0040B006(=Kop32_BCB.exe:0x01:00A006)
+
+------------------------------------------
+Error 00004. 0x100200 (r) (Thread 0x1718):
+Pointer arithmetic in invalid memory: 0x00D353F3+1.
+Call Tree:
+   0x003B10E1(=STK_BCB.DLL:0x01:0300E1)
+   0x003B1064(=STK_BCB.DLL:0x01:030064)
+   0x00381864(=STK_BCB.DLL:0x01:000864)
+   0x0040146B(=Kop32_BCB.exe:0x01:00046B) C:\Documents and Settings\stasiek\My Documents\My Projects\PROGS\CPP\Kop32\kop32_main.cpp#270
    0x0040B006(=Kop32_BCB.exe:0x01:00A006)
 
 ------------------------------------------

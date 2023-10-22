@@ -49,7 +49,7 @@
     <PFLAGS value="-$YD -$W -$T -$R -$Q -$B -v -JPHNE -M"/>
     <RFLAGS value=""/>
     <AFLAGS value="/ml /w2 /zi /la /z /x /n /c"/>
-    <LFLAGS value="-D&quot;&quot; -Rr -Gz -ap -Tpe -GD -s -Gn"/>
+    <LFLAGS value="-D&quot;&quot; -Rr -Gz -ap -Tpe -GD -s -Gn -v"/>
   </OPTIONS>
   <LINKER>
     <ALLOBJ value="c0x32.obj $(OBJFILES)"/>
@@ -85,8 +85,8 @@ ProductVersion=1.0.0.0
 Comments=
 
 [Excluded Packages]
-$(BCB)\Bin\bcbsmp50.bpl=Borland C++ Sample Components
 $(BCB)\Bin\dcl31w50.bpl=Delphi 1.0 Compatibility Components
+$(BCB)\Bin\bcbsmp50.bpl=Borland C++ Sample Components
 $(BCB)\Bin\dclocx50.bpl=Borland Sample Imported ActiveX Controls
 $(BCB)\Bin\bcb2kaxserver50.bpl=Borland C++Builder COM Server Components Sample Package
 
@@ -128,16 +128,5 @@ RemoteDebug=0
 [Compiler]
 ShowInfoMsgs=1
 LinkDebugVcl=1
-LinkCGLIB=1
-
-[CORBA]
-AddServerUnit=1
-AddClientUnit=1
-PrecompiledHeaders=1
-
-[Language]
-ActiveLang=
-ProjectLang=
-RootDir=
   </IDEOPTIONS>
 </PROJECT>
