@@ -4,6 +4,7 @@
 
 TEMPLATE = app
 DEFINES += QT_GUI
+DEFINES += KOP32_STATIC
 
 #CONFIG -= static
 CONFIG += precompile_header
@@ -38,7 +39,7 @@ QT -= testlib
     contains(DEFINES, KOP32_STATIC) {
     TARGET = Kop32_QT5_static
     VPATH += $$absolute_path(./../../../X86_LIBRARIES/stk)
-    message($$VPATH)
+    message("Target"+$$TARGET+$$VPATH)
     }
     else {
     TARGET = Kop32_QT5
@@ -49,7 +50,7 @@ else {
     contains(DEFINES, KOP32_STATIC) {
     TARGET = Kop32_static
     VPATH += $$absolute_path(./../../../X86_LIBRARIES/stk)
-    message($$VPATH)
+    message("Target"+$$TARGET+$$VPATH)
     }
     else {
     TARGET = Kop32
@@ -59,6 +60,7 @@ else {
 INCLUDEPATH += "./../../../X86_LIBRARIES/STK"
 
 win32-g++: {
+    message("win32-g++")
 QMAKE_CXXFLAGS -= -pipe
 QMAKE_CXXFLAGS += -save-temps
 
@@ -79,17 +81,17 @@ QMAKE_CXXFLAGS += -g
 QMAKE_CXXFLAGS += -std=gnu++0x -pthread
 
 QMAKE_CXXFLAGS_RELEASE += -mmmx -msse -msse2 #-msse3
-
 }
 
 win32-msvc2010: {
+    message("win32-msvc2010")
 QMAKE_CXXFLAGS_RELEASE += /W0
 QMAKE_CXXFLAGS_RELEASE += /arch:SSE2
 #QMAKE_CXXFLAGS_RELEASE += /arch:SSE3
 QMAKE_CXXFLAGS_RELEASE += /w
 }
 
-contains(DEFINES, __clang__) {
+win32-clang++: {
 QMAKE_CXX = clang++
 QMAKE_CXXFLAGS += -save-temps
 QMAKE_CXXFLAGS -= -pipe
@@ -117,6 +119,7 @@ QMAKE_CC  = clang
 QMAKE_LFLAGS += -Qunused-arguments -Wno-error=unused-command-line-argument-hard-error-in-future
 QMAKE_LFLAGS -= -mthreads
 }
+# SOURCES
 
 SOURCES += \
     ../Kop32/kop32_main.cpp
@@ -168,10 +171,10 @@ contains(DEFINES, KOP32_STATIC) {
 #    sockets/stk_sockets.cpp \
     stasm/stk_stasm.cpp \
     threads/stk_threads.cpp \
-    text/stk_cstr_utils.cpp \
     time/stk_time.cpp \
-    text/stk_cstr_class.cpp \
+    text/stk_cstr_utils.cpp \
     text/stk_cstr_stack.cpp \
+    text/stk_cstr_class.cpp \
     koperek/stk_kop32_options.cpp \
     koperek/stk_kop32_list.cpp \
     hash/md5/md5.cpp \
@@ -282,10 +285,14 @@ HEADERS += \
         tselect_form.h \
         tconsole_form.h
 }
-contains(DEFINES, __GNUC__) {
+# LINKER
+
+win32-g++: {
 LIBS += -lwinmm -lgomp
 LIBS += -lwsock32 -lws2_32 -lcrypt32 -lgdi32 -luser32 -lshell32
     contains(DEFINES, KOP32_STATIC) {
+      QMAKE_CFLAGS += -DBUILD_STK_LIBRARY
+    QMAKE_CXXFLAGS += -DBUILD_STK_LIBRARY
     }
     else {
     LIBS += -static -L$$absolute_path("./../../../X86_LIBRARIES/STK/release/libstk.a")
@@ -293,30 +300,37 @@ LIBS += -lwsock32 -lws2_32 -lcrypt32 -lgdi32 -luser32 -lshell32
     LIBS += -L$$absolute_path("./../../../X86_LIBRARIES/openssl-win32/lib/MinGW") libssl
     }
 }
-contains(DEFINES, _MSC_VER) {
-LIBS += \
-    winmm.lib wsock32.lib ws2_32.lib crypt32.lib
-LIBS += \
-    gdi32.lib user32.lib shell32.lib ole32.lib oleaut32.lib kernel32.lib uuid.lib \
-    QtCored.lib
-LIBS -= \
-    gomp.lib \
-    vcompd.lib
+win32-msvc2010: {
+    LIBS += \
+        winmm.lib wsock32.lib ws2_32.lib crypt32.lib
+    LIBS += \
+        gdi32.lib user32.lib shell32.lib ole32.lib oleaut32.lib kernel32.lib uuid.lib \
+        QtCored.lib
+    LIBS -= \
+        gomp.lib \
+        vcompd.lib
+
     contains(DEFINES, KOP32_STATIC) {
+          QMAKE_CFLAGS += /DBUILD_STK_LIBRARY
+        QMAKE_CXXFLAGS += /DBUILD_STK_LIBRARY
+        message("MSVC STATIC LIBRARY BUILT IN")
     }
     else {
     LIBS += -L"./../../../../x86_libraries/STK/Desktop_Qt_5_5_0_MSVC2010_32bit-Release/release/libstk.lib"
     }
 }
-contains(DEFINES, __clang__) {
-LIBS += -lwinmm -lgomp
-LIBS += -lwsock32 -lws2_32 -lcrypt32 -lgdi32 -luser32 -lshell32
+win32-clang++: {
+    LIBS += -lwinmm -lgomp
+    LIBS += -lwsock32 -lws2_32 -lcrypt32 -lgdi32 -luser32 -lshell32
     contains(DEFINES, KOP32_STATIC) {
+          QMAKE_CFLAGS += -DBUILD_STK_LIBRARY
+        QMAKE_CXXFLAGS += -DBUILD_STK_LIBRARY
     }
     else {
     LIBS += -dL"./../../../../x86_libraries/STK/Qt_5_5_0_mingw492_32-Release/release/libstk.a"
     }
 }
+# GUI UI and Resources
 
 contains(DEFINES, QT_GUI) {
 FORMS += \
