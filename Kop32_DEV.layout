@@ -54,8 +54,8 @@
 	</File>
 </CodeBlocks_layout_file>
 [Editors]
-Order=
-Focused=76
+Order=58
+Focused=58
 [Editor_50]
 CursorCol=3
 CursorRow=232
@@ -182,9 +182,9 @@ CursorRow=1
 TopLine=1
 LeftChar=1
 [Editor_58]
-CursorCol=16
-CursorRow=251
-TopLine=238
+CursorCol=1
+CursorRow=67
+TopLine=54
 LeftChar=1
 [Editor_10]
 CursorCol=11

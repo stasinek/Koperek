@@ -9,14 +9,14 @@
 // THIS WILL MAKE THE PROGRAM USE THE COMMON CONTROLS
 // LIBRARY VERSION 6.0 (IF IT IS AVAILABLE)
 //
-1 24 "Kop32_DEV.exe.Manifest"
+1 24 "Kop32_DEV_static.exe.Manifest"
 
 //
 // TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
 //
 1 VERSIONINFO
-FILEVERSION 0,8,0,2599
-PRODUCTVERSION 0,8,0,2599
+FILEVERSION 0,8,0,2607
+PRODUCTVERSION 0,8,0,2607
 FILETYPE VFT_APP
 {
   BLOCK "StringFileInfo"
@@ -24,14 +24,14 @@ FILETYPE VFT_APP
     BLOCK "041504E4"
     {
       VALUE "CompanyName", "SSTSOFT.pl"
-      VALUE "FileVersion", "0.8.0.2599"
+      VALUE "FileVersion", "0.8.0.2607"
       VALUE "FileDescription", "Developed using the Dev-C++ IDE"
       VALUE "InternalName", "Koperek"
       VALUE "LegalCopyright", "Stanislaw Stasiak"
       VALUE "LegalTrademarks", ""
-      VALUE "OriginalFilename", "Kop32_DEV"
-      VALUE "ProductName", "Koperek"
-      VALUE "ProductVersion", "0.8.0.2599"
+      VALUE "OriginalFilename", "Kop32_DEV_static"
+      VALUE "ProductName", "Koperek MinGW Static Link"
+      VALUE "ProductVersion", "0.8.0.2607"
     }
   }
   BLOCK "VarFileInfo"
